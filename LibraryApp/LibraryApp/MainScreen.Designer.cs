@@ -30,24 +30,26 @@ namespace LibraryApp
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.topPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.exitButton = new Bunifu.UI.WinForms.BunifuImageButton();
             this.sidePanel = new System.Windows.Forms.Panel();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.mainPanel = new System.Windows.Forms.Panel();
             this.returnBookBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.issuedBookBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.readersBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.booksBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dashBoardBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.exitButton = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.logOutBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.topPanel.SuspendLayout();
             this.sidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,8 +62,9 @@ namespace LibraryApp
             this.topPanel.Controls.Add(this.exitButton);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1566, 75);
+            this.topPanel.Size = new System.Drawing.Size(1627, 75);
             this.topPanel.TabIndex = 0;
             // 
             // label1
@@ -75,9 +78,46 @@ namespace LibraryApp
             this.label1.TabIndex = 2;
             this.label1.Text = "User Name";
             // 
+            // exitButton
+            // 
+            this.exitButton.ActiveImage = null;
+            this.exitButton.AllowAnimations = true;
+            this.exitButton.AllowBuffering = false;
+            this.exitButton.AllowToggling = false;
+            this.exitButton.AllowZooming = true;
+            this.exitButton.AllowZoomingOnFocus = false;
+            this.exitButton.BackColor = System.Drawing.Color.Transparent;
+            this.exitButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.exitButton.ErrorImage = ((System.Drawing.Image)(resources.GetObject("exitButton.ErrorImage")));
+            this.exitButton.FadeWhenInactive = false;
+            this.exitButton.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.exitButton.Image = global::LibraryApp.Properties.Resources.exit;
+            this.exitButton.ImageActive = null;
+            this.exitButton.ImageLocation = null;
+            this.exitButton.ImageMargin = 5;
+            this.exitButton.ImageSize = new System.Drawing.Size(59, 57);
+            this.exitButton.ImageZoomSize = new System.Drawing.Size(64, 62);
+            this.exitButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("exitButton.InitialImage")));
+            this.exitButton.Location = new System.Drawing.Point(1499, 9);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Rotation = 0;
+            this.exitButton.ShowActiveImage = true;
+            this.exitButton.ShowCursorChanges = true;
+            this.exitButton.ShowImageBorders = true;
+            this.exitButton.ShowSizeMarkers = false;
+            this.exitButton.Size = new System.Drawing.Size(64, 62);
+            this.exitButton.TabIndex = 1;
+            this.exitButton.ToolTipText = "";
+            this.exitButton.WaitOnLoad = false;
+            this.exitButton.Zoom = 5;
+            this.exitButton.ZoomSpeed = 10;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.sidePanel.Controls.Add(this.logOutBt);
             this.sidePanel.Controls.Add(this.returnBookBt);
             this.sidePanel.Controls.Add(this.issuedBookBt);
             this.sidePanel.Controls.Add(this.readersBt);
@@ -86,24 +126,10 @@ namespace LibraryApp
             this.sidePanel.Controls.Add(this.pictureBox1);
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel.Location = new System.Drawing.Point(0, 75);
+            this.sidePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.Size = new System.Drawing.Size(200, 650);
             this.sidePanel.TabIndex = 1;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.topPanel;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // mainPanel
-            // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(200, 75);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1366, 650);
-            this.mainPanel.TabIndex = 2;
             // 
             // returnBookBt
             // 
@@ -125,11 +151,11 @@ namespace LibraryApp
             this.returnBookBt.ColorContrastOnClick = 45;
             this.returnBookBt.ColorContrastOnHover = 45;
             this.returnBookBt.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.returnBookBt.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.returnBookBt.CustomizableEdges = borderEdges2;
             this.returnBookBt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.returnBookBt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.returnBookBt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -153,7 +179,8 @@ namespace LibraryApp
             this.returnBookBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("returnBookBt.IdleIconLeftImage")));
             this.returnBookBt.IdleIconRightImage = null;
             this.returnBookBt.IndicateFocus = false;
-            this.returnBookBt.Location = new System.Drawing.Point(-6, 472);
+            this.returnBookBt.Location = new System.Drawing.Point(-5, 473);
+            this.returnBookBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.returnBookBt.Name = "returnBookBt";
             this.returnBookBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.returnBookBt.OnDisabledState.BorderRadius = 1;
@@ -187,7 +214,7 @@ namespace LibraryApp
             this.returnBookBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.returnBookBt.OnPressedState.IconLeftImage = null;
             this.returnBookBt.OnPressedState.IconRightImage = null;
-            this.returnBookBt.Size = new System.Drawing.Size(203, 41);
+            this.returnBookBt.Size = new System.Drawing.Size(200, 41);
             this.returnBookBt.TabIndex = 5;
             this.returnBookBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.returnBookBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -216,11 +243,11 @@ namespace LibraryApp
             this.issuedBookBt.ColorContrastOnClick = 45;
             this.issuedBookBt.ColorContrastOnHover = 45;
             this.issuedBookBt.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.issuedBookBt.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.issuedBookBt.CustomizableEdges = borderEdges3;
             this.issuedBookBt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.issuedBookBt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.issuedBookBt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -244,7 +271,8 @@ namespace LibraryApp
             this.issuedBookBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("issuedBookBt.IdleIconLeftImage")));
             this.issuedBookBt.IdleIconRightImage = null;
             this.issuedBookBt.IndicateFocus = false;
-            this.issuedBookBt.Location = new System.Drawing.Point(-3, 414);
+            this.issuedBookBt.Location = new System.Drawing.Point(-3, 416);
+            this.issuedBookBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.issuedBookBt.Name = "issuedBookBt";
             this.issuedBookBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.issuedBookBt.OnDisabledState.BorderRadius = 1;
@@ -278,7 +306,7 @@ namespace LibraryApp
             this.issuedBookBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.issuedBookBt.OnPressedState.IconLeftImage = null;
             this.issuedBookBt.OnPressedState.IconRightImage = null;
-            this.issuedBookBt.Size = new System.Drawing.Size(203, 41);
+            this.issuedBookBt.Size = new System.Drawing.Size(200, 41);
             this.issuedBookBt.TabIndex = 2;
             this.issuedBookBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.issuedBookBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -307,11 +335,11 @@ namespace LibraryApp
             this.readersBt.ColorContrastOnClick = 45;
             this.readersBt.ColorContrastOnHover = 45;
             this.readersBt.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.readersBt.CustomizableEdges = borderEdges3;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.readersBt.CustomizableEdges = borderEdges4;
             this.readersBt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.readersBt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.readersBt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -335,7 +363,8 @@ namespace LibraryApp
             this.readersBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("readersBt.IdleIconLeftImage")));
             this.readersBt.IdleIconRightImage = null;
             this.readersBt.IndicateFocus = false;
-            this.readersBt.Location = new System.Drawing.Point(-3, 355);
+            this.readersBt.Location = new System.Drawing.Point(-3, 359);
+            this.readersBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.readersBt.Name = "readersBt";
             this.readersBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.readersBt.OnDisabledState.BorderRadius = 1;
@@ -369,7 +398,7 @@ namespace LibraryApp
             this.readersBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.readersBt.OnPressedState.IconLeftImage = null;
             this.readersBt.OnPressedState.IconRightImage = null;
-            this.readersBt.Size = new System.Drawing.Size(203, 41);
+            this.readersBt.Size = new System.Drawing.Size(200, 41);
             this.readersBt.TabIndex = 3;
             this.readersBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.readersBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -398,11 +427,11 @@ namespace LibraryApp
             this.booksBt.ColorContrastOnClick = 45;
             this.booksBt.ColorContrastOnHover = 45;
             this.booksBt.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.booksBt.CustomizableEdges = borderEdges4;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.booksBt.CustomizableEdges = borderEdges5;
             this.booksBt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.booksBt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.booksBt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -426,7 +455,8 @@ namespace LibraryApp
             this.booksBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("booksBt.IdleIconLeftImage")));
             this.booksBt.IdleIconRightImage = null;
             this.booksBt.IndicateFocus = false;
-            this.booksBt.Location = new System.Drawing.Point(-3, 292);
+            this.booksBt.Location = new System.Drawing.Point(-3, 302);
+            this.booksBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.booksBt.Name = "booksBt";
             this.booksBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.booksBt.OnDisabledState.BorderRadius = 1;
@@ -460,7 +490,7 @@ namespace LibraryApp
             this.booksBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.booksBt.OnPressedState.IconLeftImage = null;
             this.booksBt.OnPressedState.IconRightImage = null;
-            this.booksBt.Size = new System.Drawing.Size(203, 41);
+            this.booksBt.Size = new System.Drawing.Size(200, 41);
             this.booksBt.TabIndex = 2;
             this.booksBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.booksBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -489,11 +519,11 @@ namespace LibraryApp
             this.dashBoardBt.ColorContrastOnClick = 45;
             this.dashBoardBt.ColorContrastOnHover = 45;
             this.dashBoardBt.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.dashBoardBt.CustomizableEdges = borderEdges5;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.dashBoardBt.CustomizableEdges = borderEdges6;
             this.dashBoardBt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dashBoardBt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.dashBoardBt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -518,6 +548,7 @@ namespace LibraryApp
             this.dashBoardBt.IdleIconRightImage = null;
             this.dashBoardBt.IndicateFocus = false;
             this.dashBoardBt.Location = new System.Drawing.Point(-3, 234);
+            this.dashBoardBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dashBoardBt.Name = "dashBoardBt";
             this.dashBoardBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.dashBoardBt.OnDisabledState.BorderRadius = 1;
@@ -551,7 +582,7 @@ namespace LibraryApp
             this.dashBoardBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.dashBoardBt.OnPressedState.IconLeftImage = null;
             this.dashBoardBt.OnPressedState.IconRightImage = null;
-            this.dashBoardBt.Size = new System.Drawing.Size(203, 52);
+            this.dashBoardBt.Size = new System.Drawing.Size(200, 41);
             this.dashBoardBt.TabIndex = 1;
             this.dashBoardBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.dashBoardBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -565,57 +596,131 @@ namespace LibraryApp
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::LibraryApp.Properties.Resources.books;
             this.pictureBox1.Location = new System.Drawing.Point(33, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(125, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // exitButton
+            // bunifuDragControl1
             // 
-            this.exitButton.ActiveImage = null;
-            this.exitButton.AllowAnimations = true;
-            this.exitButton.AllowBuffering = false;
-            this.exitButton.AllowToggling = false;
-            this.exitButton.AllowZooming = true;
-            this.exitButton.AllowZoomingOnFocus = false;
-            this.exitButton.BackColor = System.Drawing.Color.Transparent;
-            this.exitButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.exitButton.ErrorImage = ((System.Drawing.Image)(resources.GetObject("exitButton.ErrorImage")));
-            this.exitButton.FadeWhenInactive = false;
-            this.exitButton.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.exitButton.Image = global::LibraryApp.Properties.Resources.exit;
-            this.exitButton.ImageActive = null;
-            this.exitButton.ImageLocation = null;
-            this.exitButton.ImageMargin = 5;
-            this.exitButton.ImageSize = new System.Drawing.Size(51, 55);
-            this.exitButton.ImageZoomSize = new System.Drawing.Size(56, 60);
-            this.exitButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("exitButton.InitialImage")));
-            this.exitButton.Location = new System.Drawing.Point(1498, 9);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Rotation = 0;
-            this.exitButton.ShowActiveImage = true;
-            this.exitButton.ShowCursorChanges = true;
-            this.exitButton.ShowImageBorders = true;
-            this.exitButton.ShowSizeMarkers = false;
-            this.exitButton.Size = new System.Drawing.Size(56, 60);
-            this.exitButton.TabIndex = 1;
-            this.exitButton.ToolTipText = "";
-            this.exitButton.WaitOnLoad = false;
-            this.exitButton.Zoom = 5;
-            this.exitButton.ZoomSpeed = 10;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.topPanel;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(200, 75);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(1427, 650);
+            this.mainPanel.TabIndex = 2;
+            // 
+            // logOutBt
+            // 
+            this.logOutBt.AllowAnimations = true;
+            this.logOutBt.AllowMouseEffects = true;
+            this.logOutBt.AllowToggling = false;
+            this.logOutBt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.logOutBt.AnimationSpeed = 200;
+            this.logOutBt.AutoGenerateColors = false;
+            this.logOutBt.AutoRoundBorders = false;
+            this.logOutBt.AutoSizeLeftIcon = true;
+            this.logOutBt.AutoSizeRightIcon = true;
+            this.logOutBt.BackColor = System.Drawing.Color.Transparent;
+            this.logOutBt.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.logOutBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logOutBt.BackgroundImage")));
+            this.logOutBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.logOutBt.ButtonText = "Log out";
+            this.logOutBt.ButtonTextMarginLeft = 0;
+            this.logOutBt.ColorContrastOnClick = 45;
+            this.logOutBt.ColorContrastOnHover = 45;
+            this.logOutBt.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.logOutBt.CustomizableEdges = borderEdges1;
+            this.logOutBt.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.logOutBt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.logOutBt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.logOutBt.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.logOutBt.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.logOutBt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.logOutBt.ForeColor = System.Drawing.Color.White;
+            this.logOutBt.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logOutBt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.logOutBt.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.logOutBt.IconMarginLeft = 11;
+            this.logOutBt.IconPadding = 10;
+            this.logOutBt.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logOutBt.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.logOutBt.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.logOutBt.IconSize = 25;
+            this.logOutBt.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.logOutBt.IdleBorderRadius = 1;
+            this.logOutBt.IdleBorderThickness = 1;
+            this.logOutBt.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.logOutBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("logOutBt.IdleIconLeftImage")));
+            this.logOutBt.IdleIconRightImage = null;
+            this.logOutBt.IndicateFocus = false;
+            this.logOutBt.Location = new System.Drawing.Point(0, 530);
+            this.logOutBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logOutBt.Name = "logOutBt";
+            this.logOutBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.logOutBt.OnDisabledState.BorderRadius = 1;
+            this.logOutBt.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.logOutBt.OnDisabledState.BorderThickness = 1;
+            this.logOutBt.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.logOutBt.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.logOutBt.OnDisabledState.IconLeftImage = null;
+            this.logOutBt.OnDisabledState.IconRightImage = null;
+            this.logOutBt.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.logOutBt.onHoverState.BorderRadius = 1;
+            this.logOutBt.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.logOutBt.onHoverState.BorderThickness = 1;
+            this.logOutBt.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.logOutBt.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.logOutBt.onHoverState.IconLeftImage = null;
+            this.logOutBt.onHoverState.IconRightImage = null;
+            this.logOutBt.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.logOutBt.OnIdleState.BorderRadius = 1;
+            this.logOutBt.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.logOutBt.OnIdleState.BorderThickness = 1;
+            this.logOutBt.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.logOutBt.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.logOutBt.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.logOutBt.OnIdleState.IconRightImage = null;
+            this.logOutBt.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.logOutBt.OnPressedState.BorderRadius = 1;
+            this.logOutBt.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.logOutBt.OnPressedState.BorderThickness = 1;
+            this.logOutBt.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.logOutBt.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.logOutBt.OnPressedState.IconLeftImage = null;
+            this.logOutBt.OnPressedState.IconRightImage = null;
+            this.logOutBt.Size = new System.Drawing.Size(200, 41);
+            this.logOutBt.TabIndex = 6;
+            this.logOutBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.logOutBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.logOutBt.TextMarginLeft = 0;
+            this.logOutBt.TextPadding = new System.Windows.Forms.Padding(0);
+            this.logOutBt.UseDefaultRadiusAndThickness = true;
             // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1566, 725);
+            this.ClientSize = new System.Drawing.Size(1627, 725);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainScreen";
             this.Text = "MainScreen";
             this.topPanel.ResumeLayout(false);
@@ -640,5 +745,6 @@ namespace LibraryApp
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton returnBookBt;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel mainPanel;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton logOutBt;
     }
 }

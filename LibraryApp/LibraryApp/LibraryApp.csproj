@@ -145,6 +145,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddReader.Designer.cs">
+      <DependentUpon>AddReader.cs</DependentUpon>
+    </Compile>
     <Compile Include="BookScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,12 @@
     </Compile>
     <Compile Include="DashbroadScreen.Designer.cs">
       <DependentUpon>DashbroadScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBookScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBookScreen.Designer.cs">
+      <DependentUpon>AddBookScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="IssuedBooks.cs">
       <SubType>Form</SubType>
@@ -174,6 +186,18 @@
     </Compile>
     <Compile Include="MainScreen.Designer.cs">
       <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyBookScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyBookScreen.Designer.cs">
+      <DependentUpon>ModifyBookScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayDebtScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayDebtScreen.Designer.cs">
+      <DependentUpon>PayDebtScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -195,6 +219,12 @@
     <Compile Include="SignUpScreen.Designer.cs">
       <DependentUpon>SignUpScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddBookScreen.resx">
+      <DependentUpon>AddBookScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddReader.resx">
+      <DependentUpon>AddReader.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BookScreen.resx">
       <DependentUpon>BookScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +239,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainScreen.resx">
       <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyBookScreen.resx">
+      <DependentUpon>ModifyBookScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayDebtScreen.resx">
+      <DependentUpon>PayDebtScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -16,5 +16,17 @@ namespace LibraryApp
         {
             InitializeComponent();
         }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            AddReader child = new AddReader();
+            child.ShowDialog();
+        }
+
+        private void payBt_Click(object sender, EventArgs e)
+        {
+            PayDebtScreen child = new PayDebtScreen();
+            child.ShowDialog();
+        }
     }
 }

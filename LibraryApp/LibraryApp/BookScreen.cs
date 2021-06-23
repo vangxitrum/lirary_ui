@@ -21,5 +21,17 @@ namespace LibraryApp
         {
 
         }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            AddBookScreen child = new AddBookScreen();
+            child.ShowDialog();
+        }
+
+        private void modifyBt_Click(object sender, EventArgs e)
+        {
+            ModifyBookScreen child = new ModifyBookScreen();
+            child.ShowDialog();
+        }
     }
 }

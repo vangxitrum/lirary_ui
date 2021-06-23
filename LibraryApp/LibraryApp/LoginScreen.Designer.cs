@@ -167,6 +167,7 @@ namespace LibraryApp
             this.loginBt.Size = new System.Drawing.Size(204, 41);
             this.loginBt.TabIndex = 4;
             this.loginBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.loginBt.Click += new System.EventHandler(this.loginBt_Click);
             // 
             // passwordTaker
             // 

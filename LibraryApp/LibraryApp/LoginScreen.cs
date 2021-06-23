@@ -28,5 +28,13 @@ namespace LibraryApp
         {
             Application.Exit();
         }
+
+        private void loginBt_Click(object sender, EventArgs e)
+        {
+            
+            MainScreen newScreen = new MainScreen();
+            newScreen.Show();
+            this.Hide();
+        }
     }
 }

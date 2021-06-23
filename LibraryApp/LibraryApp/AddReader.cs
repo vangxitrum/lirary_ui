@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace LibraryApp
 {
-    public partial class IssuedBooks : Form
+    public partial class AddReader : Form
     {
-        public IssuedBooks()
+        public AddReader()
         {
             InitializeComponent();
         }
 
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
