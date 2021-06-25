@@ -29,10 +29,10 @@ namespace LibraryApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IssuedBooks));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IssuedBooks));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -63,12 +63,12 @@ namespace LibraryApp
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.na = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bSearchBt = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -83,81 +83,21 @@ namespace LibraryApp
             this.bunifuTextBox7 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bIdTaker = new Bunifu.UI.WinForms.BunifuTextBox();
             this.rIdTaker = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // na
-            // 
-            this.na.AllowParentOverrides = false;
-            this.na.AutoEllipsis = false;
-            this.na.Cursor = System.Windows.Forms.Cursors.Default;
-            this.na.CursorType = System.Windows.Forms.Cursors.Default;
-            this.na.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.na.Location = new System.Drawing.Point(352, 365);
-            this.na.Name = "na";
-            this.na.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.na.Size = new System.Drawing.Size(40, 20);
-            this.na.TabIndex = 1;
-            this.na.Text = "Name";
-            this.na.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.na.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel2
-            // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(352, 530);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(53, 20);
-            this.bunifuLabel2.TabIndex = 3;
-            this.bunifuLabel2.Text = "Address";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel3
-            // 
-            this.bunifuLabel3.AllowParentOverrides = false;
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(352, 420);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(37, 20);
-            this.bunifuLabel3.TabIndex = 3;
-            this.bunifuLabel3.Text = "Email";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(352, 475);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(85, 20);
-            this.bunifuLabel4.TabIndex = 3;
-            this.bunifuLabel4.Text = "Date of birth";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(402, 319);
+            this.label1.Location = new System.Drawing.Point(302, 259);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 29);
+            this.label1.Size = new System.Drawing.Size(163, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Reader Infomation";
             // 
@@ -217,30 +157,61 @@ namespace LibraryApp
             this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
             this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
             this.bunifuDataGridView1.Location = new System.Drawing.Point(0, -1);
+            this.bunifuDataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuDataGridView1.Name = "bunifuDataGridView1";
             this.bunifuDataGridView1.RowHeadersVisible = false;
             this.bunifuDataGridView1.RowHeadersWidth = 51;
             this.bunifuDataGridView1.RowTemplate.Height = 40;
             this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(1427, 223);
+            this.bunifuDataGridView1.Size = new System.Drawing.Size(1070, 181);
             this.bunifuDataGridView1.TabIndex = 8;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // ID
+            // 
+            this.ID.DividerWidth = 1;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // bookName
+            // 
+            this.bookName.DividerWidth = 1;
+            this.bookName.HeaderText = "Name";
+            this.bookName.MinimumWidth = 6;
+            this.bookName.Name = "bookName";
+            // 
+            // Status
+            // 
+            this.Status.DividerWidth = 1;
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            // 
+            // Price
+            // 
+            this.Price.DividerWidth = 1;
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(847, 436);
+            this.label2.Location = new System.Drawing.Point(635, 354);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 17);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "Book Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(845, 382);
+            this.label3.Location = new System.Drawing.Point(634, 310);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 17);
+            this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Issued Date";
             // 
@@ -261,18 +232,18 @@ namespace LibraryApp
             this.bSearchBt.ImageActive = null;
             this.bSearchBt.ImageLocation = null;
             this.bSearchBt.ImageMargin = 0;
-            this.bSearchBt.ImageSize = new System.Drawing.Size(28, 29);
-            this.bSearchBt.ImageZoomSize = new System.Drawing.Size(29, 30);
+            this.bSearchBt.ImageSize = new System.Drawing.Size(21, 23);
+            this.bSearchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
             this.bSearchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("bSearchBt.InitialImage")));
-            this.bSearchBt.Location = new System.Drawing.Point(1135, 258);
-            this.bSearchBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bSearchBt.Location = new System.Drawing.Point(851, 210);
+            this.bSearchBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bSearchBt.Name = "bSearchBt";
             this.bSearchBt.Rotation = 0;
             this.bSearchBt.ShowActiveImage = true;
             this.bSearchBt.ShowCursorChanges = true;
             this.bSearchBt.ShowImageBorders = true;
             this.bSearchBt.ShowSizeMarkers = false;
-            this.bSearchBt.Size = new System.Drawing.Size(29, 30);
+            this.bSearchBt.Size = new System.Drawing.Size(22, 24);
             this.bSearchBt.TabIndex = 9;
             this.bSearchBt.ToolTipText = "";
             this.bSearchBt.WaitOnLoad = false;
@@ -296,18 +267,18 @@ namespace LibraryApp
             this.rSearchBt.ImageActive = null;
             this.rSearchBt.ImageLocation = null;
             this.rSearchBt.ImageMargin = 0;
-            this.rSearchBt.ImageSize = new System.Drawing.Size(28, 29);
-            this.rSearchBt.ImageZoomSize = new System.Drawing.Size(29, 30);
+            this.rSearchBt.ImageSize = new System.Drawing.Size(21, 23);
+            this.rSearchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
             this.rSearchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("rSearchBt.InitialImage")));
-            this.rSearchBt.Location = new System.Drawing.Point(632, 258);
-            this.rSearchBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rSearchBt.Location = new System.Drawing.Point(474, 210);
+            this.rSearchBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rSearchBt.Name = "rSearchBt";
             this.rSearchBt.Rotation = 0;
             this.rSearchBt.ShowActiveImage = true;
             this.rSearchBt.ShowCursorChanges = true;
             this.rSearchBt.ShowImageBorders = true;
             this.rSearchBt.ShowSizeMarkers = false;
-            this.rSearchBt.Size = new System.Drawing.Size(29, 30);
+            this.rSearchBt.Size = new System.Drawing.Size(22, 24);
             this.rSearchBt.TabIndex = 9;
             this.rSearchBt.ToolTipText = "";
             this.rSearchBt.WaitOnLoad = false;
@@ -361,7 +332,8 @@ namespace LibraryApp
             this.addBookBt.IdleIconLeftImage = null;
             this.addBookBt.IdleIconRightImage = null;
             this.addBookBt.IndicateFocus = false;
-            this.addBookBt.Location = new System.Drawing.Point(934, 511);
+            this.addBookBt.Location = new System.Drawing.Point(700, 415);
+            this.addBookBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addBookBt.Name = "addBookBt";
             this.addBookBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.addBookBt.OnDisabledState.BorderRadius = 1;
@@ -395,7 +367,7 @@ namespace LibraryApp
             this.addBookBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.addBookBt.OnPressedState.IconLeftImage = null;
             this.addBookBt.OnPressedState.IconRightImage = null;
-            this.addBookBt.Size = new System.Drawing.Size(150, 39);
+            this.addBookBt.Size = new System.Drawing.Size(112, 32);
             this.addBookBt.TabIndex = 7;
             this.addBookBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.addBookBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -450,7 +422,8 @@ namespace LibraryApp
             this.saveBt.IdleIconLeftImage = null;
             this.saveBt.IdleIconRightImage = null;
             this.saveBt.IndicateFocus = false;
-            this.saveBt.Location = new System.Drawing.Point(1217, 599);
+            this.saveBt.Location = new System.Drawing.Point(913, 487);
+            this.saveBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.saveBt.Name = "saveBt";
             this.saveBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.saveBt.OnDisabledState.BorderRadius = 1;
@@ -484,7 +457,7 @@ namespace LibraryApp
             this.saveBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.saveBt.OnPressedState.IconLeftImage = null;
             this.saveBt.OnPressedState.IconRightImage = null;
-            this.saveBt.Size = new System.Drawing.Size(150, 39);
+            this.saveBt.Size = new System.Drawing.Size(112, 32);
             this.saveBt.TabIndex = 7;
             this.saveBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.saveBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -510,10 +483,11 @@ namespace LibraryApp
             this.bunifuDatePicker1.IconColor = System.Drawing.Color.Gray;
             this.bunifuDatePicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.bunifuDatePicker1.LeftTextMargin = 5;
-            this.bunifuDatePicker1.Location = new System.Drawing.Point(934, 382);
+            this.bunifuDatePicker1.Location = new System.Drawing.Point(700, 310);
+            this.bunifuDatePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuDatePicker1.MinimumSize = new System.Drawing.Size(4, 32);
             this.bunifuDatePicker1.Name = "bunifuDatePicker1";
-            this.bunifuDatePicker1.Size = new System.Drawing.Size(220, 32);
+            this.bunifuDatePicker1.Size = new System.Drawing.Size(166, 32);
             this.bunifuDatePicker1.TabIndex = 6;
             // 
             // rBirth
@@ -543,7 +517,8 @@ namespace LibraryApp
             this.rBirth.IconRight = null;
             this.rBirth.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rBirth.Lines = new string[0];
-            this.rBirth.Location = new System.Drawing.Point(463, 475);
+            this.rBirth.Location = new System.Drawing.Point(347, 386);
+            this.rBirth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rBirth.MaxLength = 32767;
             this.rBirth.MinimumSize = new System.Drawing.Size(1, 1);
             this.rBirth.Modified = false;
@@ -569,7 +544,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rBirth.OnIdleState = stateProperties4;
-            this.rBirth.Padding = new System.Windows.Forms.Padding(3);
+            this.rBirth.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rBirth.PasswordChar = '\0';
             this.rBirth.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rBirth.PlaceholderText = "ReaderID";
@@ -579,7 +554,7 @@ namespace LibraryApp
             this.rBirth.SelectionLength = 0;
             this.rBirth.SelectionStart = 0;
             this.rBirth.ShortcutsEnabled = true;
-            this.rBirth.Size = new System.Drawing.Size(260, 49);
+            this.rBirth.Size = new System.Drawing.Size(195, 40);
             this.rBirth.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rBirth.TabIndex = 4;
             this.rBirth.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -617,7 +592,8 @@ namespace LibraryApp
             this.rEmail.IconRight = null;
             this.rEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rEmail.Lines = new string[0];
-            this.rEmail.Location = new System.Drawing.Point(463, 420);
+            this.rEmail.Location = new System.Drawing.Point(347, 341);
+            this.rEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rEmail.MaxLength = 32767;
             this.rEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.rEmail.Modified = false;
@@ -643,7 +619,7 @@ namespace LibraryApp
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rEmail.OnIdleState = stateProperties8;
-            this.rEmail.Padding = new System.Windows.Forms.Padding(3);
+            this.rEmail.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rEmail.PasswordChar = '\0';
             this.rEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rEmail.PlaceholderText = "ReaderID";
@@ -653,7 +629,7 @@ namespace LibraryApp
             this.rEmail.SelectionLength = 0;
             this.rEmail.SelectionStart = 0;
             this.rEmail.ShortcutsEnabled = true;
-            this.rEmail.Size = new System.Drawing.Size(260, 49);
+            this.rEmail.Size = new System.Drawing.Size(195, 40);
             this.rEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rEmail.TabIndex = 4;
             this.rEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -691,7 +667,8 @@ namespace LibraryApp
             this.rAddress.IconRight = null;
             this.rAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rAddress.Lines = new string[0];
-            this.rAddress.Location = new System.Drawing.Point(463, 530);
+            this.rAddress.Location = new System.Drawing.Point(347, 431);
+            this.rAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rAddress.MaxLength = 32767;
             this.rAddress.MinimumSize = new System.Drawing.Size(1, 1);
             this.rAddress.Modified = false;
@@ -717,7 +694,7 @@ namespace LibraryApp
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rAddress.OnIdleState = stateProperties12;
-            this.rAddress.Padding = new System.Windows.Forms.Padding(3);
+            this.rAddress.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rAddress.PasswordChar = '\0';
             this.rAddress.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rAddress.PlaceholderText = "ReaderID";
@@ -727,7 +704,7 @@ namespace LibraryApp
             this.rAddress.SelectionLength = 0;
             this.rAddress.SelectionStart = 0;
             this.rAddress.ShortcutsEnabled = true;
-            this.rAddress.Size = new System.Drawing.Size(260, 49);
+            this.rAddress.Size = new System.Drawing.Size(195, 40);
             this.rAddress.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rAddress.TabIndex = 4;
             this.rAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -765,7 +742,8 @@ namespace LibraryApp
             this.rName.IconRight = null;
             this.rName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rName.Lines = new string[0];
-            this.rName.Location = new System.Drawing.Point(463, 365);
+            this.rName.Location = new System.Drawing.Point(347, 297);
+            this.rName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rName.MaxLength = 32767;
             this.rName.MinimumSize = new System.Drawing.Size(1, 1);
             this.rName.Modified = false;
@@ -791,7 +769,7 @@ namespace LibraryApp
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rName.OnIdleState = stateProperties16;
-            this.rName.Padding = new System.Windows.Forms.Padding(3);
+            this.rName.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rName.PasswordChar = '\0';
             this.rName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rName.PlaceholderText = "ReaderID";
@@ -801,7 +779,7 @@ namespace LibraryApp
             this.rName.SelectionLength = 0;
             this.rName.SelectionStart = 0;
             this.rName.ShortcutsEnabled = true;
-            this.rName.Size = new System.Drawing.Size(260, 49);
+            this.rName.Size = new System.Drawing.Size(195, 40);
             this.rName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rName.TabIndex = 2;
             this.rName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -839,7 +817,8 @@ namespace LibraryApp
             this.bunifuTextBox7.IconRight = null;
             this.bunifuTextBox7.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox7.Lines = new string[0];
-            this.bunifuTextBox7.Location = new System.Drawing.Point(934, 436);
+            this.bunifuTextBox7.Location = new System.Drawing.Point(700, 354);
+            this.bunifuTextBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuTextBox7.MaxLength = 32767;
             this.bunifuTextBox7.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox7.Modified = false;
@@ -865,7 +844,7 @@ namespace LibraryApp
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox7.OnIdleState = stateProperties20;
-            this.bunifuTextBox7.Padding = new System.Windows.Forms.Padding(3);
+            this.bunifuTextBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuTextBox7.PasswordChar = '\0';
             this.bunifuTextBox7.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox7.PlaceholderText = "ReaderID";
@@ -875,7 +854,7 @@ namespace LibraryApp
             this.bunifuTextBox7.SelectionLength = 0;
             this.bunifuTextBox7.SelectionStart = 0;
             this.bunifuTextBox7.ShortcutsEnabled = true;
-            this.bunifuTextBox7.Size = new System.Drawing.Size(260, 49);
+            this.bunifuTextBox7.Size = new System.Drawing.Size(195, 40);
             this.bunifuTextBox7.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.bunifuTextBox7.TabIndex = 0;
             this.bunifuTextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -913,7 +892,8 @@ namespace LibraryApp
             this.bIdTaker.IconRight = null;
             this.bIdTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bIdTaker.Lines = new string[0];
-            this.bIdTaker.Location = new System.Drawing.Point(850, 239);
+            this.bIdTaker.Location = new System.Drawing.Point(638, 194);
+            this.bIdTaker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bIdTaker.MaxLength = 32767;
             this.bIdTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.bIdTaker.Modified = false;
@@ -939,7 +919,7 @@ namespace LibraryApp
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bIdTaker.OnIdleState = stateProperties24;
-            this.bIdTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.bIdTaker.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bIdTaker.PasswordChar = '\0';
             this.bIdTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bIdTaker.PlaceholderText = "Book ID";
@@ -949,7 +929,7 @@ namespace LibraryApp
             this.bIdTaker.SelectionLength = 0;
             this.bIdTaker.SelectionStart = 0;
             this.bIdTaker.ShortcutsEnabled = true;
-            this.bIdTaker.Size = new System.Drawing.Size(260, 49);
+            this.bIdTaker.Size = new System.Drawing.Size(195, 40);
             this.bIdTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.bIdTaker.TabIndex = 0;
             this.bIdTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -987,7 +967,8 @@ namespace LibraryApp
             this.rIdTaker.IconRight = null;
             this.rIdTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rIdTaker.Lines = new string[0];
-            this.rIdTaker.Location = new System.Drawing.Point(352, 239);
+            this.rIdTaker.Location = new System.Drawing.Point(264, 194);
+            this.rIdTaker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rIdTaker.MaxLength = 32767;
             this.rIdTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.rIdTaker.Modified = false;
@@ -1013,7 +994,7 @@ namespace LibraryApp
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rIdTaker.OnIdleState = stateProperties28;
-            this.rIdTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.rIdTaker.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rIdTaker.PasswordChar = '\0';
             this.rIdTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rIdTaker.PlaceholderText = "Reader ID";
@@ -1023,7 +1004,7 @@ namespace LibraryApp
             this.rIdTaker.SelectionLength = 0;
             this.rIdTaker.SelectionStart = 0;
             this.rIdTaker.ShortcutsEnabled = true;
-            this.rIdTaker.Size = new System.Drawing.Size(260, 49);
+            this.rIdTaker.Size = new System.Drawing.Size(195, 40);
             this.rIdTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.rIdTaker.TabIndex = 0;
             this.rIdTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1034,39 +1015,51 @@ namespace LibraryApp
             this.rIdTaker.UseSystemPasswordChar = false;
             this.rIdTaker.WordWrap = true;
             // 
-            // ID
+            // label4
             // 
-            this.ID.DividerWidth = 1;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(264, 297);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Name";
             // 
-            // bookName
+            // label5
             // 
-            this.bookName.DividerWidth = 1;
-            this.bookName.HeaderText = "Name";
-            this.bookName.MinimumWidth = 6;
-            this.bookName.Name = "bookName";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(264, 341);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Email";
             // 
-            // Status
+            // label6
             // 
-            this.Status.DividerWidth = 1;
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(264, 386);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Address";
             // 
-            // Price
+            // label7
             // 
-            this.Price.DividerWidth = 1;
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(264, 434);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Date of birth";
             // 
             // IssuedBooks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1427, 650);
+            this.ClientSize = new System.Drawing.Size(1070, 528);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bSearchBt);
@@ -1077,18 +1070,14 @@ namespace LibraryApp
             this.Controls.Add(this.bunifuDatePicker1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rBirth);
-            this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.rEmail);
-            this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.rAddress);
-            this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.rName);
-            this.Controls.Add(this.na);
             this.Controls.Add(this.bunifuTextBox7);
             this.Controls.Add(this.bIdTaker);
             this.Controls.Add(this.rIdTaker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "IssuedBooks";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -1099,13 +1088,9 @@ namespace LibraryApp
         #endregion
 
         private Bunifu.UI.WinForms.BunifuTextBox rIdTaker;
-        private Bunifu.UI.WinForms.BunifuLabel na;
         private Bunifu.UI.WinForms.BunifuTextBox rName;
         private Bunifu.UI.WinForms.BunifuTextBox rAddress;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuTextBox rEmail;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuTextBox rBirth;
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuTextBox bIdTaker;
@@ -1122,5 +1107,9 @@ namespace LibraryApp
         private System.Windows.Forms.DataGridViewTextBoxColumn bookName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

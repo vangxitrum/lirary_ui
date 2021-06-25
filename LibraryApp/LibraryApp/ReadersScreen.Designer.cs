@@ -118,14 +118,14 @@ namespace LibraryApp
             this.bookData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bookData.HeaderBgColor = System.Drawing.Color.Empty;
             this.bookData.HeaderForeColor = System.Drawing.Color.White;
-            this.bookData.Location = new System.Drawing.Point(0, 70);
-            this.bookData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bookData.Location = new System.Drawing.Point(0, 57);
+            this.bookData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookData.Name = "bookData";
             this.bookData.RowHeadersVisible = false;
             this.bookData.RowHeadersWidth = 30;
             this.bookData.RowTemplate.Height = 40;
             this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookData.Size = new System.Drawing.Size(1427, 523);
+            this.bookData.Size = new System.Drawing.Size(1070, 425);
             this.bookData.TabIndex = 6;
             this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -176,8 +176,8 @@ namespace LibraryApp
             this.payBt.IdleIconLeftImage = null;
             this.payBt.IdleIconRightImage = null;
             this.payBt.IndicateFocus = false;
-            this.payBt.Location = new System.Drawing.Point(1075, 600);
-            this.payBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.payBt.Location = new System.Drawing.Point(806, 488);
+            this.payBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.payBt.Name = "payBt";
             this.payBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.payBt.OnDisabledState.BorderRadius = 1;
@@ -211,7 +211,7 @@ namespace LibraryApp
             this.payBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.payBt.OnPressedState.IconLeftImage = null;
             this.payBt.OnPressedState.IconRightImage = null;
-            this.payBt.Size = new System.Drawing.Size(149, 39);
+            this.payBt.Size = new System.Drawing.Size(112, 32);
             this.payBt.TabIndex = 12;
             this.payBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.payBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -267,8 +267,8 @@ namespace LibraryApp
             this.addButton.IdleIconLeftImage = null;
             this.addButton.IdleIconRightImage = null;
             this.addButton.IndicateFocus = false;
-            this.addButton.Location = new System.Drawing.Point(901, 600);
-            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addButton.Location = new System.Drawing.Point(676, 488);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addButton.Name = "addButton";
             this.addButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.addButton.OnDisabledState.BorderRadius = 1;
@@ -302,7 +302,7 @@ namespace LibraryApp
             this.addButton.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.addButton.OnPressedState.IconLeftImage = null;
             this.addButton.OnPressedState.IconRightImage = null;
-            this.addButton.Size = new System.Drawing.Size(149, 39);
+            this.addButton.Size = new System.Drawing.Size(112, 32);
             this.addButton.TabIndex = 12;
             this.addButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.addButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -328,18 +328,18 @@ namespace LibraryApp
             this.searchBt.ImageActive = null;
             this.searchBt.ImageLocation = null;
             this.searchBt.ImageMargin = 0;
-            this.searchBt.ImageSize = new System.Drawing.Size(28, 29);
-            this.searchBt.ImageZoomSize = new System.Drawing.Size(29, 30);
+            this.searchBt.ImageSize = new System.Drawing.Size(21, 23);
+            this.searchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
             this.searchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("searchBt.InitialImage")));
-            this.searchBt.Location = new System.Drawing.Point(307, 12);
-            this.searchBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchBt.Location = new System.Drawing.Point(230, 10);
+            this.searchBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBt.Name = "searchBt";
             this.searchBt.Rotation = 0;
             this.searchBt.ShowActiveImage = true;
             this.searchBt.ShowCursorChanges = true;
             this.searchBt.ShowImageBorders = true;
             this.searchBt.ShowSizeMarkers = false;
-            this.searchBt.Size = new System.Drawing.Size(29, 30);
+            this.searchBt.Size = new System.Drawing.Size(22, 24);
             this.searchBt.TabIndex = 11;
             this.searchBt.ToolTipText = "";
             this.searchBt.WaitOnLoad = false;
@@ -373,8 +373,8 @@ namespace LibraryApp
             this.searchBar.IconRight = null;
             this.searchBar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.searchBar.Lines = new string[0];
-            this.searchBar.Location = new System.Drawing.Point(63, 12);
-            this.searchBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchBar.Location = new System.Drawing.Point(47, 10);
+            this.searchBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBar.MaxLength = 32767;
             this.searchBar.MinimumSize = new System.Drawing.Size(1, 1);
             this.searchBar.Modified = false;
@@ -400,7 +400,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.searchBar.OnIdleState = stateProperties4;
-            this.searchBar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchBar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBar.PasswordChar = '\0';
             this.searchBar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.searchBar.PlaceholderText = "Search here";
@@ -410,7 +410,7 @@ namespace LibraryApp
             this.searchBar.SelectionLength = 0;
             this.searchBar.SelectionStart = 0;
             this.searchBar.ShortcutsEnabled = true;
-            this.searchBar.Size = new System.Drawing.Size(228, 30);
+            this.searchBar.Size = new System.Drawing.Size(171, 24);
             this.searchBar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.searchBar.TabIndex = 10;
             this.searchBar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -468,8 +468,8 @@ namespace LibraryApp
             this.deleteBt.IdleIconLeftImage = null;
             this.deleteBt.IdleIconRightImage = null;
             this.deleteBt.IndicateFocus = false;
-            this.deleteBt.Location = new System.Drawing.Point(1249, 598);
-            this.deleteBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteBt.Location = new System.Drawing.Point(937, 486);
+            this.deleteBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteBt.Name = "deleteBt";
             this.deleteBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.deleteBt.OnDisabledState.BorderRadius = 1;
@@ -503,7 +503,7 @@ namespace LibraryApp
             this.deleteBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.deleteBt.OnPressedState.IconLeftImage = null;
             this.deleteBt.OnPressedState.IconRightImage = null;
-            this.deleteBt.Size = new System.Drawing.Size(149, 39);
+            this.deleteBt.Size = new System.Drawing.Size(112, 32);
             this.deleteBt.TabIndex = 8;
             this.deleteBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.deleteBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -519,12 +519,13 @@ namespace LibraryApp
             this.ID.HeaderText = "ID";
             this.ID.MinimumWidth = 40;
             this.ID.Name = "ID";
-            this.ID.Width = 60;
+            this.ID.Width = 50;
             // 
             // ReaderName
             // 
             this.ReaderName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ReaderName.DividerWidth = 1;
+            this.ReaderName.FillWeight = 10F;
             this.ReaderName.HeaderText = "Name";
             this.ReaderName.MinimumWidth = 6;
             this.ReaderName.Name = "ReaderName";
@@ -536,7 +537,7 @@ namespace LibraryApp
             this.ReaderType.HeaderText = "Type";
             this.ReaderType.MinimumWidth = 6;
             this.ReaderType.Name = "ReaderType";
-            this.ReaderType.Width = 60;
+            this.ReaderType.Width = 50;
             // 
             // DateOfBirth
             // 
@@ -545,12 +546,13 @@ namespace LibraryApp
             this.DateOfBirth.HeaderText = "Date Of Birth";
             this.DateOfBirth.MinimumWidth = 6;
             this.DateOfBirth.Name = "DateOfBirth";
-            this.DateOfBirth.Width = 160;
+            this.DateOfBirth.Width = 129;
             // 
             // Address
             // 
             this.Address.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Address.DividerWidth = 1;
+            this.Address.FillWeight = 10F;
             this.Address.HeaderText = "Address";
             this.Address.MinimumWidth = 6;
             this.Address.Name = "Address";
@@ -562,7 +564,7 @@ namespace LibraryApp
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
-            this.Email.Width = 88;
+            this.Email.Width = 72;
             // 
             // SigninDate
             // 
@@ -571,7 +573,7 @@ namespace LibraryApp
             this.SigninDate.HeaderText = "Sign In Date";
             this.SigninDate.MinimumWidth = 6;
             this.SigninDate.Name = "SigninDate";
-            this.SigninDate.Width = 152;
+            this.SigninDate.Width = 122;
             // 
             // Debt
             // 
@@ -580,13 +582,13 @@ namespace LibraryApp
             this.Debt.HeaderText = "Debt";
             this.Debt.MinimumWidth = 6;
             this.Debt.Name = "Debt";
-            this.Debt.Width = 84;
+            this.Debt.Width = 70;
             // 
             // ReadersScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1427, 650);
+            this.ClientSize = new System.Drawing.Size(1070, 528);
             this.Controls.Add(this.payBt);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.bookData);
@@ -594,7 +596,7 @@ namespace LibraryApp
             this.Controls.Add(this.searchBar);
             this.Controls.Add(this.deleteBt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ReadersScreen";
             this.Text = "ReadersScreen";
             ((System.ComponentModel.ISupportInitialize)(this.bookData)).EndInit();

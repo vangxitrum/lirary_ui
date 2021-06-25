@@ -41,16 +41,6 @@ namespace LibraryApp
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bookData = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Genre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.publishYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Publisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.searchBt = new Bunifu.UI.WinForms.BunifuImageButton();
             this.searchBar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.addButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -79,18 +69,7 @@ namespace LibraryApp
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bookData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bookData.ColumnHeadersHeight = 40;
-            this.bookData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.bookName,
-            this.Author,
-            this.Genre,
-            this.State,
-            this.Amount,
-            this.Position,
-            this.publishYear,
-            this.Publisher,
-            this.Price});
+            this.bookData.ColumnHeadersHeight = 20;
             this.bookData.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.bookData.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.bookData.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -127,113 +106,12 @@ namespace LibraryApp
             this.bookData.Name = "bookData";
             this.bookData.RowHeadersVisible = false;
             this.bookData.RowHeadersWidth = 30;
-            this.bookData.RowTemplate.Height = 40;
+            this.bookData.RowTemplate.Height = 20;
             this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.bookData.Size = new System.Drawing.Size(1070, 425);
             this.bookData.TabIndex = 0;
             this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.bookData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bookData_CellContentClick);
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.ID.DividerWidth = 1;
-            this.ID.FillWeight = 5F;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 40;
-            this.ID.Name = "ID";
-            this.ID.Width = 50;
-            // 
-            // bookName
-            // 
-            this.bookName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.bookName.DividerWidth = 1;
-            this.bookName.FillWeight = 10F;
-            this.bookName.HeaderText = "Name";
-            this.bookName.MinimumWidth = 50;
-            this.bookName.Name = "bookName";
-            this.bookName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Author
-            // 
-            this.Author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Author.DividerWidth = 1;
-            this.Author.FillWeight = 10F;
-            this.Author.HeaderText = "Author";
-            this.Author.MinimumWidth = 50;
-            this.Author.Name = "Author";
-            this.Author.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Genre
-            // 
-            this.Genre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Genre.DividerWidth = 1;
-            this.Genre.FillWeight = 10F;
-            this.Genre.HeaderText = "Genre";
-            this.Genre.MinimumWidth = 50;
-            this.Genre.Name = "Genre";
-            this.Genre.Width = 78;
-            // 
-            // State
-            // 
-            this.State.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.State.DividerWidth = 1;
-            this.State.FillWeight = 5F;
-            this.State.HeaderText = "State";
-            this.State.MinimumWidth = 50;
-            this.State.Name = "State";
-            this.State.Width = 72;
-            // 
-            // Amount
-            // 
-            this.Amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Amount.DividerWidth = 1;
-            this.Amount.FillWeight = 5F;
-            this.Amount.HeaderText = "Amount";
-            this.Amount.MinimumWidth = 50;
-            this.Amount.Name = "Amount";
-            this.Amount.Width = 93;
-            // 
-            // Position
-            // 
-            this.Position.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Position.DividerWidth = 1;
-            this.Position.FillWeight = 10F;
-            this.Position.HeaderText = "Position";
-            this.Position.MinimumWidth = 50;
-            this.Position.Name = "Position";
-            this.Position.Width = 92;
-            // 
-            // publishYear
-            // 
-            this.publishYear.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.publishYear.DividerWidth = 1;
-            this.publishYear.FillWeight = 5F;
-            this.publishYear.HeaderText = "Year";
-            this.publishYear.MinimumWidth = 30;
-            this.publishYear.Name = "publishYear";
-            this.publishYear.Width = 65;
-            // 
-            // Publisher
-            // 
-            this.Publisher.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Publisher.DividerWidth = 1;
-            this.Publisher.FillWeight = 10F;
-            this.Publisher.HeaderText = "Publisher";
-            this.Publisher.MinimumWidth = 50;
-            this.Publisher.Name = "Publisher";
-            this.Publisher.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Publisher.Width = 101;
-            // 
-            // Price
-            // 
-            this.Price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Price.DividerWidth = 1;
-            this.Price.FillWeight = 10F;
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 50;
-            this.Price.Name = "Price";
-            this.Price.Width = 70;
             // 
             // searchBt
             // 
@@ -644,15 +522,5 @@ namespace LibraryApp
         private Bunifu.UI.WinForms.BunifuTextBox searchBar;
         private Bunifu.UI.WinForms.BunifuImageButton searchBt;
         private Bunifu.UI.WinForms.BunifuDataGridView bookData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bookName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Author;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Genre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn State;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Position;
-        private System.Windows.Forms.DataGridViewTextBoxColumn publishYear;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Publisher;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
     }
 }

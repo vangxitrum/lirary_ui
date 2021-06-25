@@ -169,6 +169,8 @@
     <Compile Include="AddBookScreen.Designer.cs">
       <DependentUpon>AddBookScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBServerUtils.cs" />
+    <Compile Include="DBUtils.cs" />
     <Compile Include="IssuedBooks.cs">
       <SubType>Form</SubType>
     </Compile>

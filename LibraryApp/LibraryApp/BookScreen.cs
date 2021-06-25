@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace LibraryApp
         public BookScreen()
         {
             InitializeComponent();
+            loadData();
         }
 
         private void bookData_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -32,6 +34,27 @@ namespace LibraryApp
         {
             ModifyBookScreen child = new ModifyBookScreen();
             child.ShowDialog();
+        }
+
+        private void loadData()
+        {
+            String StrQuery;
+            using (SqlConnection conn = DBUtils.GetDBConnection())
+            {
+                using (SqlCommand comm = new SqlCommand())
+                {
+                    comm.Connection = conn;
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("select * from Sach", conn);
+                    cmd.CommandType = CommandType.Text;
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "ss");
+                    bookData.DataSource = ds.Tables["ss"];
+                }
+                conn.Close();
+            }
+           
         }
     }
 }
