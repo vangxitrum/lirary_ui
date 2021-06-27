@@ -1062,7 +1062,7 @@
         4hqIayCugbgG4hqIayCugbhrzL3+QgBzrxes2mnG4GWIywAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuDatePicker1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="dateGetter.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF/SURBVFhH7ZZdTsMwEISDuEEbIXGBPvLIMwfgMNyAnADR
@@ -1111,7 +1111,7 @@
         J3TZjwPOG4cAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="nameBook.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMMAAAAoCAYAAABD/E7rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA+SURBVHhe7cNBDQAwCASw+TfFOQPes0Cb9AEAAAAAAAAA
@@ -1130,6 +1130,14 @@
         iVBORw0KGgoAAAANSUhEUgAAAMMAAAAoCAYAAABD/E7rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA+SURBVHhe7cNBDQAwCASw+TfFOQPes0Cb9AEAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAwCdJ7dbb0wM2RHjcaFzu/AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="delBt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHAAAAAgCAYAAADKbvy8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVGhD7dExEYAwAMBAlNRy8YeM7i0IwMDfZfgpY65x
+        72fc50S0n2/gX4iigbgG4hqIayCugbgG4hqIayCugbgG4hqIayCugbgG4hqIayCugbgG4hqIayCugbgG
+        4hqIayCugbgG4hqIayCugbhrzL3+QgBzrxes2mnG4GWIywAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>
