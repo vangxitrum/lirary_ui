@@ -40,35 +40,36 @@ namespace LibraryApp
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            this.bookData = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.readerData = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.readerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateofBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.signInDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Debt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.payBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.addButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.searchBt = new Bunifu.UI.WinForms.BunifuImageButton();
             this.searchBar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.deleteBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReaderName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReaderType = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.DateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SigninDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Debt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.bookData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.readerData)).BeginInit();
             this.SuspendLayout();
             // 
-            // bookData
+            // readerData
             // 
-            this.bookData.AllowCustomTheming = false;
-            this.bookData.AllowUserToOrderColumns = true;
+            this.readerData.AllowCustomTheming = false;
+            this.readerData.AllowUserToAddRows = false;
+            this.readerData.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bookData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bookData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bookData.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.bookData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bookData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bookData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.readerData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.readerData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.readerData.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.readerData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.readerData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.readerData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -76,35 +77,35 @@ namespace LibraryApp
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bookData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bookData.ColumnHeadersHeight = 40;
-            this.bookData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.readerData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.readerData.ColumnHeadersHeight = 40;
+            this.readerData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
-            this.ReaderName,
-            this.ReaderType,
-            this.DateOfBirth,
-            this.Address,
-            this.Email,
-            this.SigninDate,
+            this.readerName,
+            this.type,
+            this.dateofBirth,
+            this.address,
+            this.rEmail,
+            this.signInDate,
             this.Debt});
-            this.bookData.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.bookData.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bookData.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bookData.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bookData.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bookData.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bookData.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bookData.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bookData.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.bookData.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.Name = null;
-            this.bookData.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bookData.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bookData.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bookData.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.readerData.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.readerData.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.readerData.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.readerData.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.readerData.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.readerData.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.readerData.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.readerData.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.readerData.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.readerData.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.readerData.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.readerData.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.readerData.CurrentTheme.Name = null;
+            this.readerData.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.readerData.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.readerData.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.readerData.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.readerData.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -112,22 +113,88 @@ namespace LibraryApp
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bookData.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bookData.EnableHeadersVisualStyles = false;
-            this.bookData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bookData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bookData.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bookData.HeaderForeColor = System.Drawing.Color.White;
-            this.bookData.Location = new System.Drawing.Point(0, 57);
-            this.bookData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bookData.Name = "bookData";
-            this.bookData.RowHeadersVisible = false;
-            this.bookData.RowHeadersWidth = 30;
-            this.bookData.RowTemplate.Height = 40;
-            this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookData.Size = new System.Drawing.Size(1070, 425);
-            this.bookData.TabIndex = 6;
-            this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.readerData.DefaultCellStyle = dataGridViewCellStyle3;
+            this.readerData.EnableHeadersVisualStyles = false;
+            this.readerData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.readerData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.readerData.HeaderBgColor = System.Drawing.Color.Empty;
+            this.readerData.HeaderForeColor = System.Drawing.Color.White;
+            this.readerData.Location = new System.Drawing.Point(0, 57);
+            this.readerData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.readerData.Name = "readerData";
+            this.readerData.RowHeadersVisible = false;
+            this.readerData.RowHeadersWidth = 30;
+            this.readerData.RowTemplate.Height = 40;
+            this.readerData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.readerData.Size = new System.Drawing.Size(1070, 425);
+            this.readerData.TabIndex = 6;
+            this.readerData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // ID
+            // 
+            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.ID.DividerWidth = 1;
+            this.ID.HeaderText = "ID          ";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.Width = 90;
+            // 
+            // readerName
+            // 
+            this.readerName.DividerWidth = 1;
+            this.readerName.HeaderText = "Name";
+            this.readerName.MinimumWidth = 6;
+            this.readerName.Name = "readerName";
+            // 
+            // type
+            // 
+            this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.type.DividerWidth = 1;
+            this.type.HeaderText = "Type";
+            this.type.MinimumWidth = 6;
+            this.type.Name = "type";
+            this.type.Width = 69;
+            // 
+            // dateofBirth
+            // 
+            this.dateofBirth.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dateofBirth.DividerWidth = 1;
+            this.dateofBirth.HeaderText = "Date of birth";
+            this.dateofBirth.MinimumWidth = 6;
+            this.dateofBirth.Name = "dateofBirth";
+            this.dateofBirth.Width = 127;
+            // 
+            // address
+            // 
+            this.address.DividerWidth = 1;
+            this.address.HeaderText = "Address";
+            this.address.MinimumWidth = 6;
+            this.address.Name = "address";
+            // 
+            // rEmail
+            // 
+            this.rEmail.DividerWidth = 1;
+            this.rEmail.HeaderText = "Email";
+            this.rEmail.MinimumWidth = 6;
+            this.rEmail.Name = "rEmail";
+            // 
+            // signInDate
+            // 
+            this.signInDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.signInDate.DividerWidth = 1;
+            this.signInDate.HeaderText = "Sign in date";
+            this.signInDate.MinimumWidth = 6;
+            this.signInDate.Name = "signInDate";
+            this.signInDate.Width = 120;
+            // 
+            // Debt
+            // 
+            this.Debt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Debt.DividerWidth = 1;
+            this.Debt.HeaderText = "Debt";
+            this.Debt.MinimumWidth = 6;
+            this.Debt.Name = "Debt";
+            this.Debt.Width = 70;
             // 
             // payBt
             // 
@@ -510,79 +577,7 @@ namespace LibraryApp
             this.deleteBt.TextMarginLeft = 0;
             this.deleteBt.TextPadding = new System.Windows.Forms.Padding(0);
             this.deleteBt.UseDefaultRadiusAndThickness = true;
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.ID.DividerWidth = 1;
-            this.ID.FillWeight = 5F;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 40;
-            this.ID.Name = "ID";
-            this.ID.Width = 50;
-            // 
-            // ReaderName
-            // 
-            this.ReaderName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ReaderName.DividerWidth = 1;
-            this.ReaderName.FillWeight = 10F;
-            this.ReaderName.HeaderText = "Name";
-            this.ReaderName.MinimumWidth = 6;
-            this.ReaderName.Name = "ReaderName";
-            // 
-            // ReaderType
-            // 
-            this.ReaderType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.ReaderType.DividerWidth = 1;
-            this.ReaderType.HeaderText = "Type";
-            this.ReaderType.MinimumWidth = 6;
-            this.ReaderType.Name = "ReaderType";
-            this.ReaderType.Width = 50;
-            // 
-            // DateOfBirth
-            // 
-            this.DateOfBirth.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.DateOfBirth.DividerWidth = 1;
-            this.DateOfBirth.HeaderText = "Date Of Birth";
-            this.DateOfBirth.MinimumWidth = 6;
-            this.DateOfBirth.Name = "DateOfBirth";
-            this.DateOfBirth.Width = 129;
-            // 
-            // Address
-            // 
-            this.Address.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Address.DividerWidth = 1;
-            this.Address.FillWeight = 10F;
-            this.Address.HeaderText = "Address";
-            this.Address.MinimumWidth = 6;
-            this.Address.Name = "Address";
-            // 
-            // Email
-            // 
-            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Email.DividerWidth = 1;
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.Width = 72;
-            // 
-            // SigninDate
-            // 
-            this.SigninDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.SigninDate.DividerWidth = 1;
-            this.SigninDate.HeaderText = "Sign In Date";
-            this.SigninDate.MinimumWidth = 6;
-            this.SigninDate.Name = "SigninDate";
-            this.SigninDate.Width = 122;
-            // 
-            // Debt
-            // 
-            this.Debt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Debt.DividerWidth = 1;
-            this.Debt.HeaderText = "Debt";
-            this.Debt.MinimumWidth = 6;
-            this.Debt.Name = "Debt";
-            this.Debt.Width = 70;
+            this.deleteBt.Click += new System.EventHandler(this.deleteBt_Click);
             // 
             // ReadersScreen
             // 
@@ -591,7 +586,7 @@ namespace LibraryApp
             this.ClientSize = new System.Drawing.Size(1070, 528);
             this.Controls.Add(this.payBt);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.bookData);
+            this.Controls.Add(this.readerData);
             this.Controls.Add(this.searchBt);
             this.Controls.Add(this.searchBar);
             this.Controls.Add(this.deleteBt);
@@ -599,26 +594,26 @@ namespace LibraryApp
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ReadersScreen";
             this.Text = "ReadersScreen";
-            ((System.ComponentModel.ISupportInitialize)(this.bookData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.readerData)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuDataGridView bookData;
+        private Bunifu.UI.WinForms.BunifuDataGridView readerData;
         private Bunifu.UI.WinForms.BunifuImageButton searchBt;
         private Bunifu.UI.WinForms.BunifuTextBox searchBar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton deleteBt;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton addButton;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton payBt;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ReaderName;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ReaderType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DateOfBirth;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SigninDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn readerName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateofBirth;
+        private System.Windows.Forms.DataGridViewTextBoxColumn address;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn signInDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Debt;
     }
 }

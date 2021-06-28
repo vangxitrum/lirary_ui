@@ -16,16 +16,17 @@ namespace LibraryApp
     {
         String readerName, readerEmail, readerBirth, readerAddress, readerID;
         String returnFormID;
+        String debt;
         int dailyFees = Int32.Parse(ConfigurationSettings.AppSettings["DailyFees"]);
         int overtimeDailyFees= Int32.Parse(ConfigurationSettings.AppSettings["OverTimeDailyFees"]);
         int maxDate = Int32.Parse(ConfigurationSettings.AppSettings["MaxDate"]);
-        
+        public bool flat = false;
         List<bool> bookReturned = new List<bool>();
 
 
         void reset()
         {
-            readerName = readerEmail = readerBirth = readerAddress = readerID =  returnFormID = null;
+            debt = readerName = readerEmail = readerBirth = readerAddress = readerID =  returnFormID = null;
             rIdTaker.Clear();
             rName.Clear();
             rEmail.Clear();
@@ -33,6 +34,7 @@ namespace LibraryApp
             rBirth.Clear();
             total.Clear();
             bookData.Rows.Clear();
+            flat = false;
         }
         void createReturnedForm()
         {
@@ -88,66 +90,98 @@ namespace LibraryApp
         private void saveBt_Click(object sender, EventArgs e)
         {
             totalBt_Click(sender, e);
-            if (readerName != null && bookData.Rows.Count != 0 && total.Text != "0")
+            
+            int rDebt = Int32.Parse(debt) + Int32.Parse(total.Text);
+            DialogResult dialogResult = MessageBox.Show("Thanh toan hoa don?", "Pay bill", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                createReturnedForm();
+                PayDebtScreen child = new PayDebtScreen(this,null,rDebt.ToString(), readerName, readerBirth, readerID);
+                child.ShowDialog();
             }
-            else
+            else if (dialogResult == DialogResult.No)
             {
-                MessageBox.Show("Error");
-                return;
-            }
-            SqlConnection conn1 = DBUtils.GetDBConnection();
-            int rowCount = bookData.RowCount;
-            for (int i = 0; i < rowCount; i++)
-            {
-                DataGridViewCheckBoxCell checkBox = bookData.Rows[i].Cells[5] as DataGridViewCheckBoxCell;
-                if ((bool)checkBox.Value)
+                flat = true;
+                SqlConnection conn = DBUtils.GetDBConnection();
+                try
                 {
-                    try
-                    {
-                        conn1.Open();
-                        string selectQuerry = "INSERT INTO ChiTietPT (MaCTPT,MaSach,MaPTS) VALUES([dbo].[idChiTietPT](),@bookID,@rID)";
-                        SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
-                        Cmd.Parameters.AddWithValue("@bookID", bookData.Rows[i].Cells[0].Value.ToString());
-                        Cmd.Parameters.AddWithValue("@rID", returnFormID);
-                        Cmd.ExecuteNonQuery();
-                    }
-                    catch (Exception s)
-                    {
-                        conn1.Close();
-                        MessageBox.Show("Failed to connect to database!!! Please try again later");
-                        return;
-                    }
-                    conn1.Close();
                     
+                    conn.Open();
+                    string selectQuerry = "UPDATE DocGia SET TongNo = @debt where MaDocGia = @ID";
+                    SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
+                    Cmd.Parameters.AddWithValue("@ID", rIdTaker.Text);
+                    Cmd.Parameters.AddWithValue("@debt", rDebt);
+                    Cmd.ExecuteNonQuery();
                 }
-                
-            }
-            for (int i = rowCount-1; i >= 0; i--)
-            {
-                DataGridViewCheckBoxCell checkBox = bookData.Rows[i].Cells[5] as DataGridViewCheckBoxCell;
-                if ((bool)checkBox.Value)
+                catch (Exception s)
                 {
-                    try
+                    MessageBox.Show("Failed to connect to database!!! Please try again later");
+                }
+                conn.Close();
+            }
+            
+            if (flat)
+            {
+                if (readerName != null && bookData.Rows.Count != 0 && total.Text != "0")
+                {
+                    createReturnedForm();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                    return;
+                }
+                SqlConnection conn1 = DBUtils.GetDBConnection();
+                int rowCount = bookData.RowCount;
+                for (int i = 0; i < rowCount; i++)
+                {
+                    DataGridViewCheckBoxCell checkBox = bookData.Rows[i].Cells[5] as DataGridViewCheckBoxCell;
+                    if ((bool)checkBox.Value)
                     {
-                        conn1.Open();
-                        string selectQuerry = "UPDATE ChiTietPM SET TrangThai = 'true' From ChiTietPM A, PhieuMuonSach B WHERE A.MaSach = @bID and A.MaPhieuMuonSach = B.MaPhieuMuonSach and B.NgayMuonSach = @date";
-                        SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
-                        Cmd.Parameters.AddWithValue("@bID", bookData.Rows[i].Cells[0].Value.ToString());
-                        List<int> temp = splitData(bookData.Rows[i].Cells[4].Value.ToString());
-                        String date = temp[2].ToString() + '-' + temp[1].ToString() + '-' + temp[0].ToString() ;
-                        Cmd.Parameters.AddWithValue("@date", date);
-                        Cmd.ExecuteNonQuery();
-                    }
-                    catch (Exception s)
-                    {
+                        try
+                        {
+                            conn1.Open();
+                            string selectQuerry = "INSERT INTO ChiTietPT (MaCTPT,MaSach,MaPTS) VALUES([dbo].[idChiTietPT](),@bookID,@rID)";
+                            SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
+                            Cmd.Parameters.AddWithValue("@bookID", bookData.Rows[i].Cells[0].Value.ToString());
+                            Cmd.Parameters.AddWithValue("@rID", returnFormID);
+                            Cmd.ExecuteNonQuery();
+                        }
+                        catch (Exception s)
+                        {
+                            conn1.Close();
+                            MessageBox.Show("Failed to connect to database!!! Please try again later");
+                            return;
+                        }
                         conn1.Close();
-                        MessageBox.Show("Failed to connect to database!!! Please try again later");
-                        return;
+
                     }
-                    conn1.Close();
-                    bookData.Rows.RemoveAt(i);
+
+                }
+                for (int i = rowCount - 1; i >= 0; i--)
+                {
+                    DataGridViewCheckBoxCell checkBox = bookData.Rows[i].Cells[5] as DataGridViewCheckBoxCell;
+                    if ((bool)checkBox.Value)
+                    {
+                        try
+                        {
+                            conn1.Open();
+                            string selectQuerry = "UPDATE ChiTietPM SET TrangThai = 'true' From ChiTietPM A, PhieuMuonSach B WHERE A.MaSach = @bID and A.MaPhieuMuonSach = B.MaPhieuMuonSach and B.NgayMuonSach = @date";
+                            SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
+                            Cmd.Parameters.AddWithValue("@bID", bookData.Rows[i].Cells[0].Value.ToString());
+                            List<int> temp = splitData(bookData.Rows[i].Cells[4].Value.ToString());
+                            String date = temp[2].ToString() + '-' + temp[1].ToString() + '-' + temp[0].ToString();
+                            Cmd.Parameters.AddWithValue("@date", date);
+                            Cmd.ExecuteNonQuery();
+                        }
+                        catch (Exception s)
+                        {
+                            conn1.Close();
+                            MessageBox.Show("Failed to connect to database!!! Please try again later");
+                            return;
+                        }
+                        conn1.Close();
+                        bookData.Rows.RemoveAt(i);
+                    }
                 }
             }
             reset();
@@ -204,7 +238,7 @@ namespace LibraryApp
             try
             {
                 conn.Open();
-                string selectQuerry = "Select MaDocGia,HoTen,DiaChi,FORMAT (NgaySinh, 'dd-MM-yyyy') as NgaySinh,Email from DocGia where MaDocGia=@ID";
+                string selectQuerry = "Select MaDocGia,HoTen,DiaChi,FORMAT (NgaySinh, 'dd-MM-yyyy') as NgaySinh,Email,TongNo from DocGia where MaDocGia=@ID";
                 SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
                 Cmd.Parameters.AddWithValue("@ID", rIdTaker.Text);
                 using (SqlDataReader oReader = Cmd.ExecuteReader())
@@ -218,6 +252,7 @@ namespace LibraryApp
                             readerEmail = oReader["Email"].ToString();
                             readerAddress = oReader["DiaChi"].ToString();
                             readerBirth = oReader["NgaySinh"].ToString();
+                            debt = oReader["TongNo"].ToString();
                             rEmail.Text = readerEmail;
                             rAddress.Text = readerAddress;
                             rBirth.Text = readerBirth;
@@ -262,13 +297,9 @@ namespace LibraryApp
                                     {
                                         while (newReader.Read())
                                         {
-                                            bookData.Rows.Add(newReader["MaSach"].ToString().Trim(), newReader["TenSach"].ToString(), newReader["TrangThai"].ToString(), newReader["TriGia"].ToString(),oReader["NgayMuonSach"].ToString(),false);
+                                            bookData.Rows.Add(newReader["MaSach"].ToString().Trim(), newReader["TenSach"].ToString(), newReader["TrangThai"].ToString(), newReader["TriGia"].ToString(), oReader["NgayMuonSach"].ToString(), false);
                                             bookReturned.Add(false);
                                         }
-                                    }
-                                    else
-                                    {
-                                        MessageBox.Show("No Issued book !!!");
                                     }
                                 }
                             }
@@ -289,6 +320,10 @@ namespace LibraryApp
                 MessageBox.Show("Failed to connect to database!!! Please try again later");
             }
             conn.Close();
+            if(bookData.Rows.Count == 0)
+            {
+                MessageBox.Show("No issued book!!!!");
+            }
         }
 
         private List<int> splitData(String date)

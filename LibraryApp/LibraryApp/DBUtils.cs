@@ -11,7 +11,7 @@ namespace LibraryApp
     {
         public static SqlConnection GetDBConnection()
         {
-            string datasource = @"DESKTOP-HTKKMI2";
+            string datasource = @"116.105.93.181";
             string database = "LibabryDB";
             string username = "sa";
             string password = "Chumhaywa112233";
