@@ -47,7 +47,7 @@ namespace LibraryApp
             try
             {
                 conn.Open();
-                string selectQuerry = "Select *, B.TenLoaiDocGia as LoaiDocGia,FORMAT (NgaySinh, 'dd-MM-yyyy') as rNgaySinh,FORMAT (NgayLapThe, 'dd-MM-yyyy') as rNgayLapThe from DocGia A, LoaiDocGia B where A.MaLoaiDocGia = B.MaLoaiDocGIa";
+                string selectQuerry = "Select *, B.TenLoaiDocGia as LoaiDocGia,FORMAT (NgaySinh, 'yyyy-MM-dd') as rNgaySinh,FORMAT (NgayLapThe, 'yyyy-MM-dd') as rNgayLapThe from DocGia A, LoaiDocGia B where A.MaLoaiDocGia = B.MaLoaiDocGIa";
                 SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
                 using (SqlDataReader oReader = Cmd.ExecuteReader())
                 {
@@ -62,7 +62,9 @@ namespace LibraryApp
                                 oReader["DiaChi"].ToString(),
                                 oReader["Email"].ToString(),
                                 oReader["rNgayLapThe"].ToString(),
-                                oReader["TongNo"].ToString()) ;
+                                oReader["TongNo"].ToString(),
+                                oReader["MaLoaiDocGia"].ToString()
+                                ) ;
                         }
                     }
                     else
@@ -154,6 +156,71 @@ namespace LibraryApp
                 return;
             }
             
+        }
+
+        private void searchBar_TextChanged(object sender, EventArgs e)
+        {
+            if (searchBar.Text == "")
+            {
+                loadData();
+            }
+        }
+
+        private void searchBt_Click(object sender, EventArgs e)
+        {
+            readerData.Rows.Clear();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            try
+            {
+                conn.Open();
+                string selectQuerry = "Select *, B.TenLoaiDocGia as LoaiDocGia,FORMAT (NgaySinh, 'yyyy-MM-dd') as rNgaySinh,FORMAT (NgayLapThe, 'yyyy-MM-dd') as rNgayLapThe from DocGia A, LoaiDocGia B where A.MaLoaiDocGia = B.MaLoaiDocGIa and A.HoTen = @searchText";
+                SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
+                Cmd.Parameters.AddWithValue("@searchText", searchBar.Text);
+                using (SqlDataReader oReader = Cmd.ExecuteReader())
+                {
+                    if (oReader.HasRows)
+                    {
+                        while (oReader.Read())
+                        {
+                            readerData.Rows.Add(oReader["MaDocGia"].ToString().Trim(),
+                                oReader["HoTen"].ToString(),
+                                oReader["LoaiDocGia"].ToString(),
+                                oReader["rNgaySinh"].ToString(),
+                                oReader["DiaChi"].ToString(),
+                                oReader["Email"].ToString(),
+                                oReader["rNgayLapThe"].ToString(),
+                                oReader["TongNo"].ToString(),
+                                oReader["MaLoaiDocGia"].ToString());
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No infomation !!!");
+                    }
+                }
+            }
+            catch (Exception s)
+            {
+                MessageBox.Show("Failed to connect to database!!! Please try again later");
+            }
+            conn.Close();
+        }
+
+        private void modifyBt_Click(object sender, EventArgs e)
+        {
+            int index = readerData.SelectedCells[0].RowIndex;
+            ModifyReader child = new ModifyReader(
+                 readerData.Rows[index].Cells[0].Value.ToString(),
+                 readerData.Rows[index].Cells[1].Value.ToString(),
+                 readerData.Rows[index].Cells[4].Value.ToString(),
+                 readerData.Rows[index].Cells[3].Value.ToString(),
+                 readerData.Rows[index].Cells[7].Value.ToString(),
+                 readerData.Rows[index].Cells[5].Value.ToString(),
+                 readerData.Rows[index].Cells[6].Value.ToString(),
+                 readerData.Rows[index].Cells[8].Value.ToString()
+                );
+            child.ShowDialog();
+            loadData();
         }
     }
 }

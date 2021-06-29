@@ -62,9 +62,9 @@ namespace LibraryApp
             this.topPanel.Controls.Add(this.exitButton);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1222, 61);
+            this.topPanel.Size = new System.Drawing.Size(1629, 75);
             this.topPanel.TabIndex = 0;
             // 
             // label1
@@ -72,10 +72,9 @@ namespace LibraryApp
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(22, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(29, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 17);
+            this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "User Name";
             // 
@@ -96,18 +95,18 @@ namespace LibraryApp
             this.exitButton.ImageActive = null;
             this.exitButton.ImageLocation = null;
             this.exitButton.ImageMargin = 5;
-            this.exitButton.ImageSize = new System.Drawing.Size(43, 45);
-            this.exitButton.ImageZoomSize = new System.Drawing.Size(48, 50);
+            this.exitButton.ImageSize = new System.Drawing.Size(59, 57);
+            this.exitButton.ImageZoomSize = new System.Drawing.Size(64, 62);
             this.exitButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("exitButton.InitialImage")));
-            this.exitButton.Location = new System.Drawing.Point(1163, 9);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitButton.Location = new System.Drawing.Point(1551, 11);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Rotation = 0;
             this.exitButton.ShowActiveImage = true;
             this.exitButton.ShowCursorChanges = true;
             this.exitButton.ShowImageBorders = true;
             this.exitButton.ShowSizeMarkers = false;
-            this.exitButton.Size = new System.Drawing.Size(48, 50);
+            this.exitButton.Size = new System.Drawing.Size(64, 62);
             this.exitButton.TabIndex = 1;
             this.exitButton.ToolTipText = "";
             this.exitButton.WaitOnLoad = false;
@@ -126,10 +125,10 @@ namespace LibraryApp
             this.sidePanel.Controls.Add(this.dashBoardBt);
             this.sidePanel.Controls.Add(this.pictureBox1);
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidePanel.Location = new System.Drawing.Point(0, 61);
-            this.sidePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sidePanel.Location = new System.Drawing.Point(0, 75);
+            this.sidePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(150, 547);
+            this.sidePanel.Size = new System.Drawing.Size(200, 673);
             this.sidePanel.TabIndex = 1;
             // 
             // logOutBt
@@ -180,8 +179,8 @@ namespace LibraryApp
             this.logOutBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("logOutBt.IdleIconLeftImage")));
             this.logOutBt.IdleIconRightImage = null;
             this.logOutBt.IndicateFocus = false;
-            this.logOutBt.Location = new System.Drawing.Point(0, 440);
-            this.logOutBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logOutBt.Location = new System.Drawing.Point(0, 542);
+            this.logOutBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.logOutBt.Name = "logOutBt";
             this.logOutBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.logOutBt.OnDisabledState.BorderRadius = 1;
@@ -215,13 +214,14 @@ namespace LibraryApp
             this.logOutBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.logOutBt.OnPressedState.IconLeftImage = null;
             this.logOutBt.OnPressedState.IconRightImage = null;
-            this.logOutBt.Size = new System.Drawing.Size(150, 33);
+            this.logOutBt.Size = new System.Drawing.Size(200, 41);
             this.logOutBt.TabIndex = 6;
             this.logOutBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.logOutBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.logOutBt.TextMarginLeft = 0;
             this.logOutBt.TextPadding = new System.Windows.Forms.Padding(0);
             this.logOutBt.UseDefaultRadiusAndThickness = true;
+            this.logOutBt.Click += new System.EventHandler(this.logOutBt_Click);
             // 
             // returnBookBt
             // 
@@ -271,8 +271,8 @@ namespace LibraryApp
             this.returnBookBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("returnBookBt.IdleIconLeftImage")));
             this.returnBookBt.IdleIconRightImage = null;
             this.returnBookBt.IndicateFocus = false;
-            this.returnBookBt.Location = new System.Drawing.Point(-4, 393);
-            this.returnBookBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.returnBookBt.Location = new System.Drawing.Point(-5, 484);
+            this.returnBookBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.returnBookBt.Name = "returnBookBt";
             this.returnBookBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.returnBookBt.OnDisabledState.BorderRadius = 1;
@@ -306,7 +306,7 @@ namespace LibraryApp
             this.returnBookBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.returnBookBt.OnPressedState.IconLeftImage = null;
             this.returnBookBt.OnPressedState.IconRightImage = null;
-            this.returnBookBt.Size = new System.Drawing.Size(150, 33);
+            this.returnBookBt.Size = new System.Drawing.Size(200, 41);
             this.returnBookBt.TabIndex = 5;
             this.returnBookBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.returnBookBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -363,8 +363,8 @@ namespace LibraryApp
             this.issuedBookBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("issuedBookBt.IdleIconLeftImage")));
             this.issuedBookBt.IdleIconRightImage = null;
             this.issuedBookBt.IndicateFocus = false;
-            this.issuedBookBt.Location = new System.Drawing.Point(-2, 347);
-            this.issuedBookBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.issuedBookBt.Location = new System.Drawing.Point(-3, 427);
+            this.issuedBookBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.issuedBookBt.Name = "issuedBookBt";
             this.issuedBookBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.issuedBookBt.OnDisabledState.BorderRadius = 1;
@@ -398,7 +398,7 @@ namespace LibraryApp
             this.issuedBookBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.issuedBookBt.OnPressedState.IconLeftImage = null;
             this.issuedBookBt.OnPressedState.IconRightImage = null;
-            this.issuedBookBt.Size = new System.Drawing.Size(150, 33);
+            this.issuedBookBt.Size = new System.Drawing.Size(200, 41);
             this.issuedBookBt.TabIndex = 2;
             this.issuedBookBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.issuedBookBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -455,8 +455,8 @@ namespace LibraryApp
             this.readersBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("readersBt.IdleIconLeftImage")));
             this.readersBt.IdleIconRightImage = null;
             this.readersBt.IndicateFocus = false;
-            this.readersBt.Location = new System.Drawing.Point(-2, 301);
-            this.readersBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.readersBt.Location = new System.Drawing.Point(-3, 370);
+            this.readersBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.readersBt.Name = "readersBt";
             this.readersBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.readersBt.OnDisabledState.BorderRadius = 1;
@@ -490,7 +490,7 @@ namespace LibraryApp
             this.readersBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.readersBt.OnPressedState.IconLeftImage = null;
             this.readersBt.OnPressedState.IconRightImage = null;
-            this.readersBt.Size = new System.Drawing.Size(150, 33);
+            this.readersBt.Size = new System.Drawing.Size(200, 41);
             this.readersBt.TabIndex = 3;
             this.readersBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.readersBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -547,8 +547,8 @@ namespace LibraryApp
             this.booksBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("booksBt.IdleIconLeftImage")));
             this.booksBt.IdleIconRightImage = null;
             this.booksBt.IndicateFocus = false;
-            this.booksBt.Location = new System.Drawing.Point(-2, 254);
-            this.booksBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.booksBt.Location = new System.Drawing.Point(-3, 313);
+            this.booksBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.booksBt.Name = "booksBt";
             this.booksBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.booksBt.OnDisabledState.BorderRadius = 1;
@@ -582,7 +582,7 @@ namespace LibraryApp
             this.booksBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.booksBt.OnPressedState.IconLeftImage = null;
             this.booksBt.OnPressedState.IconRightImage = null;
-            this.booksBt.Size = new System.Drawing.Size(150, 33);
+            this.booksBt.Size = new System.Drawing.Size(200, 41);
             this.booksBt.TabIndex = 2;
             this.booksBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.booksBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -639,8 +639,8 @@ namespace LibraryApp
             this.dashBoardBt.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("dashBoardBt.IdleIconLeftImage")));
             this.dashBoardBt.IdleIconRightImage = null;
             this.dashBoardBt.IndicateFocus = false;
-            this.dashBoardBt.Location = new System.Drawing.Point(-2, 199);
-            this.dashBoardBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dashBoardBt.Location = new System.Drawing.Point(-3, 245);
+            this.dashBoardBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dashBoardBt.Name = "dashBoardBt";
             this.dashBoardBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.dashBoardBt.OnDisabledState.BorderRadius = 1;
@@ -674,7 +674,7 @@ namespace LibraryApp
             this.dashBoardBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.dashBoardBt.OnPressedState.IconLeftImage = null;
             this.dashBoardBt.OnPressedState.IconRightImage = null;
-            this.dashBoardBt.Size = new System.Drawing.Size(150, 33);
+            this.dashBoardBt.Size = new System.Drawing.Size(200, 41);
             this.dashBoardBt.TabIndex = 1;
             this.dashBoardBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.dashBoardBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -687,10 +687,10 @@ namespace LibraryApp
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::LibraryApp.Properties.Resources.books;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(125, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -705,23 +705,23 @@ namespace LibraryApp
             // mainPanel
             // 
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(150, 61);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mainPanel.Location = new System.Drawing.Point(200, 75);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1072, 547);
+            this.mainPanel.Size = new System.Drawing.Size(1429, 673);
             this.mainPanel.TabIndex = 2;
             // 
             // MainScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1222, 608);
+            this.ClientSize = new System.Drawing.Size(1629, 748);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainScreen";
             this.Text = "MainScreen";
             this.topPanel.ResumeLayout(false);

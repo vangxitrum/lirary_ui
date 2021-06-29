@@ -18,7 +18,7 @@ namespace LibraryApp
         ReadersScreen parent1;
         private void saveBt_Click(object sender, EventArgs e)
         {
-            if (Int32.Parse(debt) <= Int32.Parse(payTaker.Text))
+            if (Int32.Parse(debt) < Int32.Parse(payTaker.Text))
             {
                 MessageBox.Show("Error!!!");
             }

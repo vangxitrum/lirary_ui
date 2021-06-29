@@ -13,6 +13,9 @@ namespace LibraryApp
 {
     public partial class BookScreen : Form
     {
+
+        List<string> bAuthorID = new List<string>();
+        List<string> bGenreID = new List<string>();
         public BookScreen()
         {
             InitializeComponent();
@@ -28,33 +31,123 @@ namespace LibraryApp
         {
             AddBookScreen child = new AddBookScreen();
             child.ShowDialog();
+            loadData();
         }
 
         private void modifyBt_Click(object sender, EventArgs e)
         {
-            ModifyBookScreen child = new ModifyBookScreen();
+            int index = bookData.SelectedCells[0].RowIndex;
+            ModifyBookScreen child = new ModifyBookScreen(
+                bookData.Rows[index].Cells[0].Value.ToString(),
+                bookData.Rows[index].Cells[1].Value.ToString(),
+                bookData.Rows[index].Cells[10].Value.ToString(),
+                bookData.Rows[index].Cells[11].Value.ToString(),
+                bookData.Rows[index].Cells[4].Value.ToString(),
+                bookData.Rows[index].Cells[5].Value.ToString(),
+                bookData.Rows[index].Cells[6].Value.ToString(),
+                bookData.Rows[index].Cells[7].Value.ToString(),
+                bookData.Rows[index].Cells[8].Value.ToString(),
+                bookData.Rows[index].Cells[9].Value.ToString()
+                ) ;
             child.ShowDialog();
         }
 
         private void loadData()
         {
-            String StrQuery;
-            using (SqlConnection conn = DBUtils.GetDBConnection())
+            bookData.Rows.Clear();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            try
             {
-                using (SqlCommand comm = new SqlCommand())
+                conn.Open();
+                string selectQuerry = "select *, TenTacGia as TacGia, TenTheLoai as TheLoai  from Sach A, TacGia B, TheLoai C where A.MaTG = B.MaTG and A.MaTL = C.MaTL";
+                SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
+                
+                using (SqlDataReader oReader = Cmd.ExecuteReader())
                 {
-                    comm.Connection = conn;
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand("select * from Sach", conn);
-                    cmd.CommandType = CommandType.Text;
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "ss");
-                    bookData.DataSource = ds.Tables["ss"];
+                    if (oReader.HasRows)
+                    {
+                        while (oReader.Read())
+                        {
+                            bookData.Rows.Add(oReader["MaSach"].ToString().Trim(),
+                                oReader["TenSach"].ToString(),
+                                oReader["TheLoai"].ToString(),
+                                oReader["TacGia"].ToString(),
+                                 oReader["TrangThai"].ToString(),
+                                oReader["SoLuong"].ToString(),
+                                oReader["ViTri"].ToString(),
+                                oReader["NamSuatBan"].ToString(),
+                                oReader["NhaSuatBan"].ToString(),
+                                oReader["TriGia"].ToString(),
+                                oReader["MaTG"].ToString(),
+                                oReader["MaTL"].ToString());
+                            bAuthorID.Add(oReader["MaTG"].ToString());
+                            bGenreID.Add(oReader["MaTL"].ToString());
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No infomation !!!");
+                    }
                 }
-                conn.Close();
             }
-           
+            catch (Exception s)
+            {
+                MessageBox.Show("Failed to connect to database!!! Please try again later");
+            }
+            conn.Close();
+        }
+
+        private void searchBt_Click(object sender, EventArgs e)
+        {
+            bookData.Rows.Clear();
+            SqlConnection conn = DBUtils.GetDBConnection();
+            try
+            {
+                conn.Open();
+                string selectQuerry = "select *, TenTacGia as TacGia, TenTheLoai as TheLoai  from Sach A, TacGia B, TheLoai C where A.MaTG = B.MaTG and A.MaTL = C.MaTL and A.TenSach = @searchText";
+                SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
+                Cmd.Parameters.AddWithValue("@searchText", searchBar.Text);
+                using (SqlDataReader oReader = Cmd.ExecuteReader())
+                {
+                    if (oReader.HasRows)
+                    {
+                        while (oReader.Read())
+                        {
+                            bookData.Rows.Add(oReader["MaSach"].ToString().Trim(),
+                                oReader["TenSach"].ToString(),
+                                oReader["TheLoai"].ToString(),
+                                oReader["TacGia"].ToString(),
+                                 oReader["TrangThai"].ToString(),
+                                oReader["SoLuong"].ToString(),
+                                oReader["ViTri"].ToString(),
+                                oReader["NamSuatBan"].ToString(),
+                                oReader["NhaSuatBan"].ToString(),
+                                oReader["TriGia"].ToString(),
+                                oReader["MaTG"].ToString(),
+                                oReader["MaTL"].ToString());
+                            bAuthorID.Add(oReader["MaTG"].ToString());
+                            bGenreID.Add(oReader["MaTL"].ToString());
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No infomation !!!");
+                    }
+                }
+            }
+            catch (Exception s)
+            {
+                MessageBox.Show("Failed to connect to database!!! Please try again later");
+            }
+            conn.Close();
+        }
+
+        private void searchBar_TextChange(object sender, EventArgs e)
+        {
+            if (searchBar.Text == "")
+            {
+                loadData();
+            }
         }
     }
 }

@@ -13,9 +13,11 @@ namespace LibraryApp
     public partial class MainScreen : Form
     {
         Form child;
-        public MainScreen()
+        LoginScreen _parent;
+        public MainScreen(LoginScreen parent)
         {
             InitializeComponent();
+            this._parent = parent;
         }
 
 
@@ -72,6 +74,12 @@ namespace LibraryApp
             this.mainPanel.Controls.Add(child);
             child.BringToFront();
             child.Show();
+        }
+
+        private void logOutBt_Click(object sender, EventArgs e)
+        {
+            this._parent.Show();
+            this.Close();
         }
     }
 }
