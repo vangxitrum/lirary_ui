@@ -139,11 +139,14 @@ namespace LibraryApp
                     {
                         try
                         {
+                            List<int> temp = splitData(bookData.Rows[i].Cells[4].Value.ToString());
+                            string date = temp[2].ToString() + '-' + temp[1].ToString() + '-' + temp[0].ToString();
                             conn1.Open();
-                            string selectQuerry = "INSERT INTO ChiTietPT (MaCTPT,MaSach,MaPTS) VALUES([dbo].[idChiTietPT](),@bookID,@rID)";
+                            string selectQuerry = "INSERT INTO ChiTietPT (MaCTPT,MaSach,MaPTS,NgayMuonSach) VALUES([dbo].[idChiTietPT](),@bookID,@rID,@date)";
                             SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
                             Cmd.Parameters.AddWithValue("@bookID", bookData.Rows[i].Cells[0].Value.ToString());
                             Cmd.Parameters.AddWithValue("@rID", returnFormID);
+                            Cmd.Parameters.AddWithValue("@date", date);
                             Cmd.ExecuteNonQuery();
                         }
                         catch (Exception s)

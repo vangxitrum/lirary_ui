@@ -242,6 +242,7 @@ namespace LibraryApp
             this.passwordTaker.TextPlaceholder = "Password";
             this.passwordTaker.UseSystemPasswordChar = true;
             this.passwordTaker.WordWrap = true;
+            this.passwordTaker.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.userNameTaker_KeyPress);
             // 
             // userNameTaker
             // 
@@ -317,6 +318,7 @@ namespace LibraryApp
             this.userNameTaker.TextPlaceholder = "User";
             this.userNameTaker.UseSystemPasswordChar = false;
             this.userNameTaker.WordWrap = true;
+            this.userNameTaker.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.userNameTaker_KeyPress);
             // 
             // pictureBox1
             // 
@@ -347,6 +349,7 @@ namespace LibraryApp
             this.Name = "LoginScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LoginScreen_KeyPress);
             this.LoginDragPanel.ResumeLayout(false);
             this.LoginDragPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

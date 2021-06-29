@@ -132,7 +132,22 @@ namespace LibraryApp
                 }
                 conn.Close();
                 SqlConnection conn1 = DBUtils.GetDBConnection();
-                //Delete
+                //Delete account
+                conn1.Open();
+                try
+                {
+                    string selectQuerry = "Delete from NguoiDung from DocGia where NguoiDung.ID = DocGia.MaTK and DocGia.MaDocGia = @rID";
+                    SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
+                    Cmd.Parameters.AddWithValue("@rID", this.readerData.SelectedRows[0].Cells[0].Value.ToString());
+                    Cmd.ExecuteNonQuery();
+                }
+                catch (Exception s)
+                {
+                    conn1.Close();
+                    MessageBox.Show("Error");
+                    return;
+                }
+                conn1.Close();
                 //Delete Reader
                 conn1.Open();
                 try
@@ -149,6 +164,8 @@ namespace LibraryApp
                     return;
                 }
                 conn1.Close();
+                
+
                 readerData.Rows.RemoveAt(index);
             }
             else if (dialogResult == DialogResult.No)

@@ -29,17 +29,17 @@ namespace LibraryApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookScreen));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bookData = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,22 +66,22 @@ namespace LibraryApp
             this.bookData.AllowCustomTheming = false;
             this.bookData.AllowUserToAddRows = false;
             this.bookData.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.bookData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.bookData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bookData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.bookData.BackgroundColor = System.Drawing.SystemColors.Control;
             this.bookData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bookData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bookData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bookData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bookData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bookData.ColumnHeadersHeight = 40;
             this.bookData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.bID,
@@ -114,27 +114,27 @@ namespace LibraryApp
             this.bookData.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.bookData.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.bookData.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bookData.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bookData.DefaultCellStyle = dataGridViewCellStyle3;
             this.bookData.EnableHeadersVisualStyles = false;
             this.bookData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.bookData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bookData.HeaderBgColor = System.Drawing.Color.Empty;
             this.bookData.HeaderForeColor = System.Drawing.Color.White;
-            this.bookData.Location = new System.Drawing.Point(12, 72);
-            this.bookData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bookData.Location = new System.Drawing.Point(-1, 58);
+            this.bookData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookData.Name = "bookData";
             this.bookData.RowHeadersVisible = false;
             this.bookData.RowHeadersWidth = 30;
             this.bookData.RowTemplate.Height = 40;
             this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookData.Size = new System.Drawing.Size(1427, 523);
+            this.bookData.Size = new System.Drawing.Size(1090, 425);
             this.bookData.TabIndex = 0;
             this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.bookData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bookData_CellContentClick);
@@ -146,7 +146,7 @@ namespace LibraryApp
             this.bID.HeaderText = "ID      ";
             this.bID.MinimumWidth = 6;
             this.bID.Name = "bID";
-            this.bID.Width = 96;
+            this.bID.Width = 74;
             // 
             // bookName
             // 
@@ -162,7 +162,7 @@ namespace LibraryApp
             this.genre.HeaderText = "Genre";
             this.genre.MinimumWidth = 6;
             this.genre.Name = "genre";
-            this.genre.Width = 95;
+            this.genre.Width = 78;
             // 
             // author
             // 
@@ -171,7 +171,7 @@ namespace LibraryApp
             this.author.HeaderText = "Author";
             this.author.MinimumWidth = 6;
             this.author.Name = "author";
-            this.author.Width = 103;
+            this.author.Width = 85;
             // 
             // status
             // 
@@ -180,7 +180,7 @@ namespace LibraryApp
             this.status.HeaderText = "Status";
             this.status.MinimumWidth = 6;
             this.status.Name = "status";
-            this.status.Width = 95;
+            this.status.Width = 79;
             // 
             // amount
             // 
@@ -189,7 +189,7 @@ namespace LibraryApp
             this.amount.HeaderText = "Amount";
             this.amount.MinimumWidth = 6;
             this.amount.Name = "amount";
-            this.amount.Width = 114;
+            this.amount.Width = 93;
             // 
             // position
             // 
@@ -198,7 +198,7 @@ namespace LibraryApp
             this.position.HeaderText = "Pos";
             this.position.MinimumWidth = 6;
             this.position.Name = "position";
-            this.position.Width = 72;
+            this.position.Width = 59;
             // 
             // publishedYear
             // 
@@ -207,7 +207,7 @@ namespace LibraryApp
             this.publishedYear.HeaderText = "Publish Year";
             this.publishedYear.MinimumWidth = 6;
             this.publishedYear.Name = "publishedYear";
-            this.publishedYear.Width = 151;
+            this.publishedYear.Width = 121;
             // 
             // publisher
             // 
@@ -255,18 +255,18 @@ namespace LibraryApp
             this.searchBt.ImageActive = null;
             this.searchBt.ImageLocation = null;
             this.searchBt.ImageMargin = 0;
-            this.searchBt.ImageSize = new System.Drawing.Size(28, 29);
-            this.searchBt.ImageZoomSize = new System.Drawing.Size(29, 30);
+            this.searchBt.ImageSize = new System.Drawing.Size(21, 23);
+            this.searchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
             this.searchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("searchBt.InitialImage")));
-            this.searchBt.Location = new System.Drawing.Point(307, 14);
-            this.searchBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchBt.Location = new System.Drawing.Point(230, 11);
+            this.searchBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBt.Name = "searchBt";
             this.searchBt.Rotation = 0;
             this.searchBt.ShowActiveImage = true;
             this.searchBt.ShowCursorChanges = true;
             this.searchBt.ShowImageBorders = true;
             this.searchBt.ShowSizeMarkers = false;
-            this.searchBt.Size = new System.Drawing.Size(29, 30);
+            this.searchBt.Size = new System.Drawing.Size(22, 24);
             this.searchBt.TabIndex = 5;
             this.searchBt.ToolTipText = "";
             this.searchBt.WaitOnLoad = false;
@@ -301,34 +301,34 @@ namespace LibraryApp
             this.searchBar.IconRight = null;
             this.searchBar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.searchBar.Lines = new string[0];
-            this.searchBar.Location = new System.Drawing.Point(63, 14);
-            this.searchBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.searchBar.Location = new System.Drawing.Point(47, 11);
+            this.searchBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBar.MaxLength = 32767;
             this.searchBar.MinimumSize = new System.Drawing.Size(1, 1);
             this.searchBar.Modified = false;
             this.searchBar.Multiline = false;
             this.searchBar.Name = "searchBar";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.searchBar.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.searchBar.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.searchBar.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.searchBar.OnIdleState = stateProperties8;
-            this.searchBar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.searchBar.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.searchBar.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.searchBar.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.searchBar.OnIdleState = stateProperties4;
+            this.searchBar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBar.PasswordChar = '\0';
             this.searchBar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.searchBar.PlaceholderText = "Search here";
@@ -338,7 +338,7 @@ namespace LibraryApp
             this.searchBar.SelectionLength = 0;
             this.searchBar.SelectionStart = 0;
             this.searchBar.ShortcutsEnabled = true;
-            this.searchBar.Size = new System.Drawing.Size(228, 30);
+            this.searchBar.Size = new System.Drawing.Size(171, 24);
             this.searchBar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.searchBar.TabIndex = 4;
             this.searchBar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -369,11 +369,11 @@ namespace LibraryApp
             this.addButton.ColorContrastOnClick = 45;
             this.addButton.ColorContrastOnHover = 45;
             this.addButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.addButton.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.addButton.CustomizableEdges = borderEdges1;
             this.addButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.addButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.addButton.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -397,8 +397,8 @@ namespace LibraryApp
             this.addButton.IdleIconLeftImage = null;
             this.addButton.IdleIconRightImage = null;
             this.addButton.IndicateFocus = false;
-            this.addButton.Location = new System.Drawing.Point(845, 599);
-            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addButton.Location = new System.Drawing.Point(634, 487);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addButton.Name = "addButton";
             this.addButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.addButton.OnDisabledState.BorderRadius = 1;
@@ -432,7 +432,7 @@ namespace LibraryApp
             this.addButton.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.addButton.OnPressedState.IconLeftImage = null;
             this.addButton.OnPressedState.IconRightImage = null;
-            this.addButton.Size = new System.Drawing.Size(149, 39);
+            this.addButton.Size = new System.Drawing.Size(112, 32);
             this.addButton.TabIndex = 3;
             this.addButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.addButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -460,11 +460,11 @@ namespace LibraryApp
             this.deleteBt.ColorContrastOnClick = 45;
             this.deleteBt.ColorContrastOnHover = 45;
             this.deleteBt.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.deleteBt.CustomizableEdges = borderEdges5;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.deleteBt.CustomizableEdges = borderEdges2;
             this.deleteBt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.deleteBt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.deleteBt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -488,8 +488,8 @@ namespace LibraryApp
             this.deleteBt.IdleIconLeftImage = null;
             this.deleteBt.IdleIconRightImage = null;
             this.deleteBt.IndicateFocus = false;
-            this.deleteBt.Location = new System.Drawing.Point(1249, 599);
-            this.deleteBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteBt.Location = new System.Drawing.Point(937, 487);
+            this.deleteBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteBt.Name = "deleteBt";
             this.deleteBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.deleteBt.OnDisabledState.BorderRadius = 1;
@@ -523,7 +523,7 @@ namespace LibraryApp
             this.deleteBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.deleteBt.OnPressedState.IconLeftImage = null;
             this.deleteBt.OnPressedState.IconRightImage = null;
-            this.deleteBt.Size = new System.Drawing.Size(149, 39);
+            this.deleteBt.Size = new System.Drawing.Size(112, 32);
             this.deleteBt.TabIndex = 2;
             this.deleteBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.deleteBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -550,11 +550,11 @@ namespace LibraryApp
             this.modifyBt.ColorContrastOnClick = 45;
             this.modifyBt.ColorContrastOnHover = 45;
             this.modifyBt.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.modifyBt.CustomizableEdges = borderEdges6;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.modifyBt.CustomizableEdges = borderEdges3;
             this.modifyBt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.modifyBt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modifyBt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -578,8 +578,8 @@ namespace LibraryApp
             this.modifyBt.IdleIconLeftImage = null;
             this.modifyBt.IdleIconRightImage = null;
             this.modifyBt.IndicateFocus = false;
-            this.modifyBt.Location = new System.Drawing.Point(1047, 599);
-            this.modifyBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.modifyBt.Location = new System.Drawing.Point(785, 487);
+            this.modifyBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.modifyBt.Name = "modifyBt";
             this.modifyBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modifyBt.OnDisabledState.BorderRadius = 1;
@@ -613,7 +613,7 @@ namespace LibraryApp
             this.modifyBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.modifyBt.OnPressedState.IconLeftImage = null;
             this.modifyBt.OnPressedState.IconRightImage = null;
-            this.modifyBt.Size = new System.Drawing.Size(149, 39);
+            this.modifyBt.Size = new System.Drawing.Size(112, 32);
             this.modifyBt.TabIndex = 1;
             this.modifyBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.modifyBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -624,9 +624,9 @@ namespace LibraryApp
             // 
             // BookScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1427, 650);
+            this.ClientSize = new System.Drawing.Size(1090, 528);
             this.Controls.Add(this.searchBt);
             this.Controls.Add(this.searchBar);
             this.Controls.Add(this.addButton);
@@ -634,7 +634,7 @@ namespace LibraryApp
             this.Controls.Add(this.modifyBt);
             this.Controls.Add(this.bookData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BookScreen";
             this.Text = "BookScreen";
             ((System.ComponentModel.ISupportInitialize)(this.bookData)).EndInit();

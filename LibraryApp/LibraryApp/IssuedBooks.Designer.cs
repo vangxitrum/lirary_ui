@@ -111,6 +111,7 @@ namespace LibraryApp
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.bookData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bookData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bookData.BackgroundColor = System.Drawing.Color.White;
             this.bookData.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bookData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.bookData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -166,7 +167,7 @@ namespace LibraryApp
             this.bookData.RowHeadersWidth = 51;
             this.bookData.RowTemplate.Height = 40;
             this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookData.Size = new System.Drawing.Size(1070, 181);
+            this.bookData.Size = new System.Drawing.Size(1090, 181);
             this.bookData.TabIndex = 8;
             this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.bookData.CellStateChanged += new System.Windows.Forms.DataGridViewCellStateChangedEventHandler(this.bookData_CellStateChanged);
@@ -1155,7 +1156,7 @@ namespace LibraryApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 528);
+            this.ClientSize = new System.Drawing.Size(1090, 528);
             this.Controls.Add(this.delBt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

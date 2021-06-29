@@ -127,7 +127,7 @@ namespace LibraryApp
             this.rSearchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
             this.rSearchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("rSearchBt.InitialImage")));
             this.rSearchBt.Location = new System.Drawing.Point(370, 218);
-            this.rSearchBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rSearchBt.Margin = new System.Windows.Forms.Padding(2);
             this.rSearchBt.Name = "rSearchBt";
             this.rSearchBt.Rotation = 0;
             this.rSearchBt.ShowActiveImage = true;
@@ -201,13 +201,13 @@ namespace LibraryApp
             this.bookData.HeaderBgColor = System.Drawing.Color.Empty;
             this.bookData.HeaderForeColor = System.Drawing.Color.White;
             this.bookData.Location = new System.Drawing.Point(0, -1);
-            this.bookData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bookData.Margin = new System.Windows.Forms.Padding(2);
             this.bookData.Name = "bookData";
             this.bookData.RowHeadersVisible = false;
             this.bookData.RowHeadersWidth = 51;
             this.bookData.RowTemplate.Height = 40;
             this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookData.Size = new System.Drawing.Size(1070, 177);
+            this.bookData.Size = new System.Drawing.Size(1090, 177);
             this.bookData.TabIndex = 27;
             this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -312,7 +312,7 @@ namespace LibraryApp
             this.saveBt.IdleIconRightImage = null;
             this.saveBt.IndicateFocus = false;
             this.saveBt.Location = new System.Drawing.Point(902, 402);
-            this.saveBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveBt.Margin = new System.Windows.Forms.Padding(2);
             this.saveBt.Name = "saveBt";
             this.saveBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.saveBt.OnDisabledState.BorderRadius = 1;
@@ -374,7 +374,7 @@ namespace LibraryApp
             this.dateGetter.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dateGetter.LeftTextMargin = 5;
             this.dateGetter.Location = new System.Drawing.Point(806, 297);
-            this.dateGetter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateGetter.Margin = new System.Windows.Forms.Padding(2);
             this.dateGetter.MinimumSize = new System.Drawing.Size(4, 32);
             this.dateGetter.Name = "dateGetter";
             this.dateGetter.Size = new System.Drawing.Size(166, 32);
@@ -419,7 +419,7 @@ namespace LibraryApp
             this.rBirth.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rBirth.Lines = new string[0];
             this.rBirth.Location = new System.Drawing.Point(243, 394);
-            this.rBirth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rBirth.Margin = new System.Windows.Forms.Padding(2);
             this.rBirth.MaxLength = 32767;
             this.rBirth.MinimumSize = new System.Drawing.Size(1, 1);
             this.rBirth.Modified = false;
@@ -445,7 +445,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rBirth.OnIdleState = stateProperties4;
-            this.rBirth.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rBirth.Padding = new System.Windows.Forms.Padding(2);
             this.rBirth.PasswordChar = '\0';
             this.rBirth.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rBirth.PlaceholderText = "";
@@ -494,7 +494,7 @@ namespace LibraryApp
             this.rEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rEmail.Lines = new string[0];
             this.rEmail.Location = new System.Drawing.Point(243, 349);
-            this.rEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rEmail.Margin = new System.Windows.Forms.Padding(2);
             this.rEmail.MaxLength = 32767;
             this.rEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.rEmail.Modified = false;
@@ -520,7 +520,7 @@ namespace LibraryApp
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rEmail.OnIdleState = stateProperties8;
-            this.rEmail.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rEmail.Padding = new System.Windows.Forms.Padding(2);
             this.rEmail.PasswordChar = '\0';
             this.rEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rEmail.PlaceholderText = "";
@@ -569,7 +569,7 @@ namespace LibraryApp
             this.rAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rAddress.Lines = new string[0];
             this.rAddress.Location = new System.Drawing.Point(243, 439);
-            this.rAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rAddress.Margin = new System.Windows.Forms.Padding(2);
             this.rAddress.MaxLength = 32767;
             this.rAddress.MinimumSize = new System.Drawing.Size(1, 1);
             this.rAddress.Modified = false;
@@ -595,7 +595,7 @@ namespace LibraryApp
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rAddress.OnIdleState = stateProperties12;
-            this.rAddress.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rAddress.Padding = new System.Windows.Forms.Padding(2);
             this.rAddress.PasswordChar = '\0';
             this.rAddress.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rAddress.PlaceholderText = "";
@@ -644,7 +644,7 @@ namespace LibraryApp
             this.rName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rName.Lines = new string[0];
             this.rName.Location = new System.Drawing.Point(243, 305);
-            this.rName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rName.Margin = new System.Windows.Forms.Padding(2);
             this.rName.MaxLength = 32767;
             this.rName.MinimumSize = new System.Drawing.Size(1, 1);
             this.rName.Modified = false;
@@ -670,7 +670,7 @@ namespace LibraryApp
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rName.OnIdleState = stateProperties16;
-            this.rName.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rName.Padding = new System.Windows.Forms.Padding(2);
             this.rName.PasswordChar = '\0';
             this.rName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rName.PlaceholderText = "";
@@ -720,7 +720,7 @@ namespace LibraryApp
             this.total.Lines = new string[] {
         "0"};
             this.total.Location = new System.Drawing.Point(806, 340);
-            this.total.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.total.Margin = new System.Windows.Forms.Padding(2);
             this.total.MaxLength = 32767;
             this.total.MinimumSize = new System.Drawing.Size(1, 1);
             this.total.Modified = false;
@@ -746,7 +746,7 @@ namespace LibraryApp
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.total.OnIdleState = stateProperties20;
-            this.total.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.total.Padding = new System.Windows.Forms.Padding(2);
             this.total.PasswordChar = '\0';
             this.total.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.total.PlaceholderText = "";
@@ -795,7 +795,7 @@ namespace LibraryApp
             this.rIdTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rIdTaker.Lines = new string[0];
             this.rIdTaker.Location = new System.Drawing.Point(170, 202);
-            this.rIdTaker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rIdTaker.Margin = new System.Windows.Forms.Padding(2);
             this.rIdTaker.MaxLength = 32767;
             this.rIdTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.rIdTaker.Modified = false;
@@ -821,7 +821,7 @@ namespace LibraryApp
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rIdTaker.OnIdleState = stateProperties24;
-            this.rIdTaker.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rIdTaker.Padding = new System.Windows.Forms.Padding(2);
             this.rIdTaker.PasswordChar = '\0';
             this.rIdTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rIdTaker.PlaceholderText = "Reader ID";
@@ -890,7 +890,7 @@ namespace LibraryApp
             this.totalBt.IdleIconRightImage = null;
             this.totalBt.IndicateFocus = false;
             this.totalBt.Location = new System.Drawing.Point(773, 402);
-            this.totalBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.totalBt.Margin = new System.Windows.Forms.Padding(2);
             this.totalBt.Name = "totalBt";
             this.totalBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.totalBt.OnDisabledState.BorderRadius = 1;
@@ -977,7 +977,7 @@ namespace LibraryApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 528);
+            this.ClientSize = new System.Drawing.Size(1090, 528);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -997,7 +997,7 @@ namespace LibraryApp
             this.Controls.Add(this.total);
             this.Controls.Add(this.rIdTaker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ReturnBookScreen";
             this.Text = "ReturnBookScreen";
             ((System.ComponentModel.ISupportInitialize)(this.bookData)).EndInit();

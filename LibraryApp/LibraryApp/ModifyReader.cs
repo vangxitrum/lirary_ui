@@ -27,6 +27,11 @@ namespace LibraryApp
         }
         string rName, rAddress, rBirth, rDebt, rEmail, rSignDate,rType,rID;
 
+        private void ModifyReader_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void saveBt_Click(object sender, EventArgs e)
         {
             SqlConnection conn = DBUtils.GetDBConnection();

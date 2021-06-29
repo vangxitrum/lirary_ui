@@ -229,6 +229,24 @@
     <Compile Include="SignUpScreen.Designer.cs">
       <DependentUpon>SignUpScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInfoScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoScreen.Designer.cs">
+      <DependentUpon>UserInfoScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserIssuedBookScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserIssuedBookScreen.Designer.cs">
+      <DependentUpon>UserIssuedBookScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserMainScreen.Designer.cs">
+      <DependentUpon>UserMainScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddBookScreen.resx">
       <DependentUpon>AddBookScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +296,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpScreen.resx">
       <DependentUpon>SignUpScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoScreen.resx">
+      <DependentUpon>UserInfoScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserIssuedBookScreen.resx">
+      <DependentUpon>UserIssuedBookScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMainScreen.resx">
+      <DependentUpon>UserMainScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

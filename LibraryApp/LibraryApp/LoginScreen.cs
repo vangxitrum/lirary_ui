@@ -14,6 +14,7 @@ namespace LibraryApp
 {
     public partial class LoginScreen : Form
     {
+        string _rID;
         public LoginScreen()
         {
             InitializeComponent();
@@ -37,13 +38,16 @@ namespace LibraryApp
             int check = checkLoginInfo();
             if (check == 0)
             {
-                //newScreen = new MainScreen();
-                //newScreen.Show();
-                //this.Hide();
+                userNameTaker.Clear();
+                passwordTaker.Clear();
+                newScreen = new UserMainScreen(this,_rID);
+                newScreen.Show();
+                this.Hide();
             }
             else if (check == 1)
             {
-               
+                userNameTaker.Clear();
+                passwordTaker.Clear();
                 newScreen = new MainScreen(this);
                 newScreen.Show();
                 this.Hide();
@@ -66,7 +70,7 @@ namespace LibraryApp
                 Console.WriteLine("Openning Connection ...");
                 conn.Open();
                 //MessageBox.Show("Success");
-                string selectQuerry = "Select QuyenHan from NguoiDung where TenDangNhap=@User and MatKhau=@Password";
+                string selectQuerry = "Select QuyenHan,ID from NguoiDung where TenDangNhap=@User and MatKhau=@Password";
                 SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
                 Cmd.Parameters.AddWithValue("@User", this.userNameTaker.Text);
                 Cmd.Parameters.AddWithValue("@Password", sb.ToString());
@@ -78,6 +82,30 @@ namespace LibraryApp
                         oReader.Read();
                         if (oReader["QuyenHan"].ToString() == "0")
                         {
+                            SqlConnection conn1 = DBUtils.GetDBConnection();
+                            try
+                            {
+                                conn1.Open();
+                                //MessageBox.Show("Success");
+                                string newQuerry = "Select MaDocGia from DocGia where MaTK = @ID";
+                                SqlCommand newCmd = new SqlCommand(newQuerry, conn1);
+                                newCmd.Parameters.AddWithValue("@ID", oReader["ID"].ToString());
+                                using (SqlDataReader newReader = newCmd.ExecuteReader())
+                                {
+
+                                    if (newReader.HasRows)
+                                    {
+                                        newReader.Read();
+                                        _rID = newReader["MaDocGia"].ToString();
+                                    }
+                                }
+
+                            }
+                            catch (Exception s)
+                            {
+                                MessageBox.Show("Failed to connect to database!!! Please try again later");
+                            }
+                            conn1.Close();
                             return 0;
                         }
                         else if (oReader["QuyenHan"].ToString() == "1")
@@ -101,6 +129,26 @@ namespace LibraryApp
             }
             conn.Close();
             return 1;
+        }
+
+        private void LoginScreen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                loginBt_Click(sender, e);
+                e.Handled = true;
+            }
+            
+        }
+
+        private void userNameTaker_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                loginBt_Click(sender, e);
+                e.Handled = true;
+            }
+            
         }
     }
 }

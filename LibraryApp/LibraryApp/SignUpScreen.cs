@@ -142,6 +142,7 @@ namespace LibraryApp
                 MessageBox.Show("Failed to connect to database!!! Please try again later");
             }
             conn.Close();
+            MessageBox.Show("Success!!!");
             this.parent.Show();
             this.Close();
         }

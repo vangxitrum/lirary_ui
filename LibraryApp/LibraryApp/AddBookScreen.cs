@@ -125,6 +125,23 @@ namespace LibraryApp
                     return;
                 }
                 conn1.Close();
+                // tao bao cao sach
+                conn1.Open();
+                try
+                {
+                    string selectQuerry = "INSERT INTO BaoCaoSach (MaBCS,MaSach,SoNgayMuon,SoNgayTraTre) VALUES([dbo].[idBCS](),@bID,0,0)";
+                    SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
+                    Cmd.Parameters.AddWithValue("@bID", bID);
+                    Cmd.ExecuteNonQuery();
+
+                }
+                catch (Exception s)
+                {
+                    conn1.Close();
+                    MessageBox.Show("Failed to connect to database!!! Please try again later");
+                    return;
+                }
+                conn1.Close();
                 this.Close();
 
             }

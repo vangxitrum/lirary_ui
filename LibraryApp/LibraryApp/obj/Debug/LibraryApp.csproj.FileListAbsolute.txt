@@ -86,3 +86,6 @@ D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.ModifyBookScreen.re
 D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.AddReader.resources
 D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.PayDebtScreen.resources
 D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.ModifyReader.resources
+D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.UserInfoScreen.resources
+D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.UserIssuedBookScreen.resources
+D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.UserMainScreen.resources
