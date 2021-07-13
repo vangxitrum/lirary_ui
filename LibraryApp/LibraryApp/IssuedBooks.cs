@@ -13,9 +13,9 @@ namespace LibraryApp
 {
     public partial class IssuedBooks : Form
     {
-        String id, bName, bStatus, bPrice;
-        String readerID, readerName, readerAddress, readerEmail, readerBirth;
-        String brFromID;
+        String _id, _bName, _bStatus, _bPrice;
+        String _readerID, _readerName, _readerAddress, _readerEmail, _readerBirth;
+        String _brFromID;
 
         void createNewBorrowForm()
         {
@@ -25,7 +25,7 @@ namespace LibraryApp
                 conn.Open();
                 string selectQuerry = "INSERT INTO PhieuMuonSach (MaPhieuMuonSach,NgayMuonSach,MaDocGia) VALUES([dbo].[idPhieuMuon](),@date,@id)";
                 SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
-                Cmd.Parameters.AddWithValue("@id", readerID);
+                Cmd.Parameters.AddWithValue("@id", _readerID);
                 Cmd.Parameters.AddWithValue("@date", dateGetter.Text);
                 Cmd.ExecuteNonQuery();
             }
@@ -39,7 +39,7 @@ namespace LibraryApp
         }
         private void saveBt_Click(object sender, EventArgs e)
         {
-            if (bName != null && readerName!= null)
+            if (_bName != null && _readerName != null)
             {
                 SqlConnection conn = DBUtils.GetDBConnection();
                 try
@@ -54,7 +54,7 @@ namespace LibraryApp
                         if (oReader.HasRows)
                         {
                             oReader.Read();
-                            brFromID = oReader["MaPhieuMuonSach"].ToString();
+                            _brFromID = oReader["MaPhieuMuonSach"].ToString();
                         }
                         else
                         {
@@ -70,7 +70,7 @@ namespace LibraryApp
                                 using (SqlDataReader oReader1 = Cmd1.ExecuteReader())
                                 {
                                     oReader1.Read();
-                                    brFromID = oReader1["MaPhieuMuonSach"].ToString();
+                                    _brFromID = oReader1["MaPhieuMuonSach"].ToString();
                                 }
                             }
                             catch (Exception s)
@@ -104,7 +104,7 @@ namespace LibraryApp
                     string selectQuerry = "INSERT INTO ChiTietPM (MaCTPM,MaSach,MaPhieuMuonSach,TrangThai) VALUES([dbo].[idChiTietPM](),@bookID,@brID,0)";
                     SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
                     Cmd.Parameters.AddWithValue("@bookID", bookData.Rows[i].Cells[0].Value.ToString());
-                    Cmd.Parameters.AddWithValue("@brID", brFromID);
+                    Cmd.Parameters.AddWithValue("@brID", _brFromID);
                     Cmd.ExecuteNonQuery();
                 }
                 catch (Exception s)
@@ -115,7 +115,7 @@ namespace LibraryApp
                 }
             }
             conn1.Close();
-            reset();
+            Reset();
            
         }
 
@@ -127,10 +127,10 @@ namespace LibraryApp
 
         private void addBookBt_Click(object sender, EventArgs e)
         {
-            if (id != null)
+            if (_id != null)
             {
-                bookData.Rows.Add(id, bName, bStatus, bPrice);
-                id = null;
+                bookData.Rows.Add(_id, _bName, _bStatus, _bPrice);
+                _id = null;
                 nameBook.Clear();
                 bIdTaker.Clear();
             }
@@ -143,11 +143,12 @@ namespace LibraryApp
 
         private void rSearchBt_Click(object sender, EventArgs e)
         {
+            DateTime signInDate = new DateTime();
             SqlConnection conn = DBUtils.GetDBConnection();
             try
             {
                 conn.Open();
-                string selectQuerry = "Select MaDocGia,HoTen,DiaChi,FORMAT (NgaySinh, 'dd-MM-yyyy') as NgaySinh,Email from DocGia where MaDocGia=@ID";
+                string selectQuerry = "Select MaDocGia,HoTen,DiaChi,FORMAT (NgaySinh, 'dd-MM-yyyy') as NgaySinh,Email,FORMAT(NgayLapThe, 'yyyy-MM-dd') as NgayLapThe from DocGia where MaDocGia=@ID";
                 SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
                 Cmd.Parameters.AddWithValue("@ID", rIdTaker.Text);
                 using (SqlDataReader oReader = Cmd.ExecuteReader())
@@ -156,15 +157,16 @@ namespace LibraryApp
                     {
                         while (oReader.Read())
                         {
-                            readerID = oReader["MaDocGia"].ToString();
-                            readerName = oReader["HoTen"].ToString();
-                            readerEmail = oReader["Email"].ToString();
-                            readerAddress = oReader["DiaChi"].ToString();
-                            readerBirth = oReader["NgaySinh"].ToString();
-                            rEmail.Text = readerEmail;
-                            rAddress.Text = readerAddress;
-                            rBirth.Text = readerBirth;
-                            rName.Text = readerName;
+                            _readerID = oReader["MaDocGia"].ToString();
+                            _readerName = oReader["HoTen"].ToString();
+                            _readerEmail = oReader["Email"].ToString();
+                            _readerAddress = oReader["DiaChi"].ToString();
+                            _readerBirth = oReader["NgaySinh"].ToString();
+                            signInDate = DateTime.Parse(oReader["NgayLapThe"].ToString());
+                            rEmail.Text = _readerEmail;
+                            rAddress.Text = _readerAddress;
+                            rBirth.Text = _readerBirth;
+                            rName.Text = _readerName;
                         }
                     }
                     else
@@ -178,6 +180,15 @@ namespace LibraryApp
                 MessageBox.Show("Failed to connect to database!!! Please try again later");
             }
             conn.Close();
+            int userSignInTime = 0;
+            if (signInDate != DateTime.MinValue) {
+                userSignInTime = (int)DateTime.Today.Subtract(signInDate).TotalDays / 30;
+            }
+            if (userSignInTime >= AppValue._cardDuration) {
+                MessageBox.Show("Reader's card expired!!!");
+                Reset();
+            }
+
         }
 
         public IssuedBooks()
@@ -208,11 +219,11 @@ namespace LibraryApp
                     {
                         while (oReader.Read())
                         {
-                            id = oReader["MaSach"].ToString().Trim();
-                            bName = oReader["TenSach"].ToString();
-                            bStatus = oReader["TrangThai"].ToString();
-                            bPrice = oReader["TriGia"].ToString();
-                            nameBook.Text = bName;
+                            _id = oReader["MaSach"].ToString().Trim();
+                            _bName = oReader["TenSach"].ToString();
+                            _bStatus = oReader["TrangThai"].ToString();
+                            _bPrice = oReader["TriGia"].ToString();
+                            nameBook.Text = _bName;
                         }
                     }
                     else
@@ -230,12 +241,12 @@ namespace LibraryApp
             
         }
 
-        private void reset()
+        private void Reset()
         {
             bookData.Rows.Clear();
-            id = bName = bStatus = bPrice =
-            readerID = readerName = readerAddress = readerEmail = readerBirth =
-            brFromID = null;
+            _id = _bName = _bStatus = _bPrice =
+            _readerID = _readerName = _readerAddress = _readerEmail = _readerBirth =
+            _brFromID = null;
             rIdTaker.Clear();
             bIdTaker.Clear();
             rName.Clear();

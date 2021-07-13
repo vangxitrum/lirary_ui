@@ -14,7 +14,7 @@ namespace LibraryApp
     
     public partial class ModifyReader : Form
     {
-        List<Item> items = new List<Item>();
+        List<Item> _items = new List<Item>();
         class Item
         {
             public int id { get; set; }
@@ -66,10 +66,11 @@ namespace LibraryApp
         public ModifyReader(string ID,string name, string address, string birth, string debt, string email,string signDate,string type)
         {
             InitializeComponent();
-            loadData();
+            LoadData();
+            LoadData();
             birthDayTaker.Format = DateTimePickerFormat.Custom;
             signInDateTaker.Format = DateTimePickerFormat.Custom;
-            readerTypeSet.DataSource = items;
+            readerTypeSet.DataSource = _items;
             readerTypeSet.DisplayMember = "value";
             readerTypeSet.ValueMember = "id";
             readerTypeSet.SelectedIndex = Int32.Parse(type) - 1;
@@ -89,7 +90,7 @@ namespace LibraryApp
             this.rID = ID;
         }
 
-        private void loadData()
+        private void LoadData()
         {
             SqlConnection conn = DBUtils.GetDBConnection();
             try
@@ -103,7 +104,7 @@ namespace LibraryApp
                     {
                         while (oReader.Read())
                         {
-                            items.Add(new Item(Int32.Parse(oReader["MaLoaiDocGIa"].ToString()), oReader["TenLoaiDocGia"].ToString()));
+                            _items.Add(new Item(Int32.Parse(oReader["MaLoaiDocGIa"].ToString()), oReader["TenLoaiDocGia"].ToString()));
                         }
                     }
                     else

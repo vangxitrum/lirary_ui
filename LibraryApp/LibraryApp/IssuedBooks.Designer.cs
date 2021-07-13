@@ -29,9 +29,6 @@ namespace LibraryApp
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IssuedBooks));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -64,12 +61,10 @@ namespace LibraryApp
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.bookData = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bSearchBt = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -89,6 +84,11 @@ namespace LibraryApp
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.delBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bookData = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bookData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,129 +96,29 @@ namespace LibraryApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(302, 259);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(389, 316);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 24);
+            this.label1.Size = new System.Drawing.Size(199, 29);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Reader Infomation";
-            // 
-            // bookData
-            // 
-            this.bookData.AllowCustomTheming = false;
-            this.bookData.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bookData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bookData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bookData.BackgroundColor = System.Drawing.Color.White;
-            this.bookData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bookData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bookData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bookData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bookData.ColumnHeadersHeight = 40;
-            this.bookData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.bookName,
-            this.Status,
-            this.Price});
-            this.bookData.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.bookData.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bookData.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bookData.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bookData.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bookData.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bookData.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bookData.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bookData.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.bookData.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.Name = null;
-            this.bookData.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bookData.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bookData.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bookData.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bookData.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bookData.EnableHeadersVisualStyles = false;
-            this.bookData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bookData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bookData.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bookData.HeaderForeColor = System.Drawing.Color.White;
-            this.bookData.Location = new System.Drawing.Point(0, -1);
-            this.bookData.Margin = new System.Windows.Forms.Padding(2);
-            this.bookData.Name = "bookData";
-            this.bookData.RowHeadersVisible = false;
-            this.bookData.RowHeadersWidth = 51;
-            this.bookData.RowTemplate.Height = 40;
-            this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookData.Size = new System.Drawing.Size(1090, 181);
-            this.bookData.TabIndex = 8;
-            this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            this.bookData.CellStateChanged += new System.Windows.Forms.DataGridViewCellStateChangedEventHandler(this.bookData_CellStateChanged);
-            // 
-            // ID
-            // 
-            this.ID.DividerWidth = 1;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            // 
-            // bookName
-            // 
-            this.bookName.DividerWidth = 1;
-            this.bookName.HeaderText = "Name";
-            this.bookName.MinimumWidth = 6;
-            this.bookName.Name = "bookName";
-            // 
-            // Status
-            // 
-            this.Status.DividerWidth = 1;
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
-            // 
-            // Price
-            // 
-            this.Price.DividerWidth = 1;
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
+            this.label1.Text = "Thông tin độc giả";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(635, 354);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(847, 436);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(67, 17);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Book Name";
+            this.label2.Text = "Tên sách";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(634, 310);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(845, 382);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.Size = new System.Drawing.Size(80, 17);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Issued Date";
+            this.label3.Text = "Ngày mượn";
             // 
             // bSearchBt
             // 
@@ -237,18 +137,18 @@ namespace LibraryApp
             this.bSearchBt.ImageActive = null;
             this.bSearchBt.ImageLocation = null;
             this.bSearchBt.ImageMargin = 0;
-            this.bSearchBt.ImageSize = new System.Drawing.Size(21, 23);
-            this.bSearchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
+            this.bSearchBt.ImageSize = new System.Drawing.Size(28, 29);
+            this.bSearchBt.ImageZoomSize = new System.Drawing.Size(29, 30);
             this.bSearchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("bSearchBt.InitialImage")));
-            this.bSearchBt.Location = new System.Drawing.Point(855, 210);
-            this.bSearchBt.Margin = new System.Windows.Forms.Padding(2);
+            this.bSearchBt.Location = new System.Drawing.Point(1140, 258);
+            this.bSearchBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bSearchBt.Name = "bSearchBt";
             this.bSearchBt.Rotation = 0;
             this.bSearchBt.ShowActiveImage = true;
             this.bSearchBt.ShowCursorChanges = true;
             this.bSearchBt.ShowImageBorders = true;
             this.bSearchBt.ShowSizeMarkers = false;
-            this.bSearchBt.Size = new System.Drawing.Size(22, 24);
+            this.bSearchBt.Size = new System.Drawing.Size(29, 30);
             this.bSearchBt.TabIndex = 9;
             this.bSearchBt.ToolTipText = "";
             this.bSearchBt.WaitOnLoad = false;
@@ -273,18 +173,18 @@ namespace LibraryApp
             this.rSearchBt.ImageActive = null;
             this.rSearchBt.ImageLocation = null;
             this.rSearchBt.ImageMargin = 0;
-            this.rSearchBt.ImageSize = new System.Drawing.Size(21, 23);
-            this.rSearchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
+            this.rSearchBt.ImageSize = new System.Drawing.Size(28, 29);
+            this.rSearchBt.ImageZoomSize = new System.Drawing.Size(29, 30);
             this.rSearchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("rSearchBt.InitialImage")));
-            this.rSearchBt.Location = new System.Drawing.Point(474, 210);
-            this.rSearchBt.Margin = new System.Windows.Forms.Padding(2);
+            this.rSearchBt.Location = new System.Drawing.Point(632, 258);
+            this.rSearchBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rSearchBt.Name = "rSearchBt";
             this.rSearchBt.Rotation = 0;
             this.rSearchBt.ShowActiveImage = true;
             this.rSearchBt.ShowCursorChanges = true;
             this.rSearchBt.ShowImageBorders = true;
             this.rSearchBt.ShowSizeMarkers = false;
-            this.rSearchBt.Size = new System.Drawing.Size(22, 24);
+            this.rSearchBt.Size = new System.Drawing.Size(29, 30);
             this.rSearchBt.TabIndex = 9;
             this.rSearchBt.ToolTipText = "";
             this.rSearchBt.WaitOnLoad = false;
@@ -306,7 +206,7 @@ namespace LibraryApp
             this.addBookBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.addBookBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addBookBt.BackgroundImage")));
             this.addBookBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.addBookBt.ButtonText = "Add Book";
+            this.addBookBt.ButtonText = "Thêm sách";
             this.addBookBt.ButtonTextMarginLeft = 0;
             this.addBookBt.ColorContrastOnClick = 45;
             this.addBookBt.ColorContrastOnHover = 45;
@@ -339,8 +239,8 @@ namespace LibraryApp
             this.addBookBt.IdleIconLeftImage = null;
             this.addBookBt.IdleIconRightImage = null;
             this.addBookBt.IndicateFocus = false;
-            this.addBookBt.Location = new System.Drawing.Point(677, 415);
-            this.addBookBt.Margin = new System.Windows.Forms.Padding(2);
+            this.addBookBt.Location = new System.Drawing.Point(903, 511);
+            this.addBookBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addBookBt.Name = "addBookBt";
             this.addBookBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.addBookBt.OnDisabledState.BorderRadius = 1;
@@ -374,7 +274,7 @@ namespace LibraryApp
             this.addBookBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.addBookBt.OnPressedState.IconLeftImage = null;
             this.addBookBt.OnPressedState.IconRightImage = null;
-            this.addBookBt.Size = new System.Drawing.Size(112, 32);
+            this.addBookBt.Size = new System.Drawing.Size(149, 39);
             this.addBookBt.TabIndex = 7;
             this.addBookBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.addBookBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -397,7 +297,7 @@ namespace LibraryApp
             this.saveBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.saveBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("saveBt.BackgroundImage")));
             this.saveBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.saveBt.ButtonText = "Save";
+            this.saveBt.ButtonText = "Lưu";
             this.saveBt.ButtonTextMarginLeft = 0;
             this.saveBt.ColorContrastOnClick = 45;
             this.saveBt.ColorContrastOnHover = 45;
@@ -430,8 +330,8 @@ namespace LibraryApp
             this.saveBt.IdleIconLeftImage = null;
             this.saveBt.IdleIconRightImage = null;
             this.saveBt.IndicateFocus = false;
-            this.saveBt.Location = new System.Drawing.Point(913, 487);
-            this.saveBt.Margin = new System.Windows.Forms.Padding(2);
+            this.saveBt.Location = new System.Drawing.Point(1217, 599);
+            this.saveBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBt.Name = "saveBt";
             this.saveBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.saveBt.OnDisabledState.BorderRadius = 1;
@@ -465,7 +365,7 @@ namespace LibraryApp
             this.saveBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.saveBt.OnPressedState.IconLeftImage = null;
             this.saveBt.OnPressedState.IconRightImage = null;
-            this.saveBt.Size = new System.Drawing.Size(112, 32);
+            this.saveBt.Size = new System.Drawing.Size(149, 39);
             this.saveBt.TabIndex = 7;
             this.saveBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.saveBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -493,11 +393,11 @@ namespace LibraryApp
             this.dateGetter.IconColor = System.Drawing.Color.Gray;
             this.dateGetter.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dateGetter.LeftTextMargin = 5;
-            this.dateGetter.Location = new System.Drawing.Point(700, 310);
-            this.dateGetter.Margin = new System.Windows.Forms.Padding(2);
+            this.dateGetter.Location = new System.Drawing.Point(933, 382);
+            this.dateGetter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateGetter.MinimumSize = new System.Drawing.Size(4, 32);
             this.dateGetter.Name = "dateGetter";
-            this.dateGetter.Size = new System.Drawing.Size(195, 32);
+            this.dateGetter.Size = new System.Drawing.Size(259, 32);
             this.dateGetter.TabIndex = 6;
             // 
             // rBirth
@@ -527,8 +427,8 @@ namespace LibraryApp
             this.rBirth.IconRight = null;
             this.rBirth.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rBirth.Lines = new string[0];
-            this.rBirth.Location = new System.Drawing.Point(347, 386);
-            this.rBirth.Margin = new System.Windows.Forms.Padding(2);
+            this.rBirth.Location = new System.Drawing.Point(463, 475);
+            this.rBirth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rBirth.MaxLength = 32767;
             this.rBirth.MinimumSize = new System.Drawing.Size(1, 1);
             this.rBirth.Modified = false;
@@ -554,7 +454,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rBirth.OnIdleState = stateProperties4;
-            this.rBirth.Padding = new System.Windows.Forms.Padding(2);
+            this.rBirth.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rBirth.PasswordChar = '\0';
             this.rBirth.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rBirth.PlaceholderText = "";
@@ -564,7 +464,7 @@ namespace LibraryApp
             this.rBirth.SelectionLength = 0;
             this.rBirth.SelectionStart = 0;
             this.rBirth.ShortcutsEnabled = true;
-            this.rBirth.Size = new System.Drawing.Size(195, 40);
+            this.rBirth.Size = new System.Drawing.Size(260, 49);
             this.rBirth.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rBirth.TabIndex = 4;
             this.rBirth.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -602,8 +502,8 @@ namespace LibraryApp
             this.rEmail.IconRight = null;
             this.rEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rEmail.Lines = new string[0];
-            this.rEmail.Location = new System.Drawing.Point(347, 341);
-            this.rEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.rEmail.Location = new System.Drawing.Point(463, 420);
+            this.rEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rEmail.MaxLength = 32767;
             this.rEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.rEmail.Modified = false;
@@ -629,7 +529,7 @@ namespace LibraryApp
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rEmail.OnIdleState = stateProperties8;
-            this.rEmail.Padding = new System.Windows.Forms.Padding(2);
+            this.rEmail.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rEmail.PasswordChar = '\0';
             this.rEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rEmail.PlaceholderText = "";
@@ -639,7 +539,7 @@ namespace LibraryApp
             this.rEmail.SelectionLength = 0;
             this.rEmail.SelectionStart = 0;
             this.rEmail.ShortcutsEnabled = true;
-            this.rEmail.Size = new System.Drawing.Size(195, 40);
+            this.rEmail.Size = new System.Drawing.Size(260, 49);
             this.rEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rEmail.TabIndex = 4;
             this.rEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -677,8 +577,8 @@ namespace LibraryApp
             this.rAddress.IconRight = null;
             this.rAddress.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rAddress.Lines = new string[0];
-            this.rAddress.Location = new System.Drawing.Point(347, 431);
-            this.rAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.rAddress.Location = new System.Drawing.Point(463, 530);
+            this.rAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rAddress.MaxLength = 32767;
             this.rAddress.MinimumSize = new System.Drawing.Size(1, 1);
             this.rAddress.Modified = false;
@@ -704,7 +604,7 @@ namespace LibraryApp
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rAddress.OnIdleState = stateProperties12;
-            this.rAddress.Padding = new System.Windows.Forms.Padding(2);
+            this.rAddress.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rAddress.PasswordChar = '\0';
             this.rAddress.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rAddress.PlaceholderText = "";
@@ -714,7 +614,7 @@ namespace LibraryApp
             this.rAddress.SelectionLength = 0;
             this.rAddress.SelectionStart = 0;
             this.rAddress.ShortcutsEnabled = true;
-            this.rAddress.Size = new System.Drawing.Size(195, 40);
+            this.rAddress.Size = new System.Drawing.Size(260, 49);
             this.rAddress.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rAddress.TabIndex = 4;
             this.rAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -752,8 +652,8 @@ namespace LibraryApp
             this.rName.IconRight = null;
             this.rName.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rName.Lines = new string[0];
-            this.rName.Location = new System.Drawing.Point(347, 297);
-            this.rName.Margin = new System.Windows.Forms.Padding(2);
+            this.rName.Location = new System.Drawing.Point(463, 366);
+            this.rName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rName.MaxLength = 32767;
             this.rName.MinimumSize = new System.Drawing.Size(1, 1);
             this.rName.Modified = false;
@@ -779,7 +679,7 @@ namespace LibraryApp
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rName.OnIdleState = stateProperties16;
-            this.rName.Padding = new System.Windows.Forms.Padding(2);
+            this.rName.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rName.PasswordChar = '\0';
             this.rName.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rName.PlaceholderText = "";
@@ -789,7 +689,7 @@ namespace LibraryApp
             this.rName.SelectionLength = 0;
             this.rName.SelectionStart = 0;
             this.rName.ShortcutsEnabled = true;
-            this.rName.Size = new System.Drawing.Size(195, 40);
+            this.rName.Size = new System.Drawing.Size(260, 49);
             this.rName.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rName.TabIndex = 2;
             this.rName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -827,8 +727,8 @@ namespace LibraryApp
             this.nameBook.IconRight = null;
             this.nameBook.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.nameBook.Lines = new string[0];
-            this.nameBook.Location = new System.Drawing.Point(700, 354);
-            this.nameBook.Margin = new System.Windows.Forms.Padding(2);
+            this.nameBook.Location = new System.Drawing.Point(933, 436);
+            this.nameBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nameBook.MaxLength = 32767;
             this.nameBook.MinimumSize = new System.Drawing.Size(1, 1);
             this.nameBook.Modified = false;
@@ -854,7 +754,7 @@ namespace LibraryApp
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.nameBook.OnIdleState = stateProperties20;
-            this.nameBook.Padding = new System.Windows.Forms.Padding(2);
+            this.nameBook.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nameBook.PasswordChar = '\0';
             this.nameBook.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.nameBook.PlaceholderText = "";
@@ -864,7 +764,7 @@ namespace LibraryApp
             this.nameBook.SelectionLength = 0;
             this.nameBook.SelectionStart = 0;
             this.nameBook.ShortcutsEnabled = true;
-            this.nameBook.Size = new System.Drawing.Size(195, 40);
+            this.nameBook.Size = new System.Drawing.Size(260, 49);
             this.nameBook.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.nameBook.TabIndex = 0;
             this.nameBook.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -902,8 +802,8 @@ namespace LibraryApp
             this.bIdTaker.IconRight = null;
             this.bIdTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bIdTaker.Lines = new string[0];
-            this.bIdTaker.Location = new System.Drawing.Point(638, 194);
-            this.bIdTaker.Margin = new System.Windows.Forms.Padding(2);
+            this.bIdTaker.Location = new System.Drawing.Point(851, 239);
+            this.bIdTaker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bIdTaker.MaxLength = 32767;
             this.bIdTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.bIdTaker.Modified = false;
@@ -929,24 +829,24 @@ namespace LibraryApp
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bIdTaker.OnIdleState = stateProperties24;
-            this.bIdTaker.Padding = new System.Windows.Forms.Padding(2);
+            this.bIdTaker.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bIdTaker.PasswordChar = '\0';
             this.bIdTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.bIdTaker.PlaceholderText = "Book ID";
+            this.bIdTaker.PlaceholderText = "Mã sách";
             this.bIdTaker.ReadOnly = false;
             this.bIdTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.bIdTaker.SelectedText = "";
             this.bIdTaker.SelectionLength = 0;
             this.bIdTaker.SelectionStart = 0;
             this.bIdTaker.ShortcutsEnabled = true;
-            this.bIdTaker.Size = new System.Drawing.Size(195, 40);
+            this.bIdTaker.Size = new System.Drawing.Size(260, 49);
             this.bIdTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.bIdTaker.TabIndex = 0;
             this.bIdTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bIdTaker.TextMarginBottom = 0;
             this.bIdTaker.TextMarginLeft = 3;
             this.bIdTaker.TextMarginTop = 0;
-            this.bIdTaker.TextPlaceholder = "Book ID";
+            this.bIdTaker.TextPlaceholder = "Mã sách";
             this.bIdTaker.UseSystemPasswordChar = false;
             this.bIdTaker.WordWrap = true;
             this.bIdTaker.TextChanged += new System.EventHandler(this.bIdTaker_TextChanged);
@@ -978,8 +878,8 @@ namespace LibraryApp
             this.rIdTaker.IconRight = null;
             this.rIdTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rIdTaker.Lines = new string[0];
-            this.rIdTaker.Location = new System.Drawing.Point(264, 194);
-            this.rIdTaker.Margin = new System.Windows.Forms.Padding(2);
+            this.rIdTaker.Location = new System.Drawing.Point(352, 239);
+            this.rIdTaker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rIdTaker.MaxLength = 32767;
             this.rIdTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.rIdTaker.Modified = false;
@@ -1005,62 +905,66 @@ namespace LibraryApp
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rIdTaker.OnIdleState = stateProperties28;
-            this.rIdTaker.Padding = new System.Windows.Forms.Padding(2);
+            this.rIdTaker.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rIdTaker.PasswordChar = '\0';
             this.rIdTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.rIdTaker.PlaceholderText = "Reader ID";
+            this.rIdTaker.PlaceholderText = "Mã độc giả";
             this.rIdTaker.ReadOnly = false;
             this.rIdTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.rIdTaker.SelectedText = "";
             this.rIdTaker.SelectionLength = 0;
             this.rIdTaker.SelectionStart = 0;
             this.rIdTaker.ShortcutsEnabled = true;
-            this.rIdTaker.Size = new System.Drawing.Size(195, 40);
+            this.rIdTaker.Size = new System.Drawing.Size(260, 49);
             this.rIdTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.rIdTaker.TabIndex = 0;
             this.rIdTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.rIdTaker.TextMarginBottom = 0;
             this.rIdTaker.TextMarginLeft = 3;
             this.rIdTaker.TextMarginTop = 0;
-            this.rIdTaker.TextPlaceholder = "Reader ID";
+            this.rIdTaker.TextPlaceholder = "Mã độc giả";
             this.rIdTaker.UseSystemPasswordChar = false;
             this.rIdTaker.WordWrap = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(264, 297);
+            this.label4.Location = new System.Drawing.Point(352, 366);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(83, 17);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Name";
+            this.label4.Text = "Tên độc giả";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(264, 341);
+            this.label5.Location = new System.Drawing.Point(352, 420);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.Size = new System.Drawing.Size(42, 17);
             this.label5.TabIndex = 12;
             this.label5.Text = "Email";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(264, 386);
+            this.label6.Location = new System.Drawing.Point(352, 475);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.Size = new System.Drawing.Size(51, 17);
             this.label6.TabIndex = 12;
-            this.label6.Text = "Address";
+            this.label6.Text = "Địa chỉ";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(264, 434);
+            this.label7.Location = new System.Drawing.Point(352, 534);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 13);
+            this.label7.Size = new System.Drawing.Size(71, 17);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Date of birth";
+            this.label7.Text = "Ngày sinh";
             // 
             // delBt
             // 
@@ -1076,7 +980,7 @@ namespace LibraryApp
             this.delBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.delBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("delBt.BackgroundImage")));
             this.delBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.delBt.ButtonText = "Delete";
+            this.delBt.ButtonText = "Xóa";
             this.delBt.ButtonTextMarginLeft = 0;
             this.delBt.ColorContrastOnClick = 45;
             this.delBt.ColorContrastOnHover = 45;
@@ -1109,7 +1013,8 @@ namespace LibraryApp
             this.delBt.IdleIconLeftImage = null;
             this.delBt.IdleIconRightImage = null;
             this.delBt.IndicateFocus = false;
-            this.delBt.Location = new System.Drawing.Point(794, 415);
+            this.delBt.Location = new System.Drawing.Point(1059, 511);
+            this.delBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.delBt.Name = "delBt";
             this.delBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.delBt.OnDisabledState.BorderRadius = 1;
@@ -1143,7 +1048,7 @@ namespace LibraryApp
             this.delBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.delBt.OnPressedState.IconLeftImage = null;
             this.delBt.OnPressedState.IconRightImage = null;
-            this.delBt.Size = new System.Drawing.Size(112, 32);
+            this.delBt.Size = new System.Drawing.Size(149, 39);
             this.delBt.TabIndex = 13;
             this.delBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.delBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1152,11 +1057,112 @@ namespace LibraryApp
             this.delBt.UseDefaultRadiusAndThickness = true;
             this.delBt.Click += new System.EventHandler(this.delBt_Click);
             // 
+            // bookData
+            // 
+            this.bookData.AllowCustomTheming = false;
+            this.bookData.AllowUserToAddRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.bookData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bookData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.bookData.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.bookData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bookData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.bookData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bookData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bookData.ColumnHeadersHeight = 40;
+            this.bookData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.bID,
+            this.bookName,
+            this.status,
+            this.price});
+            this.bookData.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.bookData.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bookData.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bookData.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bookData.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.bookData.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.bookData.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bookData.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.bookData.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.bookData.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.bookData.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.bookData.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.bookData.CurrentTheme.Name = null;
+            this.bookData.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.bookData.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bookData.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.bookData.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.bookData.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bookData.DefaultCellStyle = dataGridViewCellStyle3;
+            this.bookData.EnableHeadersVisualStyles = false;
+            this.bookData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.bookData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.bookData.HeaderBgColor = System.Drawing.Color.Empty;
+            this.bookData.HeaderForeColor = System.Drawing.Color.White;
+            this.bookData.Location = new System.Drawing.Point(-1, -1);
+            this.bookData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bookData.Name = "bookData";
+            this.bookData.RowHeadersVisible = false;
+            this.bookData.RowHeadersWidth = 51;
+            this.bookData.RowTemplate.Height = 40;
+            this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.bookData.Size = new System.Drawing.Size(1500, 235);
+            this.bookData.TabIndex = 14;
+            this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // bID
+            // 
+            this.bID.DividerWidth = 1;
+            this.bID.HeaderText = "Mã sách";
+            this.bID.MinimumWidth = 6;
+            this.bID.Name = "bID";
+            this.bID.ReadOnly = true;
+            // 
+            // bookName
+            // 
+            this.bookName.DividerWidth = 1;
+            this.bookName.HeaderText = "Tên sách";
+            this.bookName.MinimumWidth = 6;
+            this.bookName.Name = "bookName";
+            this.bookName.ReadOnly = true;
+            // 
+            // status
+            // 
+            this.status.DividerWidth = 1;
+            this.status.HeaderText = "Trạng thái";
+            this.status.MinimumWidth = 6;
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            // 
+            // price
+            // 
+            this.price.DividerWidth = 1;
+            this.price.HeaderText = "Trị giá";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            // 
             // IssuedBooks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 528);
+            this.ClientSize = new System.Drawing.Size(1500, 650);
+            this.Controls.Add(this.bookData);
             this.Controls.Add(this.delBt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -1166,7 +1172,6 @@ namespace LibraryApp
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bSearchBt);
             this.Controls.Add(this.rSearchBt);
-            this.Controls.Add(this.bookData);
             this.Controls.Add(this.addBookBt);
             this.Controls.Add(this.saveBt);
             this.Controls.Add(this.dateGetter);
@@ -1179,7 +1184,7 @@ namespace LibraryApp
             this.Controls.Add(this.bIdTaker);
             this.Controls.Add(this.rIdTaker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "IssuedBooks";
             ((System.ComponentModel.ISupportInitialize)(this.bookData)).EndInit();
             this.ResumeLayout(false);
@@ -1200,19 +1205,19 @@ namespace LibraryApp
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton saveBt;
         private Bunifu.UI.WinForms.BunifuTextBox nameBook;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton addBookBt;
-        private Bunifu.UI.WinForms.BunifuDataGridView bookData;
         private Bunifu.UI.WinForms.BunifuImageButton rSearchBt;
         private Bunifu.UI.WinForms.BunifuImageButton bSearchBt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bookName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton delBt;
+        private Bunifu.UI.WinForms.BunifuDataGridView bookData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bookName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
     }
 }

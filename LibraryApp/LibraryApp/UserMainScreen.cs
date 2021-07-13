@@ -12,7 +12,7 @@ namespace LibraryApp
 {
     public partial class UserMainScreen : Form
     {
-        Form child;
+        Form _child;
         LoginScreen _parent;
         string _rID;
         public UserMainScreen(LoginScreen parent,string rID)
@@ -20,12 +20,12 @@ namespace LibraryApp
             InitializeComponent();
             this._parent = parent;
             this._rID = rID;
-            child = new UserIssuedBookScreen(_rID);
-            child.Dock = DockStyle.Fill;
-            child.TopLevel = false;
-            this.mainPanel.Controls.Add(child);
-            child.BringToFront();
-            child.Show();
+            _child = new UserIssuedBookScreen(_rID);
+            _child.Dock = DockStyle.Fill;
+            _child.TopLevel = false;
+            this.mainPanel.Controls.Add(_child);
+            _child.BringToFront();
+            _child.Show();
         }
 
         private void logOutBt_Click(object sender, EventArgs e)
@@ -36,25 +36,25 @@ namespace LibraryApp
 
         private void booksBt_Click(object sender, EventArgs e)
         {
-            child = new UserIssuedBookScreen(_rID);
-            child.Dock = DockStyle.Fill;
-            child.TopLevel = false;
-            this.mainPanel.Controls.Add(child);
-            child.BringToFront();
-            child.Show();
+            _child = new UserIssuedBookScreen(_rID);
+            _child.Dock = DockStyle.Fill;
+            _child.TopLevel = false;
+            this.mainPanel.Controls.Add(_child);
+            _child.BringToFront();
+            _child.Show();
         }
 
         private void readersBt_Click(object sender, EventArgs e)
         {
-            child = new UserInfoScreen(_rID);
-            child.Dock = DockStyle.Fill;
-            child.TopLevel = false;
-            this.mainPanel.Controls.Add(child);
-            child.BringToFront();
-            child.Show();
+            _child = new UserInfoScreen(_rID);
+            _child.Dock = DockStyle.Fill;
+            _child.TopLevel = false;
+            this.mainPanel.Controls.Add(_child);
+            _child.BringToFront();
+            _child.Show();
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        private void exitBt_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

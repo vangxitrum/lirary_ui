@@ -41,6 +41,11 @@ namespace LibraryApp
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bookData = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.searchBt = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.searchBar = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.addButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.deleteBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.modifyBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,11 +58,6 @@ namespace LibraryApp
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.authorID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genreID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.searchBt = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.searchBar = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.addButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.deleteBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.modifyBt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.bookData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +110,7 @@ namespace LibraryApp
             this.bookData.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.bookData.CurrentTheme.Name = null;
             this.bookData.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.bookData.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bookData.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookData.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.bookData.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.bookData.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -127,116 +127,17 @@ namespace LibraryApp
             this.bookData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.bookData.HeaderBgColor = System.Drawing.Color.Empty;
             this.bookData.HeaderForeColor = System.Drawing.Color.White;
-            this.bookData.Location = new System.Drawing.Point(-1, 58);
-            this.bookData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bookData.Location = new System.Drawing.Point(-1, 59);
+            this.bookData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookData.Name = "bookData";
             this.bookData.RowHeadersVisible = false;
-            this.bookData.RowHeadersWidth = 30;
+            this.bookData.RowHeadersWidth = 20;
             this.bookData.RowTemplate.Height = 40;
             this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookData.Size = new System.Drawing.Size(1090, 425);
+            this.bookData.Size = new System.Drawing.Size(1500, 523);
             this.bookData.TabIndex = 0;
             this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.bookData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bookData_CellContentClick);
-            // 
-            // bID
-            // 
-            this.bID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.bID.DividerWidth = 1;
-            this.bID.HeaderText = "ID      ";
-            this.bID.MinimumWidth = 6;
-            this.bID.Name = "bID";
-            this.bID.Width = 74;
-            // 
-            // bookName
-            // 
-            this.bookName.DividerWidth = 1;
-            this.bookName.HeaderText = "Name";
-            this.bookName.MinimumWidth = 6;
-            this.bookName.Name = "bookName";
-            // 
-            // genre
-            // 
-            this.genre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.genre.DividerWidth = 1;
-            this.genre.HeaderText = "Genre";
-            this.genre.MinimumWidth = 6;
-            this.genre.Name = "genre";
-            this.genre.Width = 78;
-            // 
-            // author
-            // 
-            this.author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.author.DividerWidth = 1;
-            this.author.HeaderText = "Author";
-            this.author.MinimumWidth = 6;
-            this.author.Name = "author";
-            this.author.Width = 85;
-            // 
-            // status
-            // 
-            this.status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.status.DividerWidth = 1;
-            this.status.HeaderText = "Status";
-            this.status.MinimumWidth = 6;
-            this.status.Name = "status";
-            this.status.Width = 79;
-            // 
-            // amount
-            // 
-            this.amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.amount.DividerWidth = 1;
-            this.amount.HeaderText = "Amount";
-            this.amount.MinimumWidth = 6;
-            this.amount.Name = "amount";
-            this.amount.Width = 93;
-            // 
-            // position
-            // 
-            this.position.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.position.DividerWidth = 1;
-            this.position.HeaderText = "Pos";
-            this.position.MinimumWidth = 6;
-            this.position.Name = "position";
-            this.position.Width = 59;
-            // 
-            // publishedYear
-            // 
-            this.publishedYear.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.publishedYear.DividerWidth = 1;
-            this.publishedYear.HeaderText = "Publish Year";
-            this.publishedYear.MinimumWidth = 6;
-            this.publishedYear.Name = "publishedYear";
-            this.publishedYear.Width = 121;
-            // 
-            // publisher
-            // 
-            this.publisher.DividerWidth = 1;
-            this.publisher.HeaderText = "Publisher";
-            this.publisher.MinimumWidth = 6;
-            this.publisher.Name = "publisher";
-            // 
-            // price
-            // 
-            this.price.DividerWidth = 1;
-            this.price.HeaderText = "Price";
-            this.price.MinimumWidth = 6;
-            this.price.Name = "price";
-            // 
-            // authorID
-            // 
-            this.authorID.HeaderText = "aID";
-            this.authorID.MinimumWidth = 6;
-            this.authorID.Name = "authorID";
-            this.authorID.Visible = false;
-            // 
-            // genreID
-            // 
-            this.genreID.HeaderText = "gID";
-            this.genreID.MinimumWidth = 6;
-            this.genreID.Name = "genreID";
-            this.genreID.ReadOnly = true;
-            this.genreID.Visible = false;
             // 
             // searchBt
             // 
@@ -255,18 +156,18 @@ namespace LibraryApp
             this.searchBt.ImageActive = null;
             this.searchBt.ImageLocation = null;
             this.searchBt.ImageMargin = 0;
-            this.searchBt.ImageSize = new System.Drawing.Size(21, 23);
-            this.searchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
+            this.searchBt.ImageSize = new System.Drawing.Size(28, 29);
+            this.searchBt.ImageZoomSize = new System.Drawing.Size(29, 30);
             this.searchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("searchBt.InitialImage")));
-            this.searchBt.Location = new System.Drawing.Point(230, 11);
-            this.searchBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBt.Location = new System.Drawing.Point(307, 14);
+            this.searchBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBt.Name = "searchBt";
             this.searchBt.Rotation = 0;
             this.searchBt.ShowActiveImage = true;
             this.searchBt.ShowCursorChanges = true;
             this.searchBt.ShowImageBorders = true;
             this.searchBt.ShowSizeMarkers = false;
-            this.searchBt.Size = new System.Drawing.Size(22, 24);
+            this.searchBt.Size = new System.Drawing.Size(29, 30);
             this.searchBt.TabIndex = 5;
             this.searchBt.ToolTipText = "";
             this.searchBt.WaitOnLoad = false;
@@ -301,8 +202,8 @@ namespace LibraryApp
             this.searchBar.IconRight = null;
             this.searchBar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.searchBar.Lines = new string[0];
-            this.searchBar.Location = new System.Drawing.Point(47, 11);
-            this.searchBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBar.Location = new System.Drawing.Point(63, 14);
+            this.searchBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBar.MaxLength = 32767;
             this.searchBar.MinimumSize = new System.Drawing.Size(1, 1);
             this.searchBar.Modified = false;
@@ -328,7 +229,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.searchBar.OnIdleState = stateProperties4;
-            this.searchBar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBar.PasswordChar = '\0';
             this.searchBar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.searchBar.PlaceholderText = "Search here";
@@ -338,7 +239,7 @@ namespace LibraryApp
             this.searchBar.SelectionLength = 0;
             this.searchBar.SelectionStart = 0;
             this.searchBar.ShortcutsEnabled = true;
-            this.searchBar.Size = new System.Drawing.Size(171, 24);
+            this.searchBar.Size = new System.Drawing.Size(228, 30);
             this.searchBar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.searchBar.TabIndex = 4;
             this.searchBar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -364,7 +265,7 @@ namespace LibraryApp
             this.addButton.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.addButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addButton.BackgroundImage")));
             this.addButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.addButton.ButtonText = "Add";
+            this.addButton.ButtonText = "Thêm sách";
             this.addButton.ButtonTextMarginLeft = 0;
             this.addButton.ColorContrastOnClick = 45;
             this.addButton.ColorContrastOnHover = 45;
@@ -397,8 +298,8 @@ namespace LibraryApp
             this.addButton.IdleIconLeftImage = null;
             this.addButton.IdleIconRightImage = null;
             this.addButton.IndicateFocus = false;
-            this.addButton.Location = new System.Drawing.Point(634, 487);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Location = new System.Drawing.Point(845, 599);
+            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addButton.Name = "addButton";
             this.addButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.addButton.OnDisabledState.BorderRadius = 1;
@@ -432,7 +333,7 @@ namespace LibraryApp
             this.addButton.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.addButton.OnPressedState.IconLeftImage = null;
             this.addButton.OnPressedState.IconRightImage = null;
-            this.addButton.Size = new System.Drawing.Size(112, 32);
+            this.addButton.Size = new System.Drawing.Size(149, 39);
             this.addButton.TabIndex = 3;
             this.addButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.addButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -455,7 +356,7 @@ namespace LibraryApp
             this.deleteBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.deleteBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("deleteBt.BackgroundImage")));
             this.deleteBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.deleteBt.ButtonText = "Delete";
+            this.deleteBt.ButtonText = "Xóa sách";
             this.deleteBt.ButtonTextMarginLeft = 0;
             this.deleteBt.ColorContrastOnClick = 45;
             this.deleteBt.ColorContrastOnHover = 45;
@@ -488,8 +389,8 @@ namespace LibraryApp
             this.deleteBt.IdleIconLeftImage = null;
             this.deleteBt.IdleIconRightImage = null;
             this.deleteBt.IndicateFocus = false;
-            this.deleteBt.Location = new System.Drawing.Point(937, 487);
-            this.deleteBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteBt.Location = new System.Drawing.Point(1249, 599);
+            this.deleteBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteBt.Name = "deleteBt";
             this.deleteBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.deleteBt.OnDisabledState.BorderRadius = 1;
@@ -523,7 +424,7 @@ namespace LibraryApp
             this.deleteBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.deleteBt.OnPressedState.IconLeftImage = null;
             this.deleteBt.OnPressedState.IconRightImage = null;
-            this.deleteBt.Size = new System.Drawing.Size(112, 32);
+            this.deleteBt.Size = new System.Drawing.Size(149, 39);
             this.deleteBt.TabIndex = 2;
             this.deleteBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.deleteBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -545,7 +446,7 @@ namespace LibraryApp
             this.modifyBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.modifyBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("modifyBt.BackgroundImage")));
             this.modifyBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.modifyBt.ButtonText = "Modify";
+            this.modifyBt.ButtonText = "Sửa thông tin";
             this.modifyBt.ButtonTextMarginLeft = 0;
             this.modifyBt.ColorContrastOnClick = 45;
             this.modifyBt.ColorContrastOnHover = 45;
@@ -578,8 +479,8 @@ namespace LibraryApp
             this.modifyBt.IdleIconLeftImage = null;
             this.modifyBt.IdleIconRightImage = null;
             this.modifyBt.IndicateFocus = false;
-            this.modifyBt.Location = new System.Drawing.Point(785, 487);
-            this.modifyBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.modifyBt.Location = new System.Drawing.Point(1047, 599);
+            this.modifyBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.modifyBt.Name = "modifyBt";
             this.modifyBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modifyBt.OnDisabledState.BorderRadius = 1;
@@ -613,7 +514,7 @@ namespace LibraryApp
             this.modifyBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.modifyBt.OnPressedState.IconLeftImage = null;
             this.modifyBt.OnPressedState.IconRightImage = null;
-            this.modifyBt.Size = new System.Drawing.Size(112, 32);
+            this.modifyBt.Size = new System.Drawing.Size(149, 39);
             this.modifyBt.TabIndex = 1;
             this.modifyBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.modifyBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -622,11 +523,120 @@ namespace LibraryApp
             this.modifyBt.UseDefaultRadiusAndThickness = true;
             this.modifyBt.Click += new System.EventHandler(this.modifyBt_Click);
             // 
+            // bID
+            // 
+            this.bID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.bID.DividerWidth = 1;
+            this.bID.HeaderText = "Mã Sách";
+            this.bID.MinimumWidth = 6;
+            this.bID.Name = "bID";
+            this.bID.ReadOnly = true;
+            this.bID.Width = 116;
+            // 
+            // bookName
+            // 
+            this.bookName.DividerWidth = 1;
+            this.bookName.HeaderText = "Tên sách";
+            this.bookName.MinimumWidth = 6;
+            this.bookName.Name = "bookName";
+            this.bookName.ReadOnly = true;
+            // 
+            // genre
+            // 
+            this.genre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.genre.DividerWidth = 1;
+            this.genre.HeaderText = "Thể loại";
+            this.genre.MinimumWidth = 6;
+            this.genre.Name = "genre";
+            this.genre.ReadOnly = true;
+            this.genre.Width = 112;
+            // 
+            // author
+            // 
+            this.author.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.author.DividerWidth = 1;
+            this.author.HeaderText = "Tác giả";
+            this.author.MinimumWidth = 6;
+            this.author.Name = "author";
+            this.author.ReadOnly = true;
+            this.author.Width = 101;
+            // 
+            // status
+            // 
+            this.status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.status.DividerWidth = 1;
+            this.status.HeaderText = "Trạng thái";
+            this.status.MinimumWidth = 6;
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            this.status.Width = 130;
+            // 
+            // amount
+            // 
+            this.amount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.amount.DividerWidth = 1;
+            this.amount.HeaderText = "Số lượng";
+            this.amount.MinimumWidth = 6;
+            this.amount.Name = "amount";
+            this.amount.ReadOnly = true;
+            this.amount.Width = 122;
+            // 
+            // position
+            // 
+            this.position.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.position.DividerWidth = 1;
+            this.position.HeaderText = "Vị trí";
+            this.position.MinimumWidth = 6;
+            this.position.Name = "position";
+            this.position.ReadOnly = true;
+            this.position.Width = 83;
+            // 
+            // publishedYear
+            // 
+            this.publishedYear.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.publishedYear.DividerWidth = 1;
+            this.publishedYear.HeaderText = "Năm suất bản";
+            this.publishedYear.MinimumWidth = 6;
+            this.publishedYear.Name = "publishedYear";
+            this.publishedYear.ReadOnly = true;
+            this.publishedYear.Width = 167;
+            // 
+            // publisher
+            // 
+            this.publisher.DividerWidth = 1;
+            this.publisher.HeaderText = "Nhà xuất bản";
+            this.publisher.MinimumWidth = 6;
+            this.publisher.Name = "publisher";
+            this.publisher.ReadOnly = true;
+            // 
+            // price
+            // 
+            this.price.DividerWidth = 1;
+            this.price.HeaderText = "Trị giá";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.ReadOnly = true;
+            // 
+            // authorID
+            // 
+            this.authorID.HeaderText = "aID";
+            this.authorID.MinimumWidth = 6;
+            this.authorID.Name = "authorID";
+            this.authorID.Visible = false;
+            // 
+            // genreID
+            // 
+            this.genreID.HeaderText = "gID";
+            this.genreID.MinimumWidth = 6;
+            this.genreID.Name = "genreID";
+            this.genreID.ReadOnly = true;
+            this.genreID.Visible = false;
+            // 
             // BookScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 528);
+            this.ClientSize = new System.Drawing.Size(1500, 650);
             this.Controls.Add(this.searchBt);
             this.Controls.Add(this.searchBar);
             this.Controls.Add(this.addButton);
@@ -634,7 +644,7 @@ namespace LibraryApp
             this.Controls.Add(this.modifyBt);
             this.Controls.Add(this.bookData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BookScreen";
             this.Text = "BookScreen";
             ((System.ComponentModel.ISupportInitialize)(this.bookData)).EndInit();

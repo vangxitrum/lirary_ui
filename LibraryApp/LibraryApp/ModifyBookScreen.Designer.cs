@@ -106,8 +106,7 @@ namespace LibraryApp
             this.priceTaker.IconRight = null;
             this.priceTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.priceTaker.Lines = new string[0];
-            this.priceTaker.Location = new System.Drawing.Point(519, 382);
-            this.priceTaker.Margin = new System.Windows.Forms.Padding(4);
+            this.priceTaker.Location = new System.Drawing.Point(62, 371);
             this.priceTaker.MaxLength = 32767;
             this.priceTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.priceTaker.Modified = false;
@@ -133,24 +132,24 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.priceTaker.OnIdleState = stateProperties4;
-            this.priceTaker.Padding = new System.Windows.Forms.Padding(4);
+            this.priceTaker.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.priceTaker.PasswordChar = '\0';
             this.priceTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.priceTaker.PlaceholderText = "Price";
+            this.priceTaker.PlaceholderText = "Trị giá";
             this.priceTaker.ReadOnly = false;
             this.priceTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.priceTaker.SelectedText = "";
             this.priceTaker.SelectionLength = 0;
             this.priceTaker.SelectionStart = 0;
             this.priceTaker.ShortcutsEnabled = true;
-            this.priceTaker.Size = new System.Drawing.Size(347, 46);
+            this.priceTaker.Size = new System.Drawing.Size(260, 37);
             this.priceTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.priceTaker.TabIndex = 12;
             this.priceTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.priceTaker.TextMarginBottom = 0;
             this.priceTaker.TextMarginLeft = 3;
             this.priceTaker.TextMarginTop = 0;
-            this.priceTaker.TextPlaceholder = "Price";
+            this.priceTaker.TextPlaceholder = "Trị giá";
             this.priceTaker.UseSystemPasswordChar = false;
             this.priceTaker.WordWrap = true;
             // 
@@ -161,9 +160,8 @@ namespace LibraryApp
             this.topPanel.Controls.Add(this.label1);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(4);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(993, 105);
+            this.topPanel.Size = new System.Drawing.Size(745, 85);
             this.topPanel.TabIndex = 8;
             // 
             // exitButton
@@ -183,18 +181,18 @@ namespace LibraryApp
             this.exitButton.ImageActive = null;
             this.exitButton.ImageLocation = null;
             this.exitButton.ImageMargin = 5;
-            this.exitButton.ImageSize = new System.Drawing.Size(39, 33);
-            this.exitButton.ImageZoomSize = new System.Drawing.Size(44, 38);
+            this.exitButton.ImageSize = new System.Drawing.Size(28, 26);
+            this.exitButton.ImageZoomSize = new System.Drawing.Size(33, 31);
             this.exitButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("exitButton.InitialImage")));
-            this.exitButton.Location = new System.Drawing.Point(883, 23);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exitButton.Location = new System.Drawing.Point(662, 19);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Rotation = 0;
             this.exitButton.ShowActiveImage = true;
             this.exitButton.ShowCursorChanges = true;
             this.exitButton.ShowImageBorders = true;
             this.exitButton.ShowSizeMarkers = false;
-            this.exitButton.Size = new System.Drawing.Size(44, 38);
+            this.exitButton.Size = new System.Drawing.Size(33, 31);
             this.exitButton.TabIndex = 2;
             this.exitButton.ToolTipText = "";
             this.exitButton.WaitOnLoad = false;
@@ -207,12 +205,11 @@ namespace LibraryApp
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(17, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(13, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 29);
+            this.label1.Size = new System.Drawing.Size(206, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Modify Book Infomation";
+            this.label1.Text = "Thay đổi thông tin sách";
             // 
             // bunifuDragControl1
             // 
@@ -235,7 +232,7 @@ namespace LibraryApp
             this.saveBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.saveBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("saveBt.BackgroundImage")));
             this.saveBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.saveBt.ButtonText = "save";
+            this.saveBt.ButtonText = "Lưu";
             this.saveBt.ButtonTextMarginLeft = 0;
             this.saveBt.ColorContrastOnClick = 45;
             this.saveBt.ColorContrastOnHover = 45;
@@ -268,8 +265,7 @@ namespace LibraryApp
             this.saveBt.IdleIconLeftImage = null;
             this.saveBt.IdleIconRightImage = null;
             this.saveBt.IndicateFocus = false;
-            this.saveBt.Location = new System.Drawing.Point(799, 508);
-            this.saveBt.Margin = new System.Windows.Forms.Padding(4);
+            this.saveBt.Location = new System.Drawing.Point(599, 425);
             this.saveBt.Name = "saveBt";
             this.saveBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.saveBt.OnDisabledState.BorderRadius = 1;
@@ -303,7 +299,7 @@ namespace LibraryApp
             this.saveBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.saveBt.OnPressedState.IconLeftImage = null;
             this.saveBt.OnPressedState.IconRightImage = null;
-            this.saveBt.Size = new System.Drawing.Size(128, 32);
+            this.saveBt.Size = new System.Drawing.Size(96, 26);
             this.saveBt.TabIndex = 18;
             this.saveBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.saveBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -339,8 +335,7 @@ namespace LibraryApp
             this.statusTaker.IconRight = null;
             this.statusTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.statusTaker.Lines = new string[0];
-            this.statusTaker.Location = new System.Drawing.Point(83, 446);
-            this.statusTaker.Margin = new System.Windows.Forms.Padding(4);
+            this.statusTaker.Location = new System.Drawing.Point(62, 258);
             this.statusTaker.MaxLength = 32767;
             this.statusTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.statusTaker.Modified = false;
@@ -366,24 +361,24 @@ namespace LibraryApp
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.statusTaker.OnIdleState = stateProperties8;
-            this.statusTaker.Padding = new System.Windows.Forms.Padding(4);
+            this.statusTaker.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.statusTaker.PasswordChar = '\0';
             this.statusTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.statusTaker.PlaceholderText = "Status";
+            this.statusTaker.PlaceholderText = "Trạng thái";
             this.statusTaker.ReadOnly = false;
             this.statusTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.statusTaker.SelectedText = "";
             this.statusTaker.SelectionLength = 0;
             this.statusTaker.SelectionStart = 0;
             this.statusTaker.ShortcutsEnabled = true;
-            this.statusTaker.Size = new System.Drawing.Size(347, 46);
+            this.statusTaker.Size = new System.Drawing.Size(260, 37);
             this.statusTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.statusTaker.TabIndex = 16;
             this.statusTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.statusTaker.TextMarginBottom = 0;
             this.statusTaker.TextMarginLeft = 3;
             this.statusTaker.TextMarginTop = 0;
-            this.statusTaker.TextPlaceholder = "Status";
+            this.statusTaker.TextPlaceholder = "Trạng thái";
             this.statusTaker.UseSystemPasswordChar = false;
             this.statusTaker.WordWrap = true;
             // 
@@ -414,8 +409,7 @@ namespace LibraryApp
             this.amountTaker.IconRight = null;
             this.amountTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.amountTaker.Lines = new string[0];
-            this.amountTaker.Location = new System.Drawing.Point(519, 190);
-            this.amountTaker.Margin = new System.Windows.Forms.Padding(4);
+            this.amountTaker.Location = new System.Drawing.Point(389, 154);
             this.amountTaker.MaxLength = 32767;
             this.amountTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.amountTaker.Modified = false;
@@ -441,24 +435,24 @@ namespace LibraryApp
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.amountTaker.OnIdleState = stateProperties12;
-            this.amountTaker.Padding = new System.Windows.Forms.Padding(4);
+            this.amountTaker.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.amountTaker.PasswordChar = '\0';
             this.amountTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.amountTaker.PlaceholderText = "Amount";
+            this.amountTaker.PlaceholderText = "Số lượng";
             this.amountTaker.ReadOnly = false;
             this.amountTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.amountTaker.SelectedText = "";
             this.amountTaker.SelectionLength = 0;
             this.amountTaker.SelectionStart = 0;
             this.amountTaker.ShortcutsEnabled = true;
-            this.amountTaker.Size = new System.Drawing.Size(347, 46);
+            this.amountTaker.Size = new System.Drawing.Size(260, 37);
             this.amountTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.amountTaker.TabIndex = 17;
             this.amountTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.amountTaker.TextMarginBottom = 0;
             this.amountTaker.TextMarginLeft = 3;
             this.amountTaker.TextMarginTop = 0;
-            this.amountTaker.TextPlaceholder = "Amount";
+            this.amountTaker.TextPlaceholder = "Số lượng";
             this.amountTaker.UseSystemPasswordChar = false;
             this.amountTaker.WordWrap = true;
             // 
@@ -489,8 +483,7 @@ namespace LibraryApp
             this.publisherTaker.IconRight = null;
             this.publisherTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.publisherTaker.Lines = new string[0];
-            this.publisherTaker.Location = new System.Drawing.Point(83, 382);
-            this.publisherTaker.Margin = new System.Windows.Forms.Padding(4);
+            this.publisherTaker.Location = new System.Drawing.Point(62, 206);
             this.publisherTaker.MaxLength = 32767;
             this.publisherTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.publisherTaker.Modified = false;
@@ -516,24 +509,24 @@ namespace LibraryApp
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.publisherTaker.OnIdleState = stateProperties16;
-            this.publisherTaker.Padding = new System.Windows.Forms.Padding(4);
+            this.publisherTaker.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.publisherTaker.PasswordChar = '\0';
             this.publisherTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.publisherTaker.PlaceholderText = "Publisher";
+            this.publisherTaker.PlaceholderText = "Nhà xuất bản";
             this.publisherTaker.ReadOnly = false;
             this.publisherTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.publisherTaker.SelectedText = "";
             this.publisherTaker.SelectionLength = 0;
             this.publisherTaker.SelectionStart = 0;
             this.publisherTaker.ShortcutsEnabled = true;
-            this.publisherTaker.Size = new System.Drawing.Size(347, 46);
+            this.publisherTaker.Size = new System.Drawing.Size(260, 37);
             this.publisherTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.publisherTaker.TabIndex = 13;
             this.publisherTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.publisherTaker.TextMarginBottom = 0;
             this.publisherTaker.TextMarginLeft = 3;
             this.publisherTaker.TextMarginTop = 0;
-            this.publisherTaker.TextPlaceholder = "Publisher";
+            this.publisherTaker.TextPlaceholder = "Nhà xuất bản";
             this.publisherTaker.UseSystemPasswordChar = false;
             this.publisherTaker.WordWrap = true;
             // 
@@ -564,8 +557,7 @@ namespace LibraryApp
             this.publishYearTaker.IconRight = null;
             this.publishYearTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.publishYearTaker.Lines = new string[0];
-            this.publishYearTaker.Location = new System.Drawing.Point(519, 318);
-            this.publishYearTaker.Margin = new System.Windows.Forms.Padding(4);
+            this.publishYearTaker.Location = new System.Drawing.Point(62, 310);
             this.publishYearTaker.MaxLength = 32767;
             this.publishYearTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.publishYearTaker.Modified = false;
@@ -591,24 +583,24 @@ namespace LibraryApp
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.publishYearTaker.OnIdleState = stateProperties20;
-            this.publishYearTaker.Padding = new System.Windows.Forms.Padding(4);
+            this.publishYearTaker.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.publishYearTaker.PasswordChar = '\0';
             this.publishYearTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.publishYearTaker.PlaceholderText = "Publish year";
+            this.publishYearTaker.PlaceholderText = "Năm xuất bản";
             this.publishYearTaker.ReadOnly = false;
             this.publishYearTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.publishYearTaker.SelectedText = "";
             this.publishYearTaker.SelectionLength = 0;
             this.publishYearTaker.SelectionStart = 0;
             this.publishYearTaker.ShortcutsEnabled = true;
-            this.publishYearTaker.Size = new System.Drawing.Size(347, 46);
+            this.publishYearTaker.Size = new System.Drawing.Size(260, 37);
             this.publishYearTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.publishYearTaker.TabIndex = 14;
             this.publishYearTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.publishYearTaker.TextMarginBottom = 0;
             this.publishYearTaker.TextMarginLeft = 3;
             this.publishYearTaker.TextMarginTop = 0;
-            this.publishYearTaker.TextPlaceholder = "Publish year";
+            this.publishYearTaker.TextPlaceholder = "Năm xuất bản";
             this.publishYearTaker.UseSystemPasswordChar = false;
             this.publishYearTaker.WordWrap = true;
             // 
@@ -639,8 +631,7 @@ namespace LibraryApp
             this.posTaker.IconRight = null;
             this.posTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.posTaker.Lines = new string[0];
-            this.posTaker.Location = new System.Drawing.Point(519, 254);
-            this.posTaker.Margin = new System.Windows.Forms.Padding(4);
+            this.posTaker.Location = new System.Drawing.Point(389, 206);
             this.posTaker.MaxLength = 32767;
             this.posTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.posTaker.Modified = false;
@@ -666,24 +657,24 @@ namespace LibraryApp
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.posTaker.OnIdleState = stateProperties24;
-            this.posTaker.Padding = new System.Windows.Forms.Padding(4);
+            this.posTaker.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.posTaker.PasswordChar = '\0';
             this.posTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.posTaker.PlaceholderText = "Position";
+            this.posTaker.PlaceholderText = "Vị trí";
             this.posTaker.ReadOnly = false;
             this.posTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.posTaker.SelectedText = "";
             this.posTaker.SelectionLength = 0;
             this.posTaker.SelectionStart = 0;
             this.posTaker.ShortcutsEnabled = true;
-            this.posTaker.Size = new System.Drawing.Size(347, 46);
+            this.posTaker.Size = new System.Drawing.Size(260, 37);
             this.posTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.posTaker.TabIndex = 15;
             this.posTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.posTaker.TextMarginBottom = 0;
             this.posTaker.TextMarginLeft = 3;
             this.posTaker.TextMarginTop = 0;
-            this.posTaker.TextPlaceholder = "Position";
+            this.posTaker.TextPlaceholder = "Vị trí";
             this.posTaker.UseSystemPasswordChar = false;
             this.posTaker.WordWrap = true;
             // 
@@ -714,8 +705,7 @@ namespace LibraryApp
             this.nameTaker.IconRight = null;
             this.nameTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.nameTaker.Lines = new string[0];
-            this.nameTaker.Location = new System.Drawing.Point(83, 190);
-            this.nameTaker.Margin = new System.Windows.Forms.Padding(4);
+            this.nameTaker.Location = new System.Drawing.Point(62, 154);
             this.nameTaker.MaxLength = 32767;
             this.nameTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.nameTaker.Modified = false;
@@ -741,24 +731,24 @@ namespace LibraryApp
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.nameTaker.OnIdleState = stateProperties28;
-            this.nameTaker.Padding = new System.Windows.Forms.Padding(4);
+            this.nameTaker.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.nameTaker.PasswordChar = '\0';
             this.nameTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.nameTaker.PlaceholderText = "Book name";
+            this.nameTaker.PlaceholderText = "Tên sách";
             this.nameTaker.ReadOnly = false;
             this.nameTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.nameTaker.SelectedText = "";
             this.nameTaker.SelectionLength = 0;
             this.nameTaker.SelectionStart = 0;
             this.nameTaker.ShortcutsEnabled = true;
-            this.nameTaker.Size = new System.Drawing.Size(347, 46);
+            this.nameTaker.Size = new System.Drawing.Size(260, 37);
             this.nameTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.nameTaker.TabIndex = 9;
             this.nameTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.nameTaker.TextMarginBottom = 0;
             this.nameTaker.TextMarginLeft = 3;
             this.nameTaker.TextMarginTop = 0;
-            this.nameTaker.TextPlaceholder = "Book name";
+            this.nameTaker.TextPlaceholder = "Tên sách";
             this.nameTaker.UseSystemPasswordChar = false;
             this.nameTaker.WordWrap = true;
             // 
@@ -796,9 +786,10 @@ namespace LibraryApp
             this.genreSet.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.genreSet.ItemHighLightForeColor = System.Drawing.Color.White;
             this.genreSet.ItemTopMargin = 3;
-            this.genreSet.Location = new System.Drawing.Point(83, 332);
+            this.genreSet.Location = new System.Drawing.Point(389, 338);
+            this.genreSet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.genreSet.Name = "genreSet";
-            this.genreSet.Size = new System.Drawing.Size(347, 32);
+            this.genreSet.Size = new System.Drawing.Size(261, 32);
             this.genreSet.TabIndex = 22;
             this.genreSet.Text = null;
             this.genreSet.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -838,9 +829,10 @@ namespace LibraryApp
             this.authorSet.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.authorSet.ItemHighLightForeColor = System.Drawing.Color.White;
             this.authorSet.ItemTopMargin = 3;
-            this.authorSet.Location = new System.Drawing.Point(83, 268);
+            this.authorSet.Location = new System.Drawing.Point(389, 286);
+            this.authorSet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.authorSet.Name = "authorSet";
-            this.authorSet.Size = new System.Drawing.Size(347, 32);
+            this.authorSet.Size = new System.Drawing.Size(261, 32);
             this.authorSet.TabIndex = 21;
             this.authorSet.Text = null;
             this.authorSet.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
@@ -849,27 +841,29 @@ namespace LibraryApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 312);
+            this.label3.Location = new System.Drawing.Point(392, 322);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 17);
+            this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 19;
-            this.label3.Text = "Genre";
+            this.label3.Text = "Thể loại";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(89, 248);
+            this.label2.Location = new System.Drawing.Point(394, 270);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 17);
+            this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Author";
+            this.label2.Text = "Tác giả";
             // 
             // ModifyBookScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(993, 581);
+            this.ClientSize = new System.Drawing.Size(745, 472);
             this.Controls.Add(this.genreSet);
             this.Controls.Add(this.authorSet);
             this.Controls.Add(this.label3);
@@ -884,7 +878,6 @@ namespace LibraryApp
             this.Controls.Add(this.posTaker);
             this.Controls.Add(this.nameTaker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModifyBookScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModifyBookScreen";

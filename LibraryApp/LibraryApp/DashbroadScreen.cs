@@ -16,10 +16,11 @@ namespace LibraryApp
         public DashbroadScreen()
         {
             InitializeComponent();
-            loadData();
+            LoadData();
+           
         }
 
-        private void loadData()
+        private void LoadData()
         {
             genreRP.Rows.Clear();
             SqlConnection conn = DBUtils.GetDBConnection();

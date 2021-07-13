@@ -76,7 +76,7 @@ namespace LibraryApp
             this.topPanel.Controls.Add(this.todayGetter);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(4);
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(504, 105);
             this.topPanel.TabIndex = 24;
@@ -125,9 +125,9 @@ namespace LibraryApp
             this.label1.Location = new System.Drawing.Point(17, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 29);
+            this.label1.Size = new System.Drawing.Size(133, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Pay off debt";
+            this.label1.Text = "Thanh toán";
             // 
             // todayGetter
             // 
@@ -149,7 +149,7 @@ namespace LibraryApp
             this.todayGetter.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.todayGetter.LeftTextMargin = 5;
             this.todayGetter.Location = new System.Drawing.Point(21, 65);
-            this.todayGetter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.todayGetter.Margin = new System.Windows.Forms.Padding(4);
             this.todayGetter.MinimumSize = new System.Drawing.Size(4, 32);
             this.todayGetter.Name = "todayGetter";
             this.todayGetter.Size = new System.Drawing.Size(345, 32);
@@ -187,7 +187,7 @@ namespace LibraryApp
             this.saveBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.saveBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("saveBt.BackgroundImage")));
             this.saveBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.saveBt.ButtonText = "save";
+            this.saveBt.ButtonText = "Lưu";
             this.saveBt.ButtonTextMarginLeft = 0;
             this.saveBt.ColorContrastOnClick = 45;
             this.saveBt.ColorContrastOnHover = 45;
@@ -221,7 +221,7 @@ namespace LibraryApp
             this.saveBt.IdleIconRightImage = null;
             this.saveBt.IndicateFocus = false;
             this.saveBt.Location = new System.Drawing.Point(181, 523);
-            this.saveBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveBt.Margin = new System.Windows.Forms.Padding(4);
             this.saveBt.Name = "saveBt";
             this.saveBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.saveBt.OnDisabledState.BorderRadius = 1;
@@ -292,7 +292,7 @@ namespace LibraryApp
             this.payTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.payTaker.Lines = new string[0];
             this.payTaker.Location = new System.Drawing.Point(81, 428);
-            this.payTaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.payTaker.Margin = new System.Windows.Forms.Padding(4);
             this.payTaker.MaxLength = 32767;
             this.payTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.payTaker.Modified = false;
@@ -318,10 +318,10 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.payTaker.OnIdleState = stateProperties4;
-            this.payTaker.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.payTaker.Padding = new System.Windows.Forms.Padding(4);
             this.payTaker.PasswordChar = '\0';
             this.payTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.payTaker.PlaceholderText = "Amount Paid";
+            this.payTaker.PlaceholderText = "Số tiền trả";
             this.payTaker.ReadOnly = false;
             this.payTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.payTaker.SelectedText = "";
@@ -335,7 +335,7 @@ namespace LibraryApp
             this.payTaker.TextMarginBottom = 0;
             this.payTaker.TextMarginLeft = 3;
             this.payTaker.TextMarginTop = 0;
-            this.payTaker.TextPlaceholder = "Amount Paid";
+            this.payTaker.TextPlaceholder = "Số tiền trả";
             this.payTaker.UseSystemPasswordChar = false;
             this.payTaker.WordWrap = true;
             // 
@@ -367,7 +367,7 @@ namespace LibraryApp
             this.idTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.idTaker.Lines = new string[0];
             this.idTaker.Location = new System.Drawing.Point(81, 130);
-            this.idTaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idTaker.Margin = new System.Windows.Forms.Padding(4);
             this.idTaker.MaxLength = 32767;
             this.idTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.idTaker.Modified = false;
@@ -393,7 +393,7 @@ namespace LibraryApp
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.idTaker.OnIdleState = stateProperties8;
-            this.idTaker.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idTaker.Padding = new System.Windows.Forms.Padding(4);
             this.idTaker.PasswordChar = '\0';
             this.idTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.idTaker.PlaceholderText = "Reader ID";
@@ -442,7 +442,7 @@ namespace LibraryApp
             this.nameTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.nameTaker.Lines = new string[0];
             this.nameTaker.Location = new System.Drawing.Point(84, 197);
-            this.nameTaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTaker.Margin = new System.Windows.Forms.Padding(4);
             this.nameTaker.MaxLength = 32767;
             this.nameTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.nameTaker.Modified = false;
@@ -468,7 +468,7 @@ namespace LibraryApp
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.nameTaker.OnIdleState = stateProperties12;
-            this.nameTaker.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTaker.Padding = new System.Windows.Forms.Padding(4);
             this.nameTaker.PasswordChar = '\0';
             this.nameTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.nameTaker.PlaceholderText = "Name";
@@ -517,7 +517,7 @@ namespace LibraryApp
             this.rDebt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rDebt.Lines = new string[0];
             this.rDebt.Location = new System.Drawing.Point(81, 359);
-            this.rDebt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rDebt.Margin = new System.Windows.Forms.Padding(4);
             this.rDebt.MaxLength = 32767;
             this.rDebt.MinimumSize = new System.Drawing.Size(1, 1);
             this.rDebt.Modified = false;
@@ -543,7 +543,7 @@ namespace LibraryApp
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rDebt.OnIdleState = stateProperties16;
-            this.rDebt.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rDebt.Padding = new System.Windows.Forms.Padding(4);
             this.rDebt.PasswordChar = '\0';
             this.rDebt.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rDebt.PlaceholderText = "Debt";
@@ -592,7 +592,7 @@ namespace LibraryApp
             this.birthDayTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.birthDayTaker.Lines = new string[0];
             this.birthDayTaker.Location = new System.Drawing.Point(81, 267);
-            this.birthDayTaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.birthDayTaker.Margin = new System.Windows.Forms.Padding(4);
             this.birthDayTaker.MaxLength = 32767;
             this.birthDayTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.birthDayTaker.Modified = false;
@@ -618,7 +618,7 @@ namespace LibraryApp
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.birthDayTaker.OnIdleState = stateProperties20;
-            this.birthDayTaker.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.birthDayTaker.Padding = new System.Windows.Forms.Padding(4);
             this.birthDayTaker.PasswordChar = '\0';
             this.birthDayTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.birthDayTaker.PlaceholderText = "Date of Birth";

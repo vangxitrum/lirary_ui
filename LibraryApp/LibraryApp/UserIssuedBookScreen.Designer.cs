@@ -100,13 +100,13 @@ namespace LibraryApp
             this.bookData.HeaderBgColor = System.Drawing.Color.Empty;
             this.bookData.HeaderForeColor = System.Drawing.Color.White;
             this.bookData.Location = new System.Drawing.Point(-1, 0);
-            this.bookData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bookData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookData.Name = "bookData";
             this.bookData.RowHeadersVisible = false;
             this.bookData.RowHeadersWidth = 51;
             this.bookData.RowTemplate.Height = 40;
             this.bookData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bookData.Size = new System.Drawing.Size(1017, 531);
+            this.bookData.Size = new System.Drawing.Size(1356, 654);
             this.bookData.TabIndex = 28;
             this.bookData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -114,16 +114,16 @@ namespace LibraryApp
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.ID.DividerWidth = 1;
-            this.ID.HeaderText = "ID        ";
+            this.ID.HeaderText = "Mã Sách";
             this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
-            this.ID.Width = 82;
+            this.ID.Width = 116;
             // 
             // bookName
             // 
             this.bookName.DividerWidth = 1;
-            this.bookName.HeaderText = "Name";
+            this.bookName.HeaderText = "Tên sách";
             this.bookName.MinimumWidth = 6;
             this.bookName.Name = "bookName";
             this.bookName.ReadOnly = true;
@@ -131,7 +131,7 @@ namespace LibraryApp
             // Status
             // 
             this.Status.DividerWidth = 1;
-            this.Status.HeaderText = "Status";
+            this.Status.HeaderText = "Trạng thái";
             this.Status.MinimumWidth = 6;
             this.Status.Name = "Status";
             this.Status.ReadOnly = true;
@@ -139,7 +139,7 @@ namespace LibraryApp
             // Price
             // 
             this.Price.DividerWidth = 1;
-            this.Price.HeaderText = "Price";
+            this.Price.HeaderText = "Trị giá";
             this.Price.MinimumWidth = 6;
             this.Price.Name = "Price";
             this.Price.ReadOnly = true;
@@ -147,7 +147,7 @@ namespace LibraryApp
             // issuedDate
             // 
             this.issuedDate.DividerWidth = 1;
-            this.issuedDate.HeaderText = "Issued Date";
+            this.issuedDate.HeaderText = "Ngày mượn";
             this.issuedDate.MinimumWidth = 6;
             this.issuedDate.Name = "issuedDate";
             this.issuedDate.ReadOnly = true;
@@ -156,12 +156,12 @@ namespace LibraryApp
             // 
             // UserIssuedBookScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 528);
+            this.ClientSize = new System.Drawing.Size(1356, 650);
             this.Controls.Add(this.bookData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserIssuedBookScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserIssuedBookScreen";

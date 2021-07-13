@@ -567,7 +567,7 @@
   <data name="loginBt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMwAAAApCAYAAAB5q8bDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVHhe7dy9SxxBAEBx/6J0VulS2VmFNFaxkICFaZIm
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIoSURBVHhe7dy9SxxBAEBx/6J0VulS2VmFNFaxkICFaZIm
         FlYpEoimuCJwhYUiJMVBCquAiIIkRQgSFAsF4YokiCFYSCxG3nizutzc4rS37wcLx/lR7WNmdnd2Iki6
         N4ORChiMVMBgpAIGIxUwGKlAYzCXV//D5sFuePF5JcxuLIWpD/PhwZsnHh5jdXBec34v9N6G3v5W+Hd5
         MShg2Mhgdo6/x39ELETz7fRn6P/9PfipND44rzm/vxx9DYubnXjeE07OUDDUxR89+/Q6/Lk4H3wrtUdT
@@ -581,18 +581,18 @@
   </data>
   <data name="passwordTaker.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAASQAAAAlCAYAAADr0pT9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABLSURBVHhe7cMxEQAwCASw+jfFOwMUdGVJ7vIAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgL8ktVv1dnoAwHazyqvC178AAAAASUVORK5C
-        YII=
+        iVBORw0KGgoAAAANSUhEUgAAASQAAAApCAYAAACcEFSGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABPSURBVHhe7cMxEQAwCASw+jfFOwM8dGBJ7vIAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4k6R2q95OD9K6s8qpO7uQAAAAAElF
+        TkSuQmCC
 </value>
   </data>
   <data name="userNameTaker.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAASQAAAAlCAYAAADr0pT9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABLSURBVHhe7cMxEQAwCASw+jfFOwMUdGVJ7vIAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgL8ktVv1dnoAwHazyqvC178AAAAASUVORK5C
-        YII=
+        iVBORw0KGgoAAAANSUhEUgAAASQAAAApCAYAAACcEFSGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABPSURBVHhe7cMxEQAwCASw+jfFOwM8dGBJ7vIAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4k6R2q95OD9K6s8qpO7uQAAAAAElF
+        TkSuQmCC
 </value>
   </data>
 </root>

@@ -19,7 +19,7 @@ namespace LibraryApp
         public BookScreen()
         {
             InitializeComponent();
-            loadData();
+            LoadData();
         }
 
         private void bookData_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -31,7 +31,7 @@ namespace LibraryApp
         {
             AddBookScreen child = new AddBookScreen();
             child.ShowDialog();
-            loadData();
+            LoadData();
         }
 
         private void modifyBt_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace LibraryApp
             child.ShowDialog();
         }
 
-        private void loadData()
+        private void LoadData()
         {
             bookData.Rows.Clear();
             SqlConnection conn = DBUtils.GetDBConnection();
@@ -104,9 +104,10 @@ namespace LibraryApp
             try
             {
                 conn.Open();
-                string selectQuerry = "select *, TenTacGia as TacGia, TenTheLoai as TheLoai  from Sach A, TacGia B, TheLoai C where A.MaTG = B.MaTG and A.MaTL = C.MaTL and A.TenSach = @searchText";
+                string selectQuerry = "select *, TenTacGia as TacGia, TenTheLoai as TheLoai  from Sach A, TacGia B, TheLoai C where A.MaTG = B.MaTG and A.MaTL = C.MaTL and (A.TenSach like '%' + @searchText + '%' or A.MaSach = @bID)";
                 SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
                 Cmd.Parameters.AddWithValue("@searchText", searchBar.Text);
+                Cmd.Parameters.AddWithValue("@bID", searchBar.Text);
                 using (SqlDataReader oReader = Cmd.ExecuteReader())
                 {
                     if (oReader.HasRows)
@@ -146,7 +147,7 @@ namespace LibraryApp
         {
             if (searchBar.Text == "")
             {
-                loadData();
+                LoadData();
             }
         }
     }

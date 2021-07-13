@@ -68,9 +68,9 @@ namespace LibraryApp
             this.SignUpDragPanel.Controls.Add(this.label1);
             this.SignUpDragPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.SignUpDragPanel.Location = new System.Drawing.Point(0, 0);
-            this.SignUpDragPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SignUpDragPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SignUpDragPanel.Name = "SignUpDragPanel";
-            this.SignUpDragPanel.Size = new System.Drawing.Size(376, 69);
+            this.SignUpDragPanel.Size = new System.Drawing.Size(501, 85);
             this.SignUpDragPanel.TabIndex = 0;
             // 
             // exitButton
@@ -90,18 +90,18 @@ namespace LibraryApp
             this.exitButton.ImageActive = null;
             this.exitButton.ImageLocation = null;
             this.exitButton.ImageMargin = 5;
-            this.exitButton.ImageSize = new System.Drawing.Size(28, 26);
-            this.exitButton.ImageZoomSize = new System.Drawing.Size(33, 31);
+            this.exitButton.ImageSize = new System.Drawing.Size(39, 33);
+            this.exitButton.ImageZoomSize = new System.Drawing.Size(44, 38);
             this.exitButton.InitialImage = ((System.Drawing.Image)(resources.GetObject("exitButton.InitialImage")));
-            this.exitButton.Location = new System.Drawing.Point(332, 16);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitButton.Location = new System.Drawing.Point(443, 20);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Rotation = 0;
             this.exitButton.ShowActiveImage = true;
             this.exitButton.ShowCursorChanges = true;
             this.exitButton.ShowImageBorders = true;
             this.exitButton.ShowSizeMarkers = false;
-            this.exitButton.Size = new System.Drawing.Size(33, 31);
+            this.exitButton.Size = new System.Drawing.Size(44, 38);
             this.exitButton.TabIndex = 1;
             this.exitButton.ToolTipText = "";
             this.exitButton.WaitOnLoad = false;
@@ -115,35 +115,32 @@ namespace LibraryApp
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 31);
+            this.label1.Size = new System.Drawing.Size(138, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Sign Up";
+            this.label1.Text = "Đăng ký";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(164, 384);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(285, 473);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.Size = new System.Drawing.Size(127, 17);
             this.label3.TabIndex = 13;
-            this.label3.Text = "LOGIN HERE";
+            this.label3.Text = "Đăng nhập ngay";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(142, 370);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(133, 473);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 13);
+            this.label4.Size = new System.Drawing.Size(146, 17);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Already have an account?";
+            this.label4.Text = "Bạn đã có tài khoản ?";
             // 
             // SignUpDrag
             // 
@@ -161,7 +158,7 @@ namespace LibraryApp
             this.signUpBt.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.signUpBt.BackColor = System.Drawing.Color.White;
             this.signUpBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("signUpBt.BackgroundImage")));
-            this.signUpBt.ButtonText = "Sign up";
+            this.signUpBt.ButtonText = "Đăng ký";
             this.signUpBt.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signUpBt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpBt.ForeColor = System.Drawing.Color.SeaGreen;
@@ -170,10 +167,10 @@ namespace LibraryApp
             this.signUpBt.IdleFillColor = System.Drawing.Color.White;
             this.signUpBt.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.signUpBt.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.signUpBt.Location = new System.Drawing.Point(128, 333);
-            this.signUpBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.signUpBt.Location = new System.Drawing.Point(171, 410);
+            this.signUpBt.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.signUpBt.Name = "signUpBt";
-            this.signUpBt.Size = new System.Drawing.Size(153, 33);
+            this.signUpBt.Size = new System.Drawing.Size(204, 41);
             this.signUpBt.TabIndex = 11;
             this.signUpBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.signUpBt.Click += new System.EventHandler(this.signUpBt_Click);
@@ -205,8 +202,8 @@ namespace LibraryApp
             this.rePasswordTaker.IconRight = null;
             this.rePasswordTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rePasswordTaker.Lines = new string[0];
-            this.rePasswordTaker.Location = new System.Drawing.Point(90, 223);
-            this.rePasswordTaker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rePasswordTaker.Location = new System.Drawing.Point(120, 274);
+            this.rePasswordTaker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rePasswordTaker.MaxLength = 32767;
             this.rePasswordTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.rePasswordTaker.Modified = false;
@@ -232,7 +229,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rePasswordTaker.OnIdleState = stateProperties4;
-            this.rePasswordTaker.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rePasswordTaker.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rePasswordTaker.PasswordChar = '●';
             this.rePasswordTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rePasswordTaker.PlaceholderText = "Re-enter";
@@ -242,7 +239,7 @@ namespace LibraryApp
             this.rePasswordTaker.SelectionLength = 0;
             this.rePasswordTaker.SelectionStart = 0;
             this.rePasswordTaker.ShortcutsEnabled = true;
-            this.rePasswordTaker.Size = new System.Drawing.Size(219, 33);
+            this.rePasswordTaker.Size = new System.Drawing.Size(292, 41);
             this.rePasswordTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.rePasswordTaker.TabIndex = 5;
             this.rePasswordTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -280,8 +277,8 @@ namespace LibraryApp
             this.passwordTaker.IconRight = null;
             this.passwordTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.passwordTaker.Lines = new string[0];
-            this.passwordTaker.Location = new System.Drawing.Point(90, 166);
-            this.passwordTaker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passwordTaker.Location = new System.Drawing.Point(120, 204);
+            this.passwordTaker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordTaker.MaxLength = 32767;
             this.passwordTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.passwordTaker.Modified = false;
@@ -307,7 +304,7 @@ namespace LibraryApp
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.passwordTaker.OnIdleState = stateProperties8;
-            this.passwordTaker.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passwordTaker.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordTaker.PasswordChar = '●';
             this.passwordTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.passwordTaker.PlaceholderText = "Password";
@@ -317,7 +314,7 @@ namespace LibraryApp
             this.passwordTaker.SelectionLength = 0;
             this.passwordTaker.SelectionStart = 0;
             this.passwordTaker.ShortcutsEnabled = true;
-            this.passwordTaker.Size = new System.Drawing.Size(219, 33);
+            this.passwordTaker.Size = new System.Drawing.Size(292, 41);
             this.passwordTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.passwordTaker.TabIndex = 4;
             this.passwordTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -356,8 +353,8 @@ namespace LibraryApp
             this.userNameTaker.IconRight = null;
             this.userNameTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.userNameTaker.Lines = new string[0];
-            this.userNameTaker.Location = new System.Drawing.Point(90, 112);
-            this.userNameTaker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userNameTaker.Location = new System.Drawing.Point(120, 138);
+            this.userNameTaker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userNameTaker.MaxLength = 32767;
             this.userNameTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.userNameTaker.Modified = false;
@@ -383,24 +380,24 @@ namespace LibraryApp
             stateProperties12.ForeColor = System.Drawing.SystemColors.ControlText;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.userNameTaker.OnIdleState = stateProperties12;
-            this.userNameTaker.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userNameTaker.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userNameTaker.PasswordChar = '\0';
             this.userNameTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.userNameTaker.PlaceholderText = "User Name";
+            this.userNameTaker.PlaceholderText = "Tên đăng nhập";
             this.userNameTaker.ReadOnly = false;
             this.userNameTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.userNameTaker.SelectedText = "";
             this.userNameTaker.SelectionLength = 0;
             this.userNameTaker.SelectionStart = 0;
             this.userNameTaker.ShortcutsEnabled = true;
-            this.userNameTaker.Size = new System.Drawing.Size(219, 33);
+            this.userNameTaker.Size = new System.Drawing.Size(292, 41);
             this.userNameTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.userNameTaker.TabIndex = 3;
             this.userNameTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.userNameTaker.TextMarginBottom = 0;
             this.userNameTaker.TextMarginLeft = 3;
             this.userNameTaker.TextMarginTop = 0;
-            this.userNameTaker.TextPlaceholder = "User Name";
+            this.userNameTaker.TextPlaceholder = "Tên đăng nhập";
             this.userNameTaker.UseSystemPasswordChar = false;
             this.userNameTaker.WordWrap = true;
             // 
@@ -431,8 +428,8 @@ namespace LibraryApp
             this.idTaker.IconRight = null;
             this.idTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.idTaker.Lines = new string[0];
-            this.idTaker.Location = new System.Drawing.Point(90, 271);
-            this.idTaker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.idTaker.Location = new System.Drawing.Point(120, 334);
+            this.idTaker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idTaker.MaxLength = 32767;
             this.idTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.idTaker.Modified = false;
@@ -458,33 +455,33 @@ namespace LibraryApp
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.idTaker.OnIdleState = stateProperties16;
-            this.idTaker.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.idTaker.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idTaker.PasswordChar = '\0';
             this.idTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.idTaker.PlaceholderText = "Reader ID";
+            this.idTaker.PlaceholderText = "Mã độc giả";
             this.idTaker.ReadOnly = false;
             this.idTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.idTaker.SelectedText = "";
             this.idTaker.SelectionLength = 0;
             this.idTaker.SelectionStart = 0;
             this.idTaker.ShortcutsEnabled = true;
-            this.idTaker.Size = new System.Drawing.Size(219, 33);
+            this.idTaker.Size = new System.Drawing.Size(292, 41);
             this.idTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.idTaker.TabIndex = 7;
             this.idTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.idTaker.TextMarginBottom = 0;
             this.idTaker.TextMarginLeft = 3;
             this.idTaker.TextMarginTop = 0;
-            this.idTaker.TextPlaceholder = "Reader ID";
+            this.idTaker.TextPlaceholder = "Mã độc giả";
             this.idTaker.UseSystemPasswordChar = false;
             this.idTaker.WordWrap = true;
             // 
             // SignUpScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(376, 499);
+            this.ClientSize = new System.Drawing.Size(501, 614);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.signUpBt);
@@ -495,7 +492,7 @@ namespace LibraryApp
             this.Controls.Add(this.SignUpDragPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SignUpScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUpScreen";

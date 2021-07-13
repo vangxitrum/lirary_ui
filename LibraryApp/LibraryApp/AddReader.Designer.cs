@@ -67,7 +67,7 @@ namespace LibraryApp
             this.topPanel.Controls.Add(this.label1);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(4);
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(504, 105);
             this.topPanel.TabIndex = 8;
@@ -116,9 +116,9 @@ namespace LibraryApp
             this.label1.Location = new System.Drawing.Point(17, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 29);
+            this.label1.Size = new System.Drawing.Size(161, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Reader";
+            this.label1.Text = "Thêm độc giả";
             // 
             // bunifuDragControl1
             // 
@@ -141,13 +141,13 @@ namespace LibraryApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(79, 441);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 17);
+            this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 21;
-            this.label3.Text = "Date of birth";
+            this.label3.Text = "Ngày sinh";
             // 
             // readerTypeSet
             // 
@@ -184,7 +184,7 @@ namespace LibraryApp
             this.readerTypeSet.ItemHighLightForeColor = System.Drawing.Color.White;
             this.readerTypeSet.ItemTopMargin = 3;
             this.readerTypeSet.Location = new System.Drawing.Point(83, 231);
-            this.readerTypeSet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.readerTypeSet.Margin = new System.Windows.Forms.Padding(4);
             this.readerTypeSet.Name = "readerTypeSet";
             this.readerTypeSet.Size = new System.Drawing.Size(345, 32);
             this.readerTypeSet.TabIndex = 22;
@@ -195,13 +195,13 @@ namespace LibraryApp
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Silver;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(79, 212);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 17);
+            this.label4.Size = new System.Drawing.Size(85, 17);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Reader Type";
+            this.label4.Text = "Loại độc giả";
             // 
             // birthDayTaker
             // 
@@ -223,7 +223,7 @@ namespace LibraryApp
             this.birthDayTaker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.birthDayTaker.LeftTextMargin = 5;
             this.birthDayTaker.Location = new System.Drawing.Point(83, 460);
-            this.birthDayTaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.birthDayTaker.Margin = new System.Windows.Forms.Padding(4);
             this.birthDayTaker.MinimumSize = new System.Drawing.Size(4, 32);
             this.birthDayTaker.Name = "birthDayTaker";
             this.birthDayTaker.Size = new System.Drawing.Size(345, 32);
@@ -243,7 +243,7 @@ namespace LibraryApp
             this.saveBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.saveBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("saveBt.BackgroundImage")));
             this.saveBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.saveBt.ButtonText = "save";
+            this.saveBt.ButtonText = "Lưu";
             this.saveBt.ButtonTextMarginLeft = 0;
             this.saveBt.ColorContrastOnClick = 45;
             this.saveBt.ColorContrastOnHover = 45;
@@ -277,7 +277,7 @@ namespace LibraryApp
             this.saveBt.IdleIconRightImage = null;
             this.saveBt.IndicateFocus = false;
             this.saveBt.Location = new System.Drawing.Point(185, 535);
-            this.saveBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saveBt.Margin = new System.Windows.Forms.Padding(4);
             this.saveBt.Name = "saveBt";
             this.saveBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.saveBt.OnDisabledState.BorderRadius = 1;
@@ -348,7 +348,7 @@ namespace LibraryApp
             this.emailTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.emailTaker.Lines = new string[0];
             this.emailTaker.Location = new System.Drawing.Point(83, 367);
-            this.emailTaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailTaker.Margin = new System.Windows.Forms.Padding(4);
             this.emailTaker.MaxLength = 32767;
             this.emailTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.emailTaker.Modified = false;
@@ -374,7 +374,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.emailTaker.OnIdleState = stateProperties4;
-            this.emailTaker.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailTaker.Padding = new System.Windows.Forms.Padding(4);
             this.emailTaker.PasswordChar = '\0';
             this.emailTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.emailTaker.PlaceholderText = "Email";
@@ -423,7 +423,7 @@ namespace LibraryApp
             this.addressTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.addressTaker.Lines = new string[0];
             this.addressTaker.Location = new System.Drawing.Point(83, 295);
-            this.addressTaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addressTaker.Margin = new System.Windows.Forms.Padding(4);
             this.addressTaker.MaxLength = 32767;
             this.addressTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.addressTaker.Modified = false;
@@ -449,10 +449,10 @@ namespace LibraryApp
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.addressTaker.OnIdleState = stateProperties8;
-            this.addressTaker.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addressTaker.Padding = new System.Windows.Forms.Padding(4);
             this.addressTaker.PasswordChar = '\0';
             this.addressTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.addressTaker.PlaceholderText = "Address";
+            this.addressTaker.PlaceholderText = "Địa chỉ";
             this.addressTaker.ReadOnly = false;
             this.addressTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.addressTaker.SelectedText = "";
@@ -466,7 +466,7 @@ namespace LibraryApp
             this.addressTaker.TextMarginBottom = 0;
             this.addressTaker.TextMarginLeft = 3;
             this.addressTaker.TextMarginTop = 0;
-            this.addressTaker.TextPlaceholder = "Address";
+            this.addressTaker.TextPlaceholder = "Địa chỉ";
             this.addressTaker.UseSystemPasswordChar = false;
             this.addressTaker.WordWrap = true;
             // 
@@ -498,7 +498,7 @@ namespace LibraryApp
             this.nameTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.nameTaker.Lines = new string[0];
             this.nameTaker.Location = new System.Drawing.Point(83, 143);
-            this.nameTaker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTaker.Margin = new System.Windows.Forms.Padding(4);
             this.nameTaker.MaxLength = 32767;
             this.nameTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.nameTaker.Modified = false;
@@ -524,10 +524,10 @@ namespace LibraryApp
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.nameTaker.OnIdleState = stateProperties12;
-            this.nameTaker.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTaker.Padding = new System.Windows.Forms.Padding(4);
             this.nameTaker.PasswordChar = '\0';
             this.nameTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.nameTaker.PlaceholderText = "Name";
+            this.nameTaker.PlaceholderText = "Tên độc giả";
             this.nameTaker.ReadOnly = false;
             this.nameTaker.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.nameTaker.SelectedText = "";
@@ -541,7 +541,7 @@ namespace LibraryApp
             this.nameTaker.TextMarginBottom = 0;
             this.nameTaker.TextMarginLeft = 3;
             this.nameTaker.TextMarginTop = 0;
-            this.nameTaker.TextPlaceholder = "Name";
+            this.nameTaker.TextPlaceholder = "Tên độc giả";
             this.nameTaker.UseSystemPasswordChar = false;
             this.nameTaker.WordWrap = true;
             // 
@@ -562,7 +562,7 @@ namespace LibraryApp
             this.Controls.Add(this.addressTaker);
             this.Controls.Add(this.nameTaker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddReader";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddReader";

@@ -75,6 +75,20 @@ namespace LibraryApp
 
         private void saveBt_Click(object sender, EventArgs e)
         {
+            DateTime today = DateTime.Today;
+            DateTime birthDay = birthDayTaker.Value.Date;
+            int readerAge = (int)today.Subtract(birthDay).TotalDays / 356;
+            MessageBox.Show(readerAge.ToString());
+            if (readerAge < AppValue._minAge)
+            {
+                MessageBox.Show("Reader is not old enough!!!");
+                return;
+            }
+            else if (readerAge > AppValue._maxAge)
+            {
+                MessageBox.Show("Reader is too old!!!");
+                return;
+            }
             String temp = DateTime.Today.ToString("d");
             temp = temp.Replace('/', '-');
             

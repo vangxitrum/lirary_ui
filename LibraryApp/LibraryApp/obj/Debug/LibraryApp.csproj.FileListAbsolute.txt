@@ -89,3 +89,13 @@ D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.ModifyReader.resour
 D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.UserInfoScreen.resources
 D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.UserIssuedBookScreen.resources
 D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.UserMainScreen.resources
+D:\Study\code mau\LibraryApp\LibraryApp\obj\Debug\LibraryApp.SettingScreen.resources
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.dll
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.WinForms.dll
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.Wpf.dll
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.pdb
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.xml
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.WinForms.pdb
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.WinForms.xml
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.Wpf.pdb
+D:\Study\code mau\LibraryApp\LibraryApp\bin\Debug\LiveCharts.Wpf.xml

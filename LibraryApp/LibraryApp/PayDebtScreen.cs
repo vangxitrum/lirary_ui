@@ -13,18 +13,18 @@ namespace LibraryApp
 {
     public partial class PayDebtScreen : Form
     {
-        String userID,debt,name,dateOfBirth;
-        ReturnBookScreen parent;
-        ReadersScreen parent1;
+        String _userID, _debt, _name, _dateOfBirth;
+        ReturnBookScreen _parent;
+        ReadersScreen _parent1;
         private void saveBt_Click(object sender, EventArgs e)
         {
-            if (Int32.Parse(debt) < Int32.Parse(payTaker.Text))
+            if (Int32.Parse(_debt) < Int32.Parse(payTaker.Text))
             {
                 MessageBox.Show("Error!!!");
             }
             else
             {
-                int value = Int32.Parse(debt) - Int32.Parse(payTaker.Text);
+                int value = Int32.Parse(_debt) - Int32.Parse(payTaker.Text);
                 SqlConnection conn = DBUtils.GetDBConnection();
                 try
                 {
@@ -56,8 +56,8 @@ namespace LibraryApp
                     MessageBox.Show("Failed to connect to database!!! Please try again later");
                 }
                 conn.Close();
-                if (parent != null) parent.flat = true;
-                if (parent1 != null) parent1.flat = true;
+                if (_parent != null) _parent._flat = true;
+                if (_parent1 != null) _parent1._flat = true;
                 
                 
             }
@@ -66,12 +66,12 @@ namespace LibraryApp
 
         public PayDebtScreen(ReturnBookScreen parent,ReadersScreen parent1, String debt, String Name, String dateOfBirth, String ID)
         {
-            this.parent1 = parent1;
-            this.parent = parent;
+            this._parent1 = parent1;
+            this._parent = parent;
             InitializeComponent();
-            this.debt = debt;
-            this.name = Name;
-            this.dateOfBirth = dateOfBirth;
+            this._debt = debt;
+            this._name = Name;
+            this._dateOfBirth = dateOfBirth;
             this.rDebt.Text = debt;
             this.nameTaker.Text = Name;
             this.birthDayTaker.Text = dateOfBirth;

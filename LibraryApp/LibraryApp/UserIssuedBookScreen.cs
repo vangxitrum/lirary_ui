@@ -18,10 +18,10 @@ namespace LibraryApp
         {
             InitializeComponent();
             this._rID = rID;
-            loadData();
+            LoadData();
         }
 
-        private void loadData()
+        private void LoadData()
         {
             SqlConnection conn = DBUtils.GetDBConnection();
             try

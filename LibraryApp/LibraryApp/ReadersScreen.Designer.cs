@@ -123,14 +123,14 @@ namespace LibraryApp
             this.readerData.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.readerData.HeaderBgColor = System.Drawing.Color.Empty;
             this.readerData.HeaderForeColor = System.Drawing.Color.White;
-            this.readerData.Location = new System.Drawing.Point(0, 57);
-            this.readerData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.readerData.Location = new System.Drawing.Point(0, 70);
+            this.readerData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.readerData.Name = "readerData";
             this.readerData.RowHeadersVisible = false;
             this.readerData.RowHeadersWidth = 30;
             this.readerData.RowTemplate.Height = 40;
             this.readerData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.readerData.Size = new System.Drawing.Size(1090, 425);
+            this.readerData.Size = new System.Drawing.Size(1500, 523);
             this.readerData.TabIndex = 6;
             this.readerData.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -138,16 +138,16 @@ namespace LibraryApp
             // 
             this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.ID.DividerWidth = 1;
-            this.ID.HeaderText = "ID          ";
+            this.ID.HeaderText = "Mã độc giả";
             this.ID.MinimumWidth = 6;
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
-            this.ID.Width = 90;
+            this.ID.Width = 140;
             // 
             // readerName
             // 
             this.readerName.DividerWidth = 1;
-            this.readerName.HeaderText = "Name";
+            this.readerName.HeaderText = "Họ tên";
             this.readerName.MinimumWidth = 6;
             this.readerName.Name = "readerName";
             this.readerName.ReadOnly = true;
@@ -156,26 +156,26 @@ namespace LibraryApp
             // 
             this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.type.DividerWidth = 1;
-            this.type.HeaderText = "Type";
+            this.type.HeaderText = "Loại độc giả";
             this.type.MinimumWidth = 6;
             this.type.Name = "type";
             this.type.ReadOnly = true;
-            this.type.Width = 69;
+            this.type.Width = 149;
             // 
             // dateofBirth
             // 
             this.dateofBirth.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dateofBirth.DividerWidth = 1;
-            this.dateofBirth.HeaderText = "Date of birth";
+            this.dateofBirth.HeaderText = "Ngày sinh";
             this.dateofBirth.MinimumWidth = 6;
             this.dateofBirth.Name = "dateofBirth";
             this.dateofBirth.ReadOnly = true;
-            this.dateofBirth.Width = 127;
+            this.dateofBirth.Width = 131;
             // 
             // address
             // 
             this.address.DividerWidth = 1;
-            this.address.HeaderText = "Address";
+            this.address.HeaderText = "Địa chỉ";
             this.address.MinimumWidth = 6;
             this.address.Name = "address";
             this.address.ReadOnly = true;
@@ -192,21 +192,21 @@ namespace LibraryApp
             // 
             this.signInDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.signInDate.DividerWidth = 1;
-            this.signInDate.HeaderText = "Sign in date";
+            this.signInDate.HeaderText = "Ngày đăng ký thẻ";
             this.signInDate.MinimumWidth = 6;
             this.signInDate.Name = "signInDate";
             this.signInDate.ReadOnly = true;
-            this.signInDate.Width = 120;
+            this.signInDate.Width = 202;
             // 
             // Debt
             // 
             this.Debt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.Debt.DividerWidth = 1;
-            this.Debt.HeaderText = "Debt";
+            this.Debt.HeaderText = "Tổng nợ";
             this.Debt.MinimumWidth = 6;
             this.Debt.Name = "Debt";
             this.Debt.ReadOnly = true;
-            this.Debt.Width = 70;
+            this.Debt.Width = 117;
             // 
             // typeID
             // 
@@ -229,7 +229,7 @@ namespace LibraryApp
             this.payBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.payBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("payBt.BackgroundImage")));
             this.payBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.payBt.ButtonText = "Pay off Debt";
+            this.payBt.ButtonText = "Thanh toán";
             this.payBt.ButtonTextMarginLeft = 0;
             this.payBt.ColorContrastOnClick = 45;
             this.payBt.ColorContrastOnHover = 45;
@@ -262,8 +262,8 @@ namespace LibraryApp
             this.payBt.IdleIconLeftImage = null;
             this.payBt.IdleIconRightImage = null;
             this.payBt.IndicateFocus = false;
-            this.payBt.Location = new System.Drawing.Point(106, 488);
-            this.payBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.payBt.Location = new System.Drawing.Point(141, 601);
+            this.payBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.payBt.Name = "payBt";
             this.payBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.payBt.OnDisabledState.BorderRadius = 1;
@@ -297,7 +297,7 @@ namespace LibraryApp
             this.payBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.payBt.OnPressedState.IconLeftImage = null;
             this.payBt.OnPressedState.IconRightImage = null;
-            this.payBt.Size = new System.Drawing.Size(112, 32);
+            this.payBt.Size = new System.Drawing.Size(149, 39);
             this.payBt.TabIndex = 12;
             this.payBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.payBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -320,7 +320,7 @@ namespace LibraryApp
             this.addButton.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.addButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addButton.BackgroundImage")));
             this.addButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.addButton.ButtonText = "Add";
+            this.addButton.ButtonText = "Thêm độc giả";
             this.addButton.ButtonTextMarginLeft = 0;
             this.addButton.ColorContrastOnClick = 45;
             this.addButton.ColorContrastOnHover = 45;
@@ -353,8 +353,8 @@ namespace LibraryApp
             this.addButton.IdleIconLeftImage = null;
             this.addButton.IdleIconRightImage = null;
             this.addButton.IndicateFocus = false;
-            this.addButton.Location = new System.Drawing.Point(676, 488);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Location = new System.Drawing.Point(901, 601);
+            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addButton.Name = "addButton";
             this.addButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.addButton.OnDisabledState.BorderRadius = 1;
@@ -388,7 +388,7 @@ namespace LibraryApp
             this.addButton.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.addButton.OnPressedState.IconLeftImage = null;
             this.addButton.OnPressedState.IconRightImage = null;
-            this.addButton.Size = new System.Drawing.Size(112, 32);
+            this.addButton.Size = new System.Drawing.Size(149, 39);
             this.addButton.TabIndex = 12;
             this.addButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.addButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -414,18 +414,18 @@ namespace LibraryApp
             this.searchBt.ImageActive = null;
             this.searchBt.ImageLocation = null;
             this.searchBt.ImageMargin = 0;
-            this.searchBt.ImageSize = new System.Drawing.Size(21, 23);
-            this.searchBt.ImageZoomSize = new System.Drawing.Size(22, 24);
+            this.searchBt.ImageSize = new System.Drawing.Size(28, 29);
+            this.searchBt.ImageZoomSize = new System.Drawing.Size(29, 30);
             this.searchBt.InitialImage = ((System.Drawing.Image)(resources.GetObject("searchBt.InitialImage")));
-            this.searchBt.Location = new System.Drawing.Point(230, 10);
-            this.searchBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBt.Location = new System.Drawing.Point(307, 12);
+            this.searchBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBt.Name = "searchBt";
             this.searchBt.Rotation = 0;
             this.searchBt.ShowActiveImage = true;
             this.searchBt.ShowCursorChanges = true;
             this.searchBt.ShowImageBorders = true;
             this.searchBt.ShowSizeMarkers = false;
-            this.searchBt.Size = new System.Drawing.Size(22, 24);
+            this.searchBt.Size = new System.Drawing.Size(29, 30);
             this.searchBt.TabIndex = 11;
             this.searchBt.ToolTipText = "";
             this.searchBt.WaitOnLoad = false;
@@ -460,8 +460,8 @@ namespace LibraryApp
             this.searchBar.IconRight = null;
             this.searchBar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.searchBar.Lines = new string[0];
-            this.searchBar.Location = new System.Drawing.Point(47, 10);
-            this.searchBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBar.Location = new System.Drawing.Point(63, 12);
+            this.searchBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBar.MaxLength = 32767;
             this.searchBar.MinimumSize = new System.Drawing.Size(1, 1);
             this.searchBar.Modified = false;
@@ -487,7 +487,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.searchBar.OnIdleState = stateProperties4;
-            this.searchBar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBar.PasswordChar = '\0';
             this.searchBar.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.searchBar.PlaceholderText = "Search here";
@@ -497,7 +497,7 @@ namespace LibraryApp
             this.searchBar.SelectionLength = 0;
             this.searchBar.SelectionStart = 0;
             this.searchBar.ShortcutsEnabled = true;
-            this.searchBar.Size = new System.Drawing.Size(171, 24);
+            this.searchBar.Size = new System.Drawing.Size(228, 30);
             this.searchBar.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.searchBar.TabIndex = 10;
             this.searchBar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -523,7 +523,7 @@ namespace LibraryApp
             this.deleteBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.deleteBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("deleteBt.BackgroundImage")));
             this.deleteBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.deleteBt.ButtonText = "Delete";
+            this.deleteBt.ButtonText = "Xóa độc giả";
             this.deleteBt.ButtonTextMarginLeft = 0;
             this.deleteBt.ColorContrastOnClick = 45;
             this.deleteBt.ColorContrastOnHover = 45;
@@ -556,8 +556,8 @@ namespace LibraryApp
             this.deleteBt.IdleIconLeftImage = null;
             this.deleteBt.IdleIconRightImage = null;
             this.deleteBt.IndicateFocus = false;
-            this.deleteBt.Location = new System.Drawing.Point(937, 486);
-            this.deleteBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteBt.Location = new System.Drawing.Point(1249, 598);
+            this.deleteBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteBt.Name = "deleteBt";
             this.deleteBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.deleteBt.OnDisabledState.BorderRadius = 1;
@@ -591,7 +591,7 @@ namespace LibraryApp
             this.deleteBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.deleteBt.OnPressedState.IconLeftImage = null;
             this.deleteBt.OnPressedState.IconRightImage = null;
-            this.deleteBt.Size = new System.Drawing.Size(112, 32);
+            this.deleteBt.Size = new System.Drawing.Size(149, 39);
             this.deleteBt.TabIndex = 8;
             this.deleteBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.deleteBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -614,7 +614,7 @@ namespace LibraryApp
             this.modifyBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.modifyBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("modifyBt.BackgroundImage")));
             this.modifyBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.modifyBt.ButtonText = "Modify";
+            this.modifyBt.ButtonText = "Sửa thông tin";
             this.modifyBt.ButtonTextMarginLeft = 0;
             this.modifyBt.ColorContrastOnClick = 45;
             this.modifyBt.ColorContrastOnHover = 45;
@@ -647,8 +647,8 @@ namespace LibraryApp
             this.modifyBt.IdleIconLeftImage = null;
             this.modifyBt.IdleIconRightImage = null;
             this.modifyBt.IndicateFocus = false;
-            this.modifyBt.Location = new System.Drawing.Point(808, 486);
-            this.modifyBt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.modifyBt.Location = new System.Drawing.Point(1077, 598);
+            this.modifyBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.modifyBt.Name = "modifyBt";
             this.modifyBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.modifyBt.OnDisabledState.BorderRadius = 1;
@@ -682,7 +682,7 @@ namespace LibraryApp
             this.modifyBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.modifyBt.OnPressedState.IconLeftImage = null;
             this.modifyBt.OnPressedState.IconRightImage = null;
-            this.modifyBt.Size = new System.Drawing.Size(112, 32);
+            this.modifyBt.Size = new System.Drawing.Size(149, 39);
             this.modifyBt.TabIndex = 12;
             this.modifyBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.modifyBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -693,9 +693,9 @@ namespace LibraryApp
             // 
             // ReadersScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 528);
+            this.ClientSize = new System.Drawing.Size(1500, 650);
             this.Controls.Add(this.modifyBt);
             this.Controls.Add(this.payBt);
             this.Controls.Add(this.addButton);
@@ -704,7 +704,7 @@ namespace LibraryApp
             this.Controls.Add(this.searchBar);
             this.Controls.Add(this.deleteBt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ReadersScreen";
             this.Text = "ReadersScreen";
             ((System.ComponentModel.ISupportInitialize)(this.readerData)).EndInit();
@@ -720,6 +720,7 @@ namespace LibraryApp
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton deleteBt;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton addButton;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton payBt;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton modifyBt;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn readerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
@@ -729,6 +730,5 @@ namespace LibraryApp
         private System.Windows.Forms.DataGridViewTextBoxColumn signInDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Debt;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeID;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton modifyBt;
     }
 }

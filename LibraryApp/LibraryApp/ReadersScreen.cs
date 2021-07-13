@@ -13,18 +13,18 @@ namespace LibraryApp
 {
     public partial class ReadersScreen : Form
     {
-        public bool flat = false;
+        public bool _flat = false;
         public ReadersScreen()
         {
             InitializeComponent();
-            loadData();
+            LoadData();
         }
 
         private void addButton_Click(object sender, EventArgs e)
         {
             AddReader child = new AddReader();
             child.ShowDialog();
-            loadData();
+            LoadData();
         }
 
         private void payBt_Click(object sender, EventArgs e)
@@ -37,10 +37,10 @@ namespace LibraryApp
             Debt = readerData.Rows[index].Cells[7].Value.ToString();
             PayDebtScreen child = new PayDebtScreen(null,this,Debt,name,date,id);
             child.ShowDialog();
-            loadData();
+            LoadData();
         }
 
-        private void loadData()
+        private void LoadData()
         {
             readerData.Rows.Clear();
             SqlConnection conn = DBUtils.GetDBConnection();
@@ -179,7 +179,7 @@ namespace LibraryApp
         {
             if (searchBar.Text == "")
             {
-                loadData();
+                LoadData();
             }
         }
 
@@ -190,9 +190,10 @@ namespace LibraryApp
             try
             {
                 conn.Open();
-                string selectQuerry = "Select *, B.TenLoaiDocGia as LoaiDocGia,FORMAT (NgaySinh, 'yyyy-MM-dd') as rNgaySinh,FORMAT (NgayLapThe, 'yyyy-MM-dd') as rNgayLapThe from DocGia A, LoaiDocGia B where A.MaLoaiDocGia = B.MaLoaiDocGIa and A.HoTen = @searchText";
+                string selectQuerry = "Select *, B.TenLoaiDocGia as LoaiDocGia,FORMAT (NgaySinh, 'yyyy-MM-dd') as rNgaySinh,FORMAT (NgayLapThe, 'yyyy-MM-dd') as rNgayLapThe from DocGia A, LoaiDocGia B where A.MaLoaiDocGia = B.MaLoaiDocGIa and (A.HoTen like '%' + @searchText + '%' or A.MaDocGia = @rID)";
                 SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
                 Cmd.Parameters.AddWithValue("@searchText", searchBar.Text);
+                Cmd.Parameters.AddWithValue("@rID", searchBar.Text);
                 using (SqlDataReader oReader = Cmd.ExecuteReader())
                 {
                     if (oReader.HasRows)
@@ -237,7 +238,7 @@ namespace LibraryApp
                  readerData.Rows[index].Cells[8].Value.ToString()
                 );
             child.ShowDialog();
-            loadData();
+            LoadData();
         }
     }
 }

@@ -14,19 +14,16 @@ namespace LibraryApp
 {
     public partial class ReturnBookScreen : Form
     {
-        String readerName, readerEmail, readerBirth, readerAddress, readerID;
-        String returnFormID;
-        String debt;
-        int dailyFees = Int32.Parse(ConfigurationSettings.AppSettings["DailyFees"]);
-        int overtimeDailyFees= Int32.Parse(ConfigurationSettings.AppSettings["OverTimeDailyFees"]);
-        int maxDate = Int32.Parse(ConfigurationSettings.AppSettings["MaxDate"]);
-        public bool flat = false;
-        List<bool> bookReturned = new List<bool>();
+        String _readerName, _readerEmail, _readerBirth, _readerAddress, _readerID;
+        String _returnFormID;
+        String _debt;
+        public bool _flat = false;
+        List<bool> _bookReturned = new List<bool>();
 
 
         void reset()
         {
-            debt = readerName = readerEmail = readerBirth = readerAddress = readerID =  returnFormID = null;
+            _debt = _readerName = _readerEmail = _readerBirth = _readerAddress = _readerID =  _returnFormID = null;
             rIdTaker.Clear();
             rName.Clear();
             rEmail.Clear();
@@ -34,7 +31,7 @@ namespace LibraryApp
             rBirth.Clear();
             total.Clear();
             bookData.Rows.Clear();
-            flat = false;
+            _flat = false;
         }
         void createReturnedForm()
         {
@@ -65,15 +62,15 @@ namespace LibraryApp
                 MessageBox.Show("Failed to connect to database!!! Please try again later");
                 return;
             }
-            returnFormID = "PT000" + count.ToString(); 
+            _returnFormID = "PT000" + count.ToString(); 
             conn.Close();
             try
             {
                 conn.Open();
                 string selectQuerry = "INSERT INTO PhieuTraSach (MaPTS,NgayTraSach,MaDocGia,SoTienThu) VALUES(@bid,@date,@id,@Sum)";
                 SqlCommand Cmd = new SqlCommand(selectQuerry, conn);
-                Cmd.Parameters.AddWithValue("@bid", returnFormID);
-                Cmd.Parameters.AddWithValue("@id", readerID);
+                Cmd.Parameters.AddWithValue("@bid", _returnFormID);
+                Cmd.Parameters.AddWithValue("@id", _readerID);
                 Cmd.Parameters.AddWithValue("@date", dateGetter.Text);
                 Cmd.Parameters.AddWithValue("@Sum", total.Text);
                 Cmd.ExecuteNonQuery();
@@ -91,16 +88,16 @@ namespace LibraryApp
         {
             totalBt_Click(sender, e);
             
-            int rDebt = Int32.Parse(debt) + Int32.Parse(total.Text);
+            int rDebt = Int32.Parse(_debt) + Int32.Parse(total.Text);
             DialogResult dialogResult = MessageBox.Show("Thanh toan hoa don?", "Pay bill", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                PayDebtScreen child = new PayDebtScreen(this,null,rDebt.ToString(), readerName, readerBirth, readerID);
+                PayDebtScreen child = new PayDebtScreen(this,null,rDebt.ToString(), _readerName, _readerBirth, _readerID);
                 child.ShowDialog();
             }
             else if (dialogResult == DialogResult.No)
             {
-                flat = true;
+                _flat = true;
                 SqlConnection conn = DBUtils.GetDBConnection();
                 try
                 {
@@ -119,9 +116,9 @@ namespace LibraryApp
                 conn.Close();
             }
             
-            if (flat)
+            if (_flat)
             {
-                if (readerName != null && bookData.Rows.Count != 0 && total.Text != "0")
+                if (_readerName != null && bookData.Rows.Count != 0 && total.Text != "0")
                 {
                     createReturnedForm();
                 }
@@ -145,7 +142,7 @@ namespace LibraryApp
                             string selectQuerry = "INSERT INTO ChiTietPT (MaCTPT,MaSach,MaPTS,NgayMuonSach) VALUES([dbo].[idChiTietPT](),@bookID,@rID,@date)";
                             SqlCommand Cmd = new SqlCommand(selectQuerry, conn1);
                             Cmd.Parameters.AddWithValue("@bookID", bookData.Rows[i].Cells[0].Value.ToString());
-                            Cmd.Parameters.AddWithValue("@rID", returnFormID);
+                            Cmd.Parameters.AddWithValue("@rID", _returnFormID);
                             Cmd.Parameters.AddWithValue("@date", date);
                             Cmd.ExecuteNonQuery();
                         }
@@ -210,16 +207,16 @@ namespace LibraryApp
                     }
                     if (dateCount == 0)
                     {
-                        Sum += dailyFees;
+                        Sum += AppValue._dailyFee;
                     }
-                    else if (dateCount <= maxDate)
+                    else if (dateCount <= AppValue._maxIssuedDay)
                     {
-                        Sum += dateCount * dailyFees;
+                        Sum += dateCount * AppValue._dailyFee;
                     }
                     else
                     {
-                        Sum += dateCount * dailyFees;
-                        Sum += (dateCount - maxDate) * overtimeDailyFees;
+                        Sum += dateCount * AppValue._dailyFee;
+                        Sum += (dateCount - AppValue._maxIssuedDay) * AppValue._overDueFee;
                     }
                 }
             }
@@ -250,16 +247,16 @@ namespace LibraryApp
                     {
                         while (oReader.Read())
                         {
-                            readerID = oReader["MaDocGia"].ToString();
-                            readerName = oReader["HoTen"].ToString();
-                            readerEmail = oReader["Email"].ToString();
-                            readerAddress = oReader["DiaChi"].ToString();
-                            readerBirth = oReader["NgaySinh"].ToString();
-                            debt = oReader["TongNo"].ToString();
-                            rEmail.Text = readerEmail;
-                            rAddress.Text = readerAddress;
-                            rBirth.Text = readerBirth;
-                            rName.Text = readerName;
+                            _readerID = oReader["MaDocGia"].ToString();
+                            _readerName = oReader["HoTen"].ToString();
+                            _readerEmail = oReader["Email"].ToString();
+                            _readerAddress = oReader["DiaChi"].ToString();
+                            _readerBirth = oReader["NgaySinh"].ToString();
+                            _debt = oReader["TongNo"].ToString();
+                            rEmail.Text = _readerEmail;
+                            rAddress.Text = _readerAddress;
+                            rBirth.Text = _readerBirth;
+                            rName.Text = _readerName;
                         }
                     }
                     else
@@ -301,7 +298,7 @@ namespace LibraryApp
                                         while (newReader.Read())
                                         {
                                             bookData.Rows.Add(newReader["MaSach"].ToString().Trim(), newReader["TenSach"].ToString(), newReader["TrangThai"].ToString(), newReader["TriGia"].ToString(), oReader["NgayMuonSach"].ToString(), false);
-                                            bookReturned.Add(false);
+                                            _bookReturned.Add(false);
                                         }
                                     }
                                 }

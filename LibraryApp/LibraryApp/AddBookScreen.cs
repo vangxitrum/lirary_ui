@@ -14,8 +14,8 @@ namespace LibraryApp
     public partial class AddBookScreen : Form
     {
 
-        List<Item> authorList = new List<Item>();
-        List<Item> genreList = new List<Item>();
+        List<Item> _authorList = new List<Item>();
+        List<Item> _genreList = new List<Item>();
         class Item
         {
             public int id { get; set; }
@@ -31,11 +31,11 @@ namespace LibraryApp
             InitializeComponent();
             todayGetter.Format = DateTimePickerFormat.Custom;
             loadData();
-            authorSet.DataSource = authorList;
+            authorSet.DataSource = _authorList;
             authorSet.DisplayMember = "value";
             authorSet.ValueMember = "id";
 
-            genreSet.DataSource = genreList;
+            genreSet.DataSource = _genreList;
             genreSet.DisplayMember = "value";
             genreSet.ValueMember = "id";
             
@@ -165,7 +165,7 @@ namespace LibraryApp
                     {
                         while (oReader.Read())
                         {
-                            authorList.Add(new Item(Int32.Parse(oReader["MaTG"].ToString()), oReader["TenTacGia"].ToString()));
+                            _authorList.Add(new Item(Int32.Parse(oReader["MaTG"].ToString()), oReader["TenTacGia"].ToString()));
                         }
                     }
                     else
@@ -191,7 +191,7 @@ namespace LibraryApp
                     {
                         while (oReader.Read())
                         {
-                            genreList.Add(new Item(Int32.Parse(oReader["MaTL"].ToString()), oReader["TenTheLoai"].ToString()));
+                            _genreList.Add(new Item(Int32.Parse(oReader["MaTL"].ToString()), oReader["TenTheLoai"].ToString()));
                         }
                     }
                     else

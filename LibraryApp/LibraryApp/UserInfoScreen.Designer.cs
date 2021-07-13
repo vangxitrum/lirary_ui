@@ -92,72 +92,86 @@ namespace LibraryApp
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(205, 452);
+            this.label9.BackColor = System.Drawing.Color.Linen;
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(295, 469);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 13);
+            this.label9.Size = new System.Drawing.Size(61, 17);
             this.label9.TabIndex = 43;
-            this.label9.Text = "Debt";
+            this.label9.Text = "Tổng nợ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(221, 208);
+            this.label8.BackColor = System.Drawing.Color.Linen;
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(295, 256);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 13);
+            this.label8.Size = new System.Drawing.Size(42, 17);
             this.label8.TabIndex = 44;
             this.label8.Text = "Email";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(221, 144);
+            this.label7.BackColor = System.Drawing.Color.Linen;
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(295, 177);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 13);
+            this.label7.Size = new System.Drawing.Size(51, 17);
             this.label7.TabIndex = 45;
-            this.label7.Text = "Address";
+            this.label7.Text = "Địa chỉ";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(221, 15);
+            this.label6.BackColor = System.Drawing.Color.Linen;
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(295, 18);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(83, 17);
             this.label6.TabIndex = 46;
-            this.label6.Text = "Name";
+            this.label6.Text = "Tên độc giả";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(220, 80);
+            this.label4.BackColor = System.Drawing.Color.Linen;
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(293, 98);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.Size = new System.Drawing.Size(85, 17);
             this.label4.TabIndex = 47;
-            this.label4.Text = "Reader Type";
+            this.label4.Text = "Loại độc giả";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(217, 325);
+            this.label5.BackColor = System.Drawing.Color.Linen;
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(289, 400);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.Size = new System.Drawing.Size(119, 17);
             this.label5.TabIndex = 40;
-            this.label5.Text = "Sign In Date";
+            this.label5.Text = "Ngày đăng ký thẻ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(217, 272);
+            this.label3.BackColor = System.Drawing.Color.Linen;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(289, 335);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 41;
-            this.label3.Text = "Date of birth";
+            this.label3.Text = "Ngày sinh";
             // 
             // signInDateTaker
             // 
@@ -178,10 +192,11 @@ namespace LibraryApp
             this.signInDateTaker.IconColor = System.Drawing.Color.Gray;
             this.signInDateTaker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.signInDateTaker.LeftTextMargin = 5;
-            this.signInDateTaker.Location = new System.Drawing.Point(223, 345);
+            this.signInDateTaker.Location = new System.Drawing.Point(297, 425);
+            this.signInDateTaker.Margin = new System.Windows.Forms.Padding(4);
             this.signInDateTaker.MinimumSize = new System.Drawing.Size(4, 32);
             this.signInDateTaker.Name = "signInDateTaker";
-            this.signInDateTaker.Size = new System.Drawing.Size(261, 32);
+            this.signInDateTaker.Size = new System.Drawing.Size(347, 32);
             this.signInDateTaker.TabIndex = 38;
             // 
             // birthDayTaker
@@ -203,10 +218,11 @@ namespace LibraryApp
             this.birthDayTaker.IconColor = System.Drawing.Color.Gray;
             this.birthDayTaker.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.birthDayTaker.LeftTextMargin = 5;
-            this.birthDayTaker.Location = new System.Drawing.Point(223, 292);
+            this.birthDayTaker.Location = new System.Drawing.Point(297, 359);
+            this.birthDayTaker.Margin = new System.Windows.Forms.Padding(4);
             this.birthDayTaker.MinimumSize = new System.Drawing.Size(4, 32);
             this.birthDayTaker.Name = "birthDayTaker";
-            this.birthDayTaker.Size = new System.Drawing.Size(261, 32);
+            this.birthDayTaker.Size = new System.Drawing.Size(347, 32);
             this.birthDayTaker.TabIndex = 39;
             // 
             // debtTaker
@@ -236,7 +252,8 @@ namespace LibraryApp
             this.debtTaker.IconRight = null;
             this.debtTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.debtTaker.Lines = new string[0];
-            this.debtTaker.Location = new System.Drawing.Point(222, 398);
+            this.debtTaker.Location = new System.Drawing.Point(296, 490);
+            this.debtTaker.Margin = new System.Windows.Forms.Padding(4);
             this.debtTaker.MaxLength = 32767;
             this.debtTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.debtTaker.Modified = false;
@@ -262,7 +279,7 @@ namespace LibraryApp
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.debtTaker.OnIdleState = stateProperties4;
-            this.debtTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.debtTaker.Padding = new System.Windows.Forms.Padding(4);
             this.debtTaker.PasswordChar = '\0';
             this.debtTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.debtTaker.PlaceholderText = "Debt";
@@ -272,7 +289,7 @@ namespace LibraryApp
             this.debtTaker.SelectionLength = 0;
             this.debtTaker.SelectionStart = 0;
             this.debtTaker.ShortcutsEnabled = true;
-            this.debtTaker.Size = new System.Drawing.Size(260, 37);
+            this.debtTaker.Size = new System.Drawing.Size(347, 46);
             this.debtTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.debtTaker.TabIndex = 36;
             this.debtTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -310,7 +327,8 @@ namespace LibraryApp
             this.emailTaker.IconRight = null;
             this.emailTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.emailTaker.Lines = new string[0];
-            this.emailTaker.Location = new System.Drawing.Point(223, 228);
+            this.emailTaker.Location = new System.Drawing.Point(297, 281);
+            this.emailTaker.Margin = new System.Windows.Forms.Padding(4);
             this.emailTaker.MaxLength = 32767;
             this.emailTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.emailTaker.Modified = false;
@@ -336,7 +354,7 @@ namespace LibraryApp
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.emailTaker.OnIdleState = stateProperties8;
-            this.emailTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.emailTaker.Padding = new System.Windows.Forms.Padding(4);
             this.emailTaker.PasswordChar = '\0';
             this.emailTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.emailTaker.PlaceholderText = "Email";
@@ -346,7 +364,7 @@ namespace LibraryApp
             this.emailTaker.SelectionLength = 0;
             this.emailTaker.SelectionStart = 0;
             this.emailTaker.ShortcutsEnabled = true;
-            this.emailTaker.Size = new System.Drawing.Size(260, 37);
+            this.emailTaker.Size = new System.Drawing.Size(347, 46);
             this.emailTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.emailTaker.TabIndex = 37;
             this.emailTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -384,7 +402,8 @@ namespace LibraryApp
             this.addressTaker.IconRight = null;
             this.addressTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.addressTaker.Lines = new string[0];
-            this.addressTaker.Location = new System.Drawing.Point(223, 164);
+            this.addressTaker.Location = new System.Drawing.Point(297, 202);
+            this.addressTaker.Margin = new System.Windows.Forms.Padding(4);
             this.addressTaker.MaxLength = 32767;
             this.addressTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.addressTaker.Modified = false;
@@ -410,7 +429,7 @@ namespace LibraryApp
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.addressTaker.OnIdleState = stateProperties12;
-            this.addressTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.addressTaker.Padding = new System.Windows.Forms.Padding(4);
             this.addressTaker.PasswordChar = '\0';
             this.addressTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.addressTaker.PlaceholderText = "Address";
@@ -420,7 +439,7 @@ namespace LibraryApp
             this.addressTaker.SelectionLength = 0;
             this.addressTaker.SelectionStart = 0;
             this.addressTaker.ShortcutsEnabled = true;
-            this.addressTaker.Size = new System.Drawing.Size(260, 37);
+            this.addressTaker.Size = new System.Drawing.Size(347, 46);
             this.addressTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.addressTaker.TabIndex = 35;
             this.addressTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -458,7 +477,8 @@ namespace LibraryApp
             this.nameTaker.IconRight = null;
             this.nameTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.nameTaker.Lines = new string[0];
-            this.nameTaker.Location = new System.Drawing.Point(223, 36);
+            this.nameTaker.Location = new System.Drawing.Point(297, 44);
+            this.nameTaker.Margin = new System.Windows.Forms.Padding(4);
             this.nameTaker.MaxLength = 32767;
             this.nameTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.nameTaker.Modified = false;
@@ -484,7 +504,7 @@ namespace LibraryApp
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.nameTaker.OnIdleState = stateProperties16;
-            this.nameTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.nameTaker.Padding = new System.Windows.Forms.Padding(4);
             this.nameTaker.PasswordChar = '\0';
             this.nameTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.nameTaker.PlaceholderText = "Name";
@@ -494,7 +514,7 @@ namespace LibraryApp
             this.nameTaker.SelectionLength = 0;
             this.nameTaker.SelectionStart = 0;
             this.nameTaker.ShortcutsEnabled = true;
-            this.nameTaker.Size = new System.Drawing.Size(260, 37);
+            this.nameTaker.Size = new System.Drawing.Size(347, 46);
             this.nameTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.nameTaker.TabIndex = 34;
             this.nameTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -508,10 +528,9 @@ namespace LibraryApp
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(611, 82);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(815, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(2, 284);
+            this.label1.Size = new System.Drawing.Size(3, 350);
             this.label1.TabIndex = 48;
             // 
             // typeTaker
@@ -541,7 +560,8 @@ namespace LibraryApp
             this.typeTaker.IconRight = null;
             this.typeTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.typeTaker.Lines = new string[0];
-            this.typeTaker.Location = new System.Drawing.Point(222, 100);
+            this.typeTaker.Location = new System.Drawing.Point(296, 123);
+            this.typeTaker.Margin = new System.Windows.Forms.Padding(4);
             this.typeTaker.MaxLength = 32767;
             this.typeTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.typeTaker.Modified = false;
@@ -567,7 +587,7 @@ namespace LibraryApp
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.typeTaker.OnIdleState = stateProperties20;
-            this.typeTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.typeTaker.Padding = new System.Windows.Forms.Padding(4);
             this.typeTaker.PasswordChar = '\0';
             this.typeTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.typeTaker.PlaceholderText = "Type";
@@ -577,7 +597,7 @@ namespace LibraryApp
             this.typeTaker.SelectionLength = 0;
             this.typeTaker.SelectionStart = 0;
             this.typeTaker.ShortcutsEnabled = true;
-            this.typeTaker.Size = new System.Drawing.Size(260, 37);
+            this.typeTaker.Size = new System.Drawing.Size(347, 46);
             this.typeTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.typeTaker.TabIndex = 34;
             this.typeTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -615,7 +635,8 @@ namespace LibraryApp
             this.nPasswordTaker.IconRight = null;
             this.nPasswordTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.nPasswordTaker.Lines = new string[0];
-            this.nPasswordTaker.Location = new System.Drawing.Point(688, 164);
+            this.nPasswordTaker.Location = new System.Drawing.Point(917, 202);
+            this.nPasswordTaker.Margin = new System.Windows.Forms.Padding(4);
             this.nPasswordTaker.MaxLength = 32767;
             this.nPasswordTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.nPasswordTaker.Modified = false;
@@ -641,7 +662,7 @@ namespace LibraryApp
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.nPasswordTaker.OnIdleState = stateProperties24;
-            this.nPasswordTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.nPasswordTaker.Padding = new System.Windows.Forms.Padding(4);
             this.nPasswordTaker.PasswordChar = '●';
             this.nPasswordTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.nPasswordTaker.PlaceholderText = "";
@@ -651,7 +672,7 @@ namespace LibraryApp
             this.nPasswordTaker.SelectionLength = 0;
             this.nPasswordTaker.SelectionStart = 0;
             this.nPasswordTaker.ShortcutsEnabled = true;
-            this.nPasswordTaker.Size = new System.Drawing.Size(260, 37);
+            this.nPasswordTaker.Size = new System.Drawing.Size(347, 46);
             this.nPasswordTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.nPasswordTaker.TabIndex = 34;
             this.nPasswordTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -689,7 +710,8 @@ namespace LibraryApp
             this.rePasswordTaker.IconRight = null;
             this.rePasswordTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.rePasswordTaker.Lines = new string[0];
-            this.rePasswordTaker.Location = new System.Drawing.Point(687, 228);
+            this.rePasswordTaker.Location = new System.Drawing.Point(916, 281);
+            this.rePasswordTaker.Margin = new System.Windows.Forms.Padding(4);
             this.rePasswordTaker.MaxLength = 32767;
             this.rePasswordTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.rePasswordTaker.Modified = false;
@@ -715,7 +737,7 @@ namespace LibraryApp
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.rePasswordTaker.OnIdleState = stateProperties28;
-            this.rePasswordTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.rePasswordTaker.Padding = new System.Windows.Forms.Padding(4);
             this.rePasswordTaker.PasswordChar = '●';
             this.rePasswordTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.rePasswordTaker.PlaceholderText = "";
@@ -725,7 +747,7 @@ namespace LibraryApp
             this.rePasswordTaker.SelectionLength = 0;
             this.rePasswordTaker.SelectionStart = 0;
             this.rePasswordTaker.ShortcutsEnabled = true;
-            this.rePasswordTaker.Size = new System.Drawing.Size(260, 37);
+            this.rePasswordTaker.Size = new System.Drawing.Size(347, 46);
             this.rePasswordTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.rePasswordTaker.TabIndex = 34;
             this.rePasswordTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -739,22 +761,26 @@ namespace LibraryApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(685, 208);
+            this.label2.BackColor = System.Drawing.Color.Linen;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(913, 256);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.Size = new System.Drawing.Size(148, 17);
             this.label2.TabIndex = 47;
-            this.label2.Text = "Re-password";
+            this.label2.Text = "Nhập lại mật khẩu mới";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Silver;
-            this.label10.Location = new System.Drawing.Point(686, 144);
+            this.label10.BackColor = System.Drawing.Color.Linen;
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(915, 177);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 13);
+            this.label10.Size = new System.Drawing.Size(92, 17);
             this.label10.TabIndex = 46;
-            this.label10.Text = "New Password";
+            this.label10.Text = "Mật khẩu mới";
             // 
             // saveBt
             // 
@@ -770,7 +796,7 @@ namespace LibraryApp
             this.saveBt.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.saveBt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("saveBt.BackgroundImage")));
             this.saveBt.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.saveBt.ButtonText = "Save";
+            this.saveBt.ButtonText = "Lưu";
             this.saveBt.ButtonTextMarginLeft = 0;
             this.saveBt.ColorContrastOnClick = 45;
             this.saveBt.ColorContrastOnHover = 45;
@@ -803,8 +829,8 @@ namespace LibraryApp
             this.saveBt.IdleIconLeftImage = null;
             this.saveBt.IdleIconRightImage = null;
             this.saveBt.IndicateFocus = false;
-            this.saveBt.Location = new System.Drawing.Point(852, 287);
-            this.saveBt.Margin = new System.Windows.Forms.Padding(2);
+            this.saveBt.Location = new System.Drawing.Point(1136, 353);
+            this.saveBt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBt.Name = "saveBt";
             this.saveBt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.saveBt.OnDisabledState.BorderRadius = 1;
@@ -838,7 +864,7 @@ namespace LibraryApp
             this.saveBt.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.saveBt.OnPressedState.IconLeftImage = null;
             this.saveBt.OnPressedState.IconRightImage = null;
-            this.saveBt.Size = new System.Drawing.Size(95, 32);
+            this.saveBt.Size = new System.Drawing.Size(127, 39);
             this.saveBt.TabIndex = 49;
             this.saveBt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.saveBt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -881,7 +907,8 @@ namespace LibraryApp
             this.oPasswordTaker.IconRight = null;
             this.oPasswordTaker.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.oPasswordTaker.Lines = new string[0];
-            this.oPasswordTaker.Location = new System.Drawing.Point(687, 100);
+            this.oPasswordTaker.Location = new System.Drawing.Point(916, 123);
+            this.oPasswordTaker.Margin = new System.Windows.Forms.Padding(4);
             this.oPasswordTaker.MaxLength = 32767;
             this.oPasswordTaker.MinimumSize = new System.Drawing.Size(1, 1);
             this.oPasswordTaker.Modified = false;
@@ -907,7 +934,7 @@ namespace LibraryApp
             stateProperties32.ForeColor = System.Drawing.Color.Empty;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.oPasswordTaker.OnIdleState = stateProperties32;
-            this.oPasswordTaker.Padding = new System.Windows.Forms.Padding(3);
+            this.oPasswordTaker.Padding = new System.Windows.Forms.Padding(4);
             this.oPasswordTaker.PasswordChar = '●';
             this.oPasswordTaker.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.oPasswordTaker.PlaceholderText = "";
@@ -917,7 +944,7 @@ namespace LibraryApp
             this.oPasswordTaker.SelectionLength = 0;
             this.oPasswordTaker.SelectionStart = 0;
             this.oPasswordTaker.ShortcutsEnabled = true;
-            this.oPasswordTaker.Size = new System.Drawing.Size(260, 37);
+            this.oPasswordTaker.Size = new System.Drawing.Size(347, 46);
             this.oPasswordTaker.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.oPasswordTaker.TabIndex = 34;
             this.oPasswordTaker.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -931,19 +958,21 @@ namespace LibraryApp
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.Silver;
-            this.label11.Location = new System.Drawing.Point(685, 80);
+            this.label11.BackColor = System.Drawing.Color.Linen;
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(913, 98);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 13);
+            this.label11.Size = new System.Drawing.Size(116, 17);
             this.label11.TabIndex = 46;
-            this.label11.Text = "Old Password";
+            this.label11.Text = "Mật khẩu hiện tại";
             // 
             // UserInfoScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1017, 528);
+            this.ClientSize = new System.Drawing.Size(1356, 650);
             this.Controls.Add(this.saveBt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label9);
@@ -967,7 +996,7 @@ namespace LibraryApp
             this.Controls.Add(this.nPasswordTaker);
             this.Controls.Add(this.nameTaker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserInfoScreen";
             this.Text = "UserInfoScreen";
             this.Load += new System.EventHandler(this.UserInfoScreen_Load);
